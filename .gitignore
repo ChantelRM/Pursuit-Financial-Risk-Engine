@@ -1,0 +1,6 @@
+.Rhistory
+.RData
+data/processed/*.csv
+outputs/*.csv
+outputs/charts/*.png
+models/*.rds
