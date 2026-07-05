@@ -54,13 +54,12 @@ The notebook is self-contained and doesn't depend on `src/` at all.
 | 7 | LLM chat layer — ask the data questions via the Claude API |
 | 8 | Wrap-up / output file list |
 
-## Your 3 Kaggle datasets
+## 2 Kaggle datasets
 
 - `kingabzpro/bank-debt-data` — has a real recovered/not-recovered outcome; your cleanest label source
 - `kotich/banking-collections-dataset-synthetic-data` — richer risk features (loan type, risk level, outstanding amount)
-- `akrambelha/synthetic-banking-dataset-csv-sql-sqlite` — large (1.26M+ rows), likely relational; treated as optional enrichment, not required for the model to work
 
-**Before trusting Section 6's output:** download the 3 CSVs into `data/raw/`,
+**Before trusting Section 6's output:** download the 2 CSVs into `data/raw/`,
 then run the `inspect_dataset()` calls (commented out at the top of that
 section) on each one and compare the printed columns against `CONFIG`.
 Kaggle gates full column listings behind login, so `CONFIG` is a best-effort
