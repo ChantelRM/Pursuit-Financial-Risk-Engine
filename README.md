@@ -86,6 +86,33 @@ Section 7 sends a compact statistical summary of the portfolio (not raw per-debt
 
 Section 4 drafts email/SMS content as R strings/data frames. There's no live send integration — connecting this to an actual SMTP or SMS provider is a separate step, and worth checking relevant regulations on automated debt-collection communications before that happens.
 
+## Architecture & Design Decisions
+
+This project went through real debugging, not just implementation — the reasoning behind each non-obvious call is documented in full in `LEARNING_JOURNAL.md`. Summary of the ones that mattered most:
+
+- **Schema-first validation** (`validate_schema()`) — every dataset is checked against an explicit expected schema before use, so a bad column fails loudly at the point of ingestion rather than silently three cells later. This paid off repeatedly: most of this project's real bugs were caught this way rather than through trial and error.
+- **Excluding `bank_debt` from model training** — its derived outcome label had zero variance (confirmed via `group_by(Source) %>% summarise(pct_repaid = ...)`), which would have let the model "win" on accuracy by matching a majority class rather than learning anything real. Kept in the pipeline for a different purpose (the recovery-strategy cost-benefit analysis) rather than discarded entirely.
+- **Reporting a negative model result honestly** — the final pursuit-prediction model shows AUC ≈ 0.48–0.49 on ~33,000 well-powered rows. Rather than keep tuning until a better-looking number appeared, this was treated as a real, defensible finding: these two features don't predict repayment in this data. A worse-looking-but-true result was chosen over a better-looking-but-misleading one at an earlier stage (a ~1,000-row version that hit 76% accuracy purely by exploiting the excluded dataset's label imbalance).
+- **Reframing rather than discarding a flawed feature** — an initial "find similar historical debtors, recommend their strategy" feature turned out to be unsupportable (the source dataset assigns strategy purely by balance band, so there's no counterfactual to learn from). Rather than drop the work, it was reframed into a valid question the data *does* support: a cost-benefit check at each strategy threshold, using the dataset's own documented $50-per-level cost structure.
+- **Fixed exchange rate over a live currency API for model data** — deliberately not applied to training data, since two of three source datasets have no confirmed currency; applying real conversion math to unconfirmed-currency numbers would be false precision. Applied instead to the dashboard's own simulated data, where the conversion is meaningful, with the rate used logged to a file for reproducibility.
+- **Two-tier LLM chat design** — an offline keyword-matched fallback (`ask_data()`) alongside the full LLM-backed layer (`ask_data_llm()`), so a billing/API issue blocks only the more flexible tier, not natural-language querying entirely.
+
+A few debugging lessons worth naming plainly, since catching and understanding these is as much a part of the engineering as writing the code the first time:
+- **Silent missingness from mismatched training sources** — combining datasets where a feature exists in only some of them caused `glm()` to silently drop ~97% of rows to missingness, producing a model that looked fine until the degrees-of-freedom count was checked directly.
+- **JSON auto-simplification breaking a working API call** — `httr::content(resp, "parsed")` silently converted a JSON array-of-objects into a data frame, so `parsed$content[[1]]$text` grabbed a column instead of a list element and returned `NULL` with no error at all. Fixed by parsing explicitly with `jsonlite::fromJSON(..., simplifyVector = FALSE)`.
+- **Assuming a fixed response shape** — the same function initially assumed the LLM's first response block was always the text block; Claude can return a `"thinking"` block first for substantive prompts, so the fix filters by block `type` rather than assuming position.
+- **Reproducibility gaps in `set.seed()`** — reseeding once at the top of a notebook doesn't protect against a cell being rerun later in the same session after other random draws have already consumed part of the sequence; a defensive reseed immediately before each simulation call closes that gap.
+
+## Future Work
+
+- **Test `predict_new_accounts()` against a genuinely held-out dataset.** Its schema-validation behavior was confirmed correct, but it's never been run end-to-end against real unseen data — worth doing before treating the model as production-ready in any sense.
+- **Source-specific models instead of one combined model.** `collections` and the invoice dataset share almost no features beyond balance — a model trained per-source using each dataset's full feature set (e.g. `Risk_Level`/`Loan_Type`/`EMI_Amount` for one, `Payment_Term`/`Age_Of_Customer_Months` for the other) would likely outperform the current shared-feature-only approach.
+- **Revisit the set-aside relational dataset** (accounts/loans/customers/merchants/branches/cards) with an actual join across tables rather than a single flat file, now that the other two datasets have proven the pipeline can handle real, messy Kaggle data.
+- **A proper regression discontinuity design** for the recovery-strategy analysis, rather than the simpler fixed-window threshold comparison currently used — would give more statistically rigorous estimates of the effect at each cutoff.
+- **CI/automated retraining** — a GitHub Action to re-run the notebook on push, catching breakage automatically rather than relying on manual "restart and run all" passes.
+- **Live send integration for notifications**, once the jurisdiction-specific compliance review noted above is actually done — the drafting pipeline is complete, but deliberately stops short of connecting to a real SMTP/SMS provider.
+- **Per-debtor, feature-driven strategy recommendations**, once a dataset with genuine strategy/outcome variation at matched balance levels is available — the current cost-benefit analysis is portfolio-level and threshold-based, not yet a per-account recommendation.
+
 ## Dataset licensing
 
 Code in this repository is MIT licensed (see `LICENSE`). The two Kaggle datasets used for training keep their own respective licenses — see `PROJECT_PLAN.md` for the outstanding task of documenting each one's specific terms.
