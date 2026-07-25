@@ -1,0 +1,1001 @@
+Customer_ID,Name,Account_Number,Account_Type,Loan_Type,Loan_Amount,Outstanding_Amount,EMI_Amount,Due_Date,Payment_Status,Collection_Agent,Last_Payment_Date,Payment_Delay_Days,Region,Contact_Number,Email,Customer_Score,Risk_Level
+CUST00000,Richard Mccarty,81087F51-C9F,Current,Car Loan,299783,119495.19,2597.72,2023-12-05,Paid,Tyler Copeland,2023-10-06,0,West,001-713-059-9538x4286,diane22@gmail.com,557,Medium
+CUST00001,Patrick Kane,819326DB-44D,Current,Home Loan,46987,37830.59,1576.27,2023-04-07,Paid,Lindsey Doyle,2023-03-20,0,South,001-118-785-4275,edward97@yahoo.com,500,High
+CUST00002,Jean Morgan,A8682A8D-986,Current,Home Loan,259917,112988.74,4035.31,2024-10-31,Missed,Shawna Smith,,43,East,+1-158-183-9055,ifranklin@gmail.com,342,High
+CUST00003,Michael Green,45516DAD-9C8,Credit,Personal Loan,198807,122047.34,3698.4,2024-01-23,Partially Paid,Peter Miller,2023-11-10,84,South,828-258-5077,craig92@franklin-lindsey.com,806,Low
+CUST00004,Tony Greene,18D78B45-41D,Savings,Home Loan,411507,113899.82,3254.28,2023-05-10,Partially Paid,Erin Moore,2023-04-11,31,North,(611)277-3109x276,obaker@peterson.com,755,Low
+CUST00005,Nicole Morrison,577883C6-70F,Credit,Car Loan,472191,229361.28,8191.47,2024-01-28,Missed,Stacy Campbell,,61,West,430.639.2780,erinmartinez@cortez.com,825,Low
+CUST00006,Thomas Wilson,8EF4F942-7B5,Savings,Home Loan,276770,55115.12,1670.16,2023-12-16,Paid,Nicole Carney,2023-09-08,0,West,110.428.5459,pearsonamy@yahoo.com,610,Medium
+CUST00007,Amy Koch,B17597A1-5E6,Savings,Car Loan,227696,28727.65,598.49,2024-10-19,Paid,Brandon Lopez,2023-12-09,0,North,(066)547-1986,bobby15@hotmail.com,741,Low
+CUST00008,Bradley Dunn,F6DCAF3F-C2F,Credit,Personal Loan,431801,160464.56,4719.55,2024-03-26,Missed,Michael Wilson,,46,West,701-738-7544x322,ericmckinney@young.info,425,High
+CUST00009,Anna Miller,F77180B5-03D,Current,Car Loan,425430,277212.85,6160.29,2023-03-01,Missed,Savannah Graves,,85,West,+1-203-503-8300x077,rhodestimothy@thompson.com,837,Low
+CUST00010,Angela Thompson,00D2E558-C7C,Credit,Personal Loan,154055,5688.85,379.26,2024-06-26,Missed,Jennifer Rocha,,89,West,001-245-862-2782x4096,ugibson@gmail.com,376,High
+CUST00011,Kristy Martinez,EFCE7BF7-7B7,Credit,Car Loan,479123,253391.89,19491.68,2024-01-20,Partially Paid,Miranda Calderon,2023-03-30,35,South,(128)707-3067x45592,johnsonlaura@fernandez-butler.com,833,Low
+CUST00012,Brenda Fox MD,8C9B20DB-3C8,Current,Car Loan,206801,146022.64,2517.63,2024-04-21,Partially Paid,Daniel Melton,2023-11-25,35,West,(076)839-1426x6272,ortizbryan@yahoo.com,635,Medium
+CUST00013,Jessica Robinson,EBE73804-23A,Savings,Home Loan,407207,166936.05,2981.0,2024-12-21,Missed,Thomas Dillon,,57,East,(384)691-8825x925,carrlisa@rodriguez-frost.net,678,Medium
+CUST00014,Brett Osborne,31BA91B1-51D,Current,Home Loan,135056,98659.99,8221.67,2024-09-21,Missed,Mary Alvarado,,89,South,+1-196-840-3145,michaela29@ballard.info,711,Low
+CUST00015,Angela Lynch,57DA230E-21B,Savings,Car Loan,194902,80050.52,2760.36,2023-04-20,Partially Paid,Ellen Hall,2023-01-29,22,North,+1-346-978-3806x069,mdunn@hotmail.com,357,High
+CUST00016,Donald Reyes,475B16A3-D64,Current,Car Loan,219944,4017.99,85.49,2024-12-11,Partially Paid,Aaron Mckenzie,2023-05-15,12,South,001-813-094-6663x153,gwinters@colon-ramirez.net,620,Medium
+CUST00017,Jennifer Montgomery,2A4D82EF-536,Savings,Home Loan,166857,16045.34,391.35,2023-04-01,Partially Paid,Donald Miller,2023-02-18,36,South,0422362280,patrick42@gmail.com,664,Medium
+CUST00018,Lisa Barnett,51CB881A-CBC,Savings,Car Loan,38500,38183.74,647.18,2023-04-29,Missed,Jessica Castillo,,89,East,949.699.1002x18322,robertjoseph@gmail.com,691,Medium
+CUST00019,Jessica Giles,4419594A-62C,Savings,Car Loan,292276,87230.88,2127.58,2024-02-20,Missed,Keith Jones,,61,East,416-878-9678,zliu@jackson.net,802,Low
+CUST00020,Courtney Gonzalez,07AFE7CD-3C6,Credit,Car Loan,35934,5189.27,178.94,2024-06-02,Missed,Thomas Rasmussen,,41,West,768.355.3409,jasoncallahan@yahoo.com,622,Medium
+CUST00021,Crystal Hines,46B30B43-42D,Credit,Home Loan,183573,10978.38,296.71,2023-06-06,Partially Paid,Ronald Clark,2023-05-16,70,North,662.615.3973x6118,nancyclark@hotmail.com,320,High
+CUST00022,Mrs. Andrea Hubbard,BB779DC4-1B9,Current,Personal Loan,496586,476807.99,19072.32,2023-07-05,Partially Paid,Stephen Mckinney,2023-04-15,32,West,443-563-8330x631,martincatherine@chen.com,674,Medium
+CUST00023,Alexander Levine,4A59813F-E5C,Credit,Personal Loan,354019,56656.03,1716.85,2024-01-23,Paid,Kelly Anderson,2023-05-25,0,West,001-000-227-4842,gdeleon@hernandez-davis.com,653,Medium
+CUST00024,Janice Martinez,E60CA7FA-D06,Credit,Personal Loan,133437,41761.62,1265.5,2023-06-23,Paid,Jill Williams,2023-01-18,0,South,677-608-3386x966,craigmartinez@waller.com,833,Low
+CUST00025,Marc Parker,458527EC-E1A,Savings,Personal Loan,474995,337630.91,7673.43,2023-12-10,Missed,Paul Santos,,43,East,+1-820-367-7741,crystal89@fields.com,827,Low
+CUST00026,Jessica Bates,139C94EB-7EC,Credit,Personal Loan,108419,23297.25,541.8,2023-09-03,Paid,Amanda Calhoun,2023-06-04,0,North,+1-343-135-0580,ndavis@gmail.com,729,Low
+CUST00027,Meghan Morris,6B820F10-B04,Savings,Personal Loan,337922,244806.53,7418.38,2024-09-04,Paid,James Cooper,2023-07-26,0,West,(463)420-4883x5754,elainelarsen@taylor-gregory.info,820,Low
+CUST00028,Dylan Adams,7A77534F-6BE,Current,Personal Loan,277340,97161.03,6477.4,2024-04-22,Paid,Raymond White,2024-01-04,0,South,(608)287-1509x36092,gabriela14@nguyen-myers.com,467,High
+CUST00029,Lisa Houston,2A492E1E-A89,Current,Personal Loan,168395,141804.55,3545.11,2023-09-10,Partially Paid,James Cameron,2023-05-22,7,West,273.224.7284,corr@yahoo.com,305,High
+CUST00030,Melissa Harmon,BBDBF597-4D0,Savings,Home Loan,348369,162139.26,3308.96,2024-04-22,Missed,Jeffrey Brown,,3,South,+1-093-610-8438x755,millerkim@johnson.org,735,Low
+CUST00031,Brian Bishop,5A316973-51E,Current,Car Loan,301513,129622.1,4629.36,2024-08-12,Paid,Carlos Shah,2023-03-28,0,West,192.500.0559,walljustin@cardenas.org,805,Low
+CUST00032,Jennifer Johnson,CF454F4A-06D,Current,Personal Loan,267196,241021.12,4725.9,2023-02-12,Missed,David Williams,,49,South,053.543.8572,jmartin@gmail.com,485,High
+CUST00033,Sarah Deleon,EE1EB80D-D22,Savings,Personal Loan,496388,315819.21,10890.32,2024-03-10,Missed,Traci Jones,,63,South,(395)583-1036,orodriguez@gmail.com,665,Medium
+CUST00034,Crystal Garcia,A6E49371-36B,Credit,Car Loan,108312,54980.22,1078.04,2023-07-17,Paid,Rebecca Dominguez,2023-06-19,0,North,405.777.1225,brentdiaz@yahoo.com,511,Medium
+CUST00035,Taylor Matthews,1ABF9A7E-03A,Savings,Home Loan,484169,62466.39,4461.89,2024-08-28,Partially Paid,Rebecca Knight,2024-08-20,40,East,(080)066-1144,fdelgado@reed-dean.com,358,High
+CUST00036,Christopher Perry,16B01360-D01,Savings,Personal Loan,133563,83019.72,3609.55,2023-04-24,Paid,Jose Mays,2023-03-05,0,West,243.739.8851,diazchristine@williams.com,346,High
+CUST00037,Rachel Newton,6703A756-9FA,Current,Car Loan,229060,77248.53,1643.59,2024-12-03,Partially Paid,Courtney Smith,2024-11-19,68,West,974-141-4463x267,pattersonkendra@johnson-griffith.com,552,Medium
+CUST00038,Tyler Little,9973436C-078,Savings,Home Loan,330660,222959.81,6967.49,2024-05-11,Partially Paid,John Williams,2024-03-20,10,East,870-014-7186,jenniferbryant@long-ford.com,361,High
+CUST00039,Jason Yates,DAA02EAD-C07,Current,Home Loan,258954,113388.77,2139.41,2023-04-25,Paid,Jesse Lane,2023-04-10,0,West,001-814-382-8973,felicia60@yahoo.com,836,Low
+CUST00040,Christine Diaz,243607F7-2D2,Savings,Home Loan,127905,118228.86,5140.39,2023-06-29,Partially Paid,Travis Horn,2023-02-08,21,East,001-932-546-5934x01171,yvonne09@gmail.com,414,High
+CUST00041,Lisa Mcdonald,1A507B8B-8AB,Savings,Car Loan,121045,68923.09,4594.87,2024-10-06,Paid,Daniel Jackson,2024-01-20,0,East,2332616888,garciafrank@lopez.com,610,Medium
+CUST00042,Nicholas Gonzales,F2EE5FEC-950,Current,Personal Loan,166349,69067.7,1469.53,2024-10-14,Paid,Michelle Mcclure,2023-09-26,0,North,195.381.0907,lesliebright@yahoo.com,517,Medium
+CUST00043,Michelle Johnston,8F41A3F2-C4F,Current,Home Loan,416836,402950.1,22386.12,2024-10-20,Paid,Joshua Martinez,2023-08-06,0,North,741-681-5445x4166,sallysmith@hotmail.com,674,Medium
+CUST00044,Benjamin Gordon,AA2938EA-B5E,Current,Personal Loan,457722,287077.85,11961.58,2024-09-30,Missed,Justin Torres,,46,South,(694)319-3884x4665,wjackson@brown.com,685,Medium
+CUST00045,Julie Flowers,992A8807-8AE,Current,Personal Loan,219500,209745.5,4369.7,2023-09-06,Partially Paid,Christina Pearson,2023-04-14,3,West,+1-112-423-4597,robertscathy@gmail.com,563,Medium
+CUST00046,Lisa Baker,36A8B9F9-90C,Current,Home Loan,219046,82198.16,4566.56,2024-10-10,Partially Paid,Kristen Mcdonald,2023-12-06,90,East,007.432.3949x70628,franciscocurtis@yahoo.com,657,Medium
+CUST00047,Michelle Huff,7171D2BF-38F,Current,Personal Loan,93643,18447.13,838.51,2023-03-17,Partially Paid,Jeremy Smith,2023-03-08,66,West,+1-666-393-3568x495,brownsarah@hughes.info,380,High
+CUST00048,Megan Beltran,2D6F2FCC-D49,Savings,Car Loan,110151,67536.08,1570.61,2024-01-17,Partially Paid,Jonathan Friedman,2023-12-15,86,South,291-707-6649x80036,jgutierrez@henderson.info,444,High
+CUST00049,Joseph Walton,2D991515-DC1,Current,Car Loan,310698,97944.93,2577.5,2024-02-01,Partially Paid,Marcus Thompson,2023-06-19,12,North,257.228.9331x3724,cookmark@lynn-stevens.biz,620,Medium
+CUST00050,Barbara Perry,8C9C0BD4-20F,Savings,Car Loan,467408,170956.02,4070.38,2023-01-22,Paid,Erik Porter,2023-01-06,0,South,001-270-260-4246,christinastephens@gmail.com,831,Low
+CUST00051,Sara Lopez,EA07F972-9A9,Savings,Car Loan,19099,7149.46,155.42,2023-01-12,Partially Paid,Jeffrey Patterson,2023-01-07,80,East,+1-408-567-8659x8348,rbrown@gmail.com,705,Low
+CUST00052,Jessica Bullock,636F9B0D-237,Savings,Home Loan,290056,221406.91,6150.19,2024-11-14,Paid,Scott Watson,2024-07-15,0,East,8574794827,nguyenpatricia@gmail.com,533,Medium
+CUST00053,Melissa Little,8F0FCF5D-C7F,Credit,Personal Loan,94287,71614.99,2170.15,2024-04-12,Partially Paid,Susan Clark,2024-01-07,47,West,280.290.5744,palmereric@yahoo.com,727,Low
+CUST00054,Judith Booth,7DDCAC41-521,Credit,Car Loan,82818,12165.06,270.33,2024-03-21,Paid,Michelle Johnson,2023-04-11,0,South,(243)307-9477,brandonwells@rodgers.biz,361,High
+CUST00055,Nicholas Brock,8A05F575-538,Savings,Car Loan,154462,65043.81,1667.79,2024-03-13,Missed,Stephen Thompson,,51,South,001-882-749-0799x812,joel50@yahoo.com,351,High
+CUST00056,Edward Knight,C5954AB3-8C7,Current,Home Loan,471833,304914.22,5444.9,2024-04-12,Partially Paid,William Graham,2023-09-20,33,South,001-414-899-3613x9767,smithalejandra@yahoo.com,615,Medium
+CUST00057,Gordon Rodriguez,A5C87773-FAB,Current,Car Loan,229206,130373.1,10028.7,2023-02-06,Missed,Amy Singleton,,8,West,(059)576-0370,joanna81@gmail.com,596,Medium
+CUST00058,Gregory Carter,1EFE27F9-CD5,Savings,Car Loan,216116,58842.34,3922.82,2023-07-31,Partially Paid,Judith Murphy,2023-04-06,26,South,658.085.8209x587,emueller@dawson.com,304,High
+CUST00059,Kimberly Fields,B7DAFB04-DB6,Savings,Personal Loan,112853,11277.6,663.39,2024-05-31,Missed,Lee Cook,,88,South,001-042-040-8516,jenniferjones@hotmail.com,399,High
+CUST00060,Wendy Smith,394B623D-836,Credit,Home Loan,25896,19950.01,586.76,2024-12-30,Partially Paid,Shane Ford,2023-04-14,51,South,024.933.7912,andrewtaylor@cain-roach.com,436,High
+CUST00061,Ian Thompson,913219B1-490,Credit,Car Loan,445766,400686.58,6908.39,2023-09-17,Paid,Melinda Little,2023-08-17,0,South,713.727.1476x2702,anthonythompson@yahoo.com,652,Medium
+CUST00062,Ryan York,2A19C598-A3B,Savings,Home Loan,327398,266736.82,8335.53,2024-10-18,Paid,Rebecca Murphy,2024-01-10,0,West,368-646-6452x732,richard49@hotmail.com,599,Medium
+CUST00063,Andrew Green,3BB6A3F4-9EB,Current,Home Loan,299572,46985.02,886.51,2024-02-29,Partially Paid,Amanda Rivera,2023-12-26,85,South,6838785904,allison45@gmail.com,785,Low
+CUST00064,Christine Hayden,D154FEF5-6DE,Savings,Personal Loan,490770,235527.05,15701.8,2024-04-22,Missed,Dennis Gibson,,53,East,(512)169-5161x85827,jbarnett@cole.com,517,Medium
+CUST00065,Brian Richards,9CD3E1B5-95A,Savings,Car Loan,193885,55257.88,1905.44,2024-01-16,Missed,Shelby Ball,,46,North,254.685.5092x85124,jameshamilton@hotmail.com,796,Low
+CUST00066,Lee Davis,484AB5E7-531,Credit,Car Loan,152486,54672.33,911.21,2024-10-15,Paid,Jennifer Chase,2023-11-05,0,East,873.428.8671,thomasdawn@hotmail.com,784,Low
+CUST00067,Lisa Montgomery,3C77143A-166,Credit,Home Loan,231219,185187.25,14245.17,2023-02-25,Partially Paid,Courtney Juarez,2023-02-23,23,South,626.799.4902x6579,edwardpalmer@gmail.com,714,Low
+CUST00068,Trevor Davies,D695D3B3-3A8,Savings,Personal Loan,261600,101033.85,4811.14,2024-03-21,Partially Paid,Kathleen Gonzales,2023-03-24,73,East,001-146-200-5562x804,waltersjulie@robinson.com,316,High
+CUST00069,Andrea Mitchell,B1F153C4-C4A,Credit,Personal Loan,192150,2296.2,56.0,2023-03-02,Paid,Brian Pennington,2023-02-09,0,North,001-989-054-0572x53003,derrickjohnson@yahoo.com,823,Low
+CUST00070,Claudia Nelson,0C98B3CC-EBC,Current,Car Loan,332483,216125.53,10291.69,2023-04-20,Partially Paid,John Landry,2023-04-16,43,South,725-773-9466,toddadams@martin-chapman.com,600,Medium
+CUST00071,Andrea Fernandez,3C8DCAE6-B72,Credit,Car Loan,143048,112046.04,2546.5,2024-11-16,Partially Paid,John Bernard,2024-02-06,15,East,613.531.4251x24300,steven74@marshall.biz,779,Low
+CUST00072,Shelby Kirby,07A36270-34E,Savings,Car Loan,418351,77824.04,3383.65,2024-01-16,Paid,Leah Santana,2023-01-26,0,South,+1-372-253-8997x96747,wpowell@yahoo.com,790,Low
+CUST00073,Jose Smith,CB89566D-F37,Current,Personal Loan,319152,19214.36,1200.9,2023-04-23,Partially Paid,Michael Hester,2023-02-09,70,North,(872)958-0829x3441,stewarttiffany@yahoo.com,513,Medium
+CUST00074,Shelly Potter,F42AE2BC-246,Credit,Car Loan,270431,13420.11,298.22,2023-11-01,Partially Paid,Shannon Williams,2023-08-08,21,South,+1-063-744-1174x4551,rossjessica@gmail.com,575,Medium
+CUST00075,Jennifer Klein,3D41DD7B-4AE,Savings,Car Loan,298388,106347.52,8180.58,2024-04-17,Missed,Jennifer Brown,,8,South,329.149.9837x2234,langleslie@gmail.com,683,Medium
+CUST00076,Katherine Johnson,288FA04B-C13,Savings,Car Loan,192342,179844.38,3826.48,2023-05-27,Paid,Craig Hull,2023-03-28,0,West,565-219-3940,cody33@butler.com,837,Low
+CUST00077,Ivan Huffman,8BDA83FE-644,Current,Personal Loan,136039,132061.84,4001.87,2024-09-02,Paid,Andrea Mendoza,2023-11-09,0,South,052.222.6030x431,ricardo00@padilla.com,765,Low
+CUST00078,Lisa Sandoval,14CE1693-B74,Current,Car Loan,196292,175189.02,12513.5,2024-05-23,Paid,Miss Heather Ball,2024-02-08,0,South,358.619.6630,kacevedo@williams.com,739,Low
+CUST00079,Brandon Payne,9C1B23CB-E8E,Savings,Car Loan,327502,157621.73,3665.62,2023-01-14,Paid,Erik Barr,2023-01-12,0,South,361-859-5028x37737,xlopez@chavez-williams.com,850,Low
+CUST00080,Jillian Reyes,A51D6D09-F14,Credit,Personal Loan,225521,60608.87,1515.22,2023-12-19,Paid,Claire Chang,2023-01-30,0,North,001-270-871-6155x86101,maydiana@yahoo.com,540,Medium
+CUST00081,Diana Burke,AFB18FAF-649,Savings,Personal Loan,444468,428342.44,12598.31,2024-09-19,Missed,Melissa Garcia,,27,West,2056049417,rodneyjohnson@gmail.com,473,High
+CUST00082,Donna Johnson,94A6A6C4-5A4,Savings,Home Loan,384601,86450.06,3758.7,2024-01-30,Partially Paid,Alexis Oconnor,2023-12-29,87,North,+1-866-182-4610x01653,linda73@ellis.com,457,High
+CUST00083,Derrick Schaefer,42604ADC-C8E,Current,Personal Loan,220314,104735.4,3740.55,2024-07-10,Partially Paid,Kimberly Newton,2023-09-13,48,East,047-351-8222x370,wortiz@farmer-gonzalez.com,337,High
+CUST00084,Larry Ortega,DA5E742F-BD7,Savings,Car Loan,53108,1370.83,27.42,2024-02-10,Paid,Edward Gonzalez,2024-01-24,0,South,979-804-8931x392,rocharicky@gmail.com,849,Low
+CUST00085,Bethany Ellis,BDC2DE40-23E,Savings,Car Loan,175553,77613.25,3233.89,2024-07-31,Missed,Mary Vazquez,,63,West,001-308-485-1273x55168,wjones@hotmail.com,359,High
+CUST00086,Dustin Stephens,6C366633-E4F,Credit,Home Loan,432996,173762.84,3407.11,2024-07-19,Partially Paid,Michael Peterson,2023-03-17,42,East,(617)342-9911,yweber@yahoo.com,539,Medium
+CUST00087,Sarah Bender,2D855066-F2B,Current,Home Loan,160288,147752.77,7776.46,2023-09-04,Partially Paid,Heather Oconnor,2023-08-01,12,South,+1-920-846-9490,honeill@haas.biz,775,Low
+CUST00088,Stacy Spears,54477BFD-E85,Savings,Personal Loan,167620,129864.16,7214.68,2024-12-01,Missed,Robin Jensen,,14,North,001-970-883-2885x3119,tracey48@diaz.com,360,High
+CUST00089,Bobby Boyle,68FF847D-BB6,Current,Home Loan,97213,2129.27,92.58,2024-04-23,Missed,Albert Hamilton,,78,North,(597)031-1471x1891,boydderrick@thompson.com,505,Medium
+CUST00090,Jaclyn Lopez,ACC2126A-E70,Savings,Home Loan,148443,134340.25,3838.29,2023-09-04,Paid,Emily Hill,2023-05-31,0,North,(417)433-3111x28824,qyoung@ross.com,583,Medium
+CUST00091,Anthony Kelley MD,E59421A9-47A,Savings,Car Loan,403812,181474.45,3629.49,2023-11-10,Partially Paid,Micheal Martin,2023-10-26,54,West,2165814954,marcussullivan@hotmail.com,348,High
+CUST00092,Lucas Hernandez,FE6D5470-44E,Savings,Home Loan,468561,99632.25,3832.01,2024-08-12,Missed,Cory Alvarez,,73,South,(421)607-0255x09153,robinsonkimberly@olson.com,358,High
+CUST00093,Mark French,94CB4EF8-D0E,Savings,Personal Loan,24783,8776.52,626.89,2024-10-02,Partially Paid,Ruth Goodwin,2024-03-25,22,West,097-165-6863x9788,jessica47@yahoo.com,605,Medium
+CUST00094,William Gardner,0E750F63-95B,Savings,Personal Loan,64559,44970.83,1499.03,2023-10-03,Partially Paid,Desiree Wagner,2023-01-08,32,West,3216749360,kristen96@brown.info,682,Medium
+CUST00095,Beth Anderson,AA2F2C4E-B8B,Savings,Personal Loan,269965,266976.3,20536.64,2024-01-08,Partially Paid,Jessica Pittman,2023-12-07,73,East,001-816-033-8139,evansmark@hotmail.com,822,Low
+CUST00096,Jennifer Lewis,ED5D586E-A97,Savings,Car Loan,417064,370954.12,6395.76,2023-05-25,Paid,Leslie Pham,2023-03-10,0,West,(436)784-2478x80441,joshua57@gmail.com,389,High
+CUST00097,Tiffany Mendoza,02CE2C40-D55,Current,Home Loan,239059,90463.98,2512.89,2023-02-06,Missed,Melanie Boyd,,44,North,+1-043-186-9820x462,mullinsamanda@yahoo.com,485,High
+CUST00098,Anthony Swanson,1D960F61-3FF,Credit,Car Loan,205089,184309.89,3613.92,2023-03-09,Partially Paid,Emily Murphy,2023-01-08,24,South,+1-744-199-5932x677,cynthia16@stuart.com,435,High
+CUST00099,Steven Hayes,DC857FB7-BF5,Credit,Home Loan,238235,92028.28,1643.36,2024-05-02,Partially Paid,Steven Hamilton,2023-10-19,63,West,(868)455-4232,karensingh@yahoo.com,474,High
+CUST00100,Richard Booth,50819E9F-E5E,Credit,Personal Loan,470747,193811.32,4037.74,2023-03-22,Missed,Terri Washington,,86,South,688.110.9906x81616,cwiggins@campbell.com,361,High
+CUST00101,Mark Johnson,67186F4F-3BA,Current,Car Loan,411773,172690.89,4211.97,2023-12-17,Partially Paid,Bruce Larson,2023-11-28,57,South,001-001-427-1484x8565,paul29@perkins.net,540,Medium
+CUST00102,Jennifer Woods,8A1BE7D1-95C,Credit,Home Loan,323853,25485.38,1592.84,2023-01-17,Paid,David Oconnor,2023-01-06,0,West,467-495-0555x34717,vwall@warren.com,383,High
+CUST00103,James Strickland,C5424A59-088,Savings,Personal Loan,93891,47567.87,1081.09,2024-02-01,Paid,Brandon Mueller,2023-09-26,0,South,615-777-4052x123,williamtorres@dalton.com,827,Low
+CUST00104,Jeremy Patterson,F42212BC-DA3,Savings,Personal Loan,301413,121857.44,2833.89,2023-05-22,Paid,Morgan Anderson,2023-03-13,0,South,769.499.8141,amandalewis@mckenzie.com,779,Low
+CUST00105,Jason Byrd,1B5E2447-C9D,Current,Personal Loan,304668,245319.96,11681.9,2023-07-12,Missed,Cynthia Carroll MD,,11,East,855-336-6857x83414,roberto66@hotmail.com,679,Medium
+CUST00106,Matthew Cohen,B21BF24B-A3C,Current,Car Loan,154736,154687.79,4070.73,2023-02-20,Missed,James Moran,,31,West,888.996.1201x025,evansmonica@hotmail.com,658,Medium
+CUST00107,Taylor Cortez,20040DDF-F71,Current,Personal Loan,54257,26806.63,1031.02,2024-08-11,Missed,Teresa House,,67,North,6646413558,amandanorris@owens-rubio.biz,817,Low
+CUST00108,Dr. Ronald Carey,61D7EA45-D84,Savings,Home Loan,430185,71082.09,1393.77,2023-02-22,Partially Paid,David Greene,2023-01-31,72,South,+1-606-511-1967x53507,penasherry@gmail.com,374,High
+CUST00109,Connor Guerra,D601B944-216,Current,Personal Loan,128088,52325.23,1245.84,2024-06-06,Missed,Lisa Taylor,,81,West,857.136.6910,davidsmith@white.net,762,Low
+CUST00110,April Bradley,9FEE20A4-79B,Savings,Personal Loan,171782,12419.46,310.49,2023-07-08,Paid,Mary Hurst,2023-06-18,0,East,621-151-2984x408,daviskatherine@harper.com,619,Medium
+CUST00111,Elizabeth Taylor,F4B864D8-470,Savings,Personal Loan,406844,391486.34,15057.17,2024-02-29,Partially Paid,Rebecca Bailey,2023-03-23,12,North,001-503-319-1247x837,belljavier@hunter.com,600,Medium
+CUST00112,Tricia Bennett,6508E4D6-90E,Credit,Personal Loan,123668,49554.94,839.91,2024-11-19,Paid,Natalie Martin,2024-09-08,0,South,438.654.5885,sarah00@yahoo.com,797,Low
+CUST00113,Stacy Odonnell,DD2C27B4-9C4,Credit,Personal Loan,149167,70974.31,4731.62,2023-11-10,Partially Paid,Amanda Collins,2023-02-01,30,West,461.436.0679,marshallkeith@yahoo.com,480,High
+CUST00114,Ashley Lopez,66759900-70D,Current,Home Loan,386165,122688.85,3608.5,2024-10-06,Paid,David Weber,2023-08-18,0,East,(908)361-9427x3464,milleranna@flowers.org,474,High
+CUST00115,Tara Swanson,F056F54C-F8D,Current,Car Loan,421678,157630.34,11259.31,2023-02-14,Paid,Michelle David DDS,2023-01-29,0,South,001-616-751-4962x48876,abennett@gmail.com,516,Medium
+CUST00116,Tina Cruz,A95A40E2-569,Savings,Personal Loan,379936,248712.17,4522.04,2023-07-22,Paid,Jason Porter,2023-02-05,0,South,745-242-0832x91485,faulkneradriana@yahoo.com,730,Low
+CUST00117,Erika Joseph,47C352DD-89F,Current,Home Loan,117919,53023.17,2039.35,2023-12-27,Paid,Casey Ramos,2023-06-21,0,North,(180)707-2123,dherring@lopez.org,579,Medium
+CUST00118,Benjamin Jones,2F13CD21-F5D,Current,Personal Loan,98219,26755.2,1070.21,2023-09-25,Partially Paid,Andrea Powell,2023-07-03,82,North,286-045-4505,wwhitaker@gmail.com,361,High
+CUST00119,Mark Young,EB28FBC7-7E5,Savings,Car Loan,19522,7860.01,357.27,2024-12-28,Missed,Annette Schroeder,,43,East,(863)119-9693x279,mckaygregory@cline.com,823,Low
+CUST00120,John Stafford,50599B67-108,Credit,Car Loan,182180,9698.35,293.89,2023-02-03,Paid,Breanna Burton,2023-01-10,0,North,001-407-358-3598x95899,nharris@gmail.com,749,Low
+CUST00121,Debra Webb MD,A523D210-5FD,Current,Home Loan,84953,18788.46,494.43,2023-07-25,Missed,Tara Murphy,,65,North,001-636-598-3768x5462,susanwilliams@hotmail.com,408,High
+CUST00122,James Garza,B5D845E5-08A,Current,Home Loan,186293,122913.06,3964.94,2023-09-26,Missed,Chelsea Hamilton,,65,South,7614000868,christinedecker@gmail.com,824,Low
+CUST00123,Robert Barnes,86311988-0B9,Savings,Home Loan,101017,67735.43,1278.03,2023-11-21,Missed,Briana Burke,,16,West,(836)669-1799,marcobrown@hotmail.com,687,Medium
+CUST00124,Courtney Jones,3712F2D8-ABD,Current,Car Loan,253929,43690.1,809.08,2023-10-12,Partially Paid,Angel Simon,2023-09-01,53,North,+1-933-346-9202x6923,aaronsimpson@hotmail.com,464,High
+CUST00125,April Berg,0ED4CBC2-9A2,Current,Personal Loan,246832,222127.92,6533.17,2024-04-03,Partially Paid,Johnny Johnson,2023-06-04,21,South,226.659.3690,jhamilton@smith.com,758,Low
+CUST00126,Crystal Murray,3380F5FF-ABD,Current,Car Loan,280719,257574.48,14309.69,2024-02-22,Partially Paid,Gabriel Johnson,2024-02-11,30,East,(103)437-4048x75706,amber17@moore.com,469,High
+CUST00127,Emily Morales,5EA8B742-4B1,Savings,Personal Loan,368785,233255.55,6860.46,2024-01-28,Partially Paid,John Mitchell,2023-11-15,2,South,001-931-280-7712x621,srobinson@hotmail.com,574,Medium
+CUST00128,Kathryn Scott,7BAB012C-B5B,Savings,Personal Loan,265043,75644.2,1543.76,2024-03-21,Paid,Jeffrey Barron,2023-01-16,0,East,(012)909-1499,mgarcia@hoffman.com,411,High
+CUST00129,Whitney Smith,F4B87C43-BE6,Savings,Car Loan,112780,96279.56,6017.47,2023-10-01,Missed,Jacob Cole,,42,West,(273)837-5643x005,xjohnson@martin-mack.biz,832,Low
+CUST00130,Alyssa Brown,DFD187D8-410,Savings,Car Loan,109300,95478.96,2652.19,2023-08-02,Missed,Gregory Wong,,78,North,542-802-4387,jensencameron@coleman.org,636,Medium
+CUST00131,Ashley Li,1C2E5D0F-02F,Credit,Home Loan,7676,1047.4,19.76,2023-01-12,Paid,Sergio Evans,2023-01-07,0,East,001-366-660-1204x5791,millermackenzie@lee.com,836,Low
+CUST00132,Nicholas Porter Jr.,8207EF1A-31E,Current,Home Loan,170457,60797.25,2763.51,2023-01-29,Partially Paid,Kimberly Cook,2023-01-10,30,East,835-300-7362x20846,richarddiaz@white.org,730,Low
+CUST00133,Carla Fuller,5F025C4F-68D,Savings,Personal Loan,333885,309356.16,12889.84,2023-05-24,Missed,Autumn Gonzalez,,10,West,901.418.5587,hensonalexandra@hotmail.com,535,Medium
+CUST00134,Autumn Schwartz,4E670E02-629,Savings,Car Loan,478143,189627.23,4740.68,2023-12-26,Missed,Curtis Rodriguez,,35,East,001-472-495-7989x56893,millerjeffrey@yahoo.com,561,Medium
+CUST00135,Amy Blackburn,ED4D2A3B-481,Credit,Home Loan,150788,45255.12,962.87,2024-08-22,Partially Paid,Claire Richards PhD,2024-08-01,67,East,+1-238-050-3364x3421,ryansmith@coleman.biz,317,High
+CUST00136,Cathy Sawyer,D1E9758E-9F1,Current,Home Loan,114725,47909.57,1330.82,2024-02-12,Missed,Claudia Edwards,,14,North,392.838.7834,qwood@hotmail.com,583,Medium
+CUST00137,Christopher Gaines,FE62AE3A-F15,Current,Car Loan,87605,78566.82,1482.39,2023-02-20,Partially Paid,James Holland,2023-01-17,59,North,547.271.5377x59501,vlawson@weiss.com,532,Medium
+CUST00138,Sandra Griffin,C02D8A46-304,Current,Home Loan,78986,52028.2,2601.41,2024-04-29,Paid,Laurie Davidson,2024-01-25,0,East,(114)861-9837x75146,foxsamuel@yahoo.com,512,Medium
+CUST00139,Paul Cortez,843A1147-534,Current,Personal Loan,397143,173667.17,11577.81,2023-01-31,Paid,Nicholas Todd,2023-01-22,0,East,473.079.3718x90979,roberthanson@gmail.com,840,Low
+CUST00140,Laura Andrews,9296A10E-D08,Current,Personal Loan,269968,67569.38,2111.54,2023-11-17,Partially Paid,Grant Martin,2023-08-21,24,North,+1-289-439-4908,wwoods@jackson-hernandez.net,310,High
+CUST00141,James Davis,37AA2E44-1C6,Current,Home Loan,265341,216118.41,5026.01,2023-01-27,Missed,Jessica Davis,,8,North,829.322.7342x05342,masseycynthia@hotmail.com,381,High
+CUST00142,Holly Davenport,15BEB42C-C63,Savings,Home Loan,112189,92470.38,2255.38,2024-03-20,Missed,Robert James,,83,East,(611)909-2089x1647,crystal94@hotmail.com,535,Medium
+CUST00143,Lindsey Roy,4C1D0A69-D49,Credit,Car Loan,312797,163052.53,4658.64,2024-04-29,Partially Paid,Daniel Lucas,2023-09-05,79,East,237.263.1431x75796,davidbrooks@galloway-young.info,414,High
+CUST00144,Joshua Washington,7B1498A2-0D2,Savings,Personal Loan,245602,37165.67,864.32,2024-06-21,Missed,Heather Murray,,81,North,(166)131-1623,ramirezterry@boyd-williams.com,663,Medium
+CUST00145,Daniel Cross,459AABDA-EAF,Credit,Home Loan,22347,9784.42,611.53,2024-04-01,Missed,Brandon Lozano,,24,South,606.198.7143x1108,torresdavid@lopez.com,763,Low
+CUST00146,Mr. William Griffith,292D8AFA-EFE,Current,Car Loan,251512,204093.43,4165.17,2023-11-05,Paid,Ryan Schmitt,2023-01-18,0,South,001-258-365-6105x51426,justin96@norton.com,596,Medium
+CUST00147,Donald Harrison,5C0BD5F3-806,Current,Home Loan,75458,14178.83,262.57,2023-08-18,Missed,John Peters,,51,North,(537)229-4726x18572,weaveralexander@hotmail.com,621,Medium
+CUST00148,Anthony Morrison,45133790-F20,Savings,Car Loan,200795,44824.06,1792.96,2023-02-19,Partially Paid,Heather Simmons,2023-01-25,68,South,+1-900-598-5307x5096,jenna24@hotmail.com,776,Low
+CUST00149,Sarah Davis,3B0CA616-AE1,Savings,Personal Loan,43078,8745.53,312.34,2024-10-03,Paid,Dr. Tracy Kelly,2023-12-31,0,South,1886638184,grant82@hotmail.com,553,Medium
+CUST00150,Michael Ryan,6D00DA3E-CDD,Credit,Home Loan,139648,22223.06,376.66,2024-02-09,Missed,Aaron Jones,,12,West,(448)854-4366x346,paul23@sampson.com,353,High
+CUST00151,Gloria Keller,10ECF3EF-15E,Current,Personal Loan,25156,365.35,13.05,2023-09-06,Missed,Kayla Bennett,,3,West,(298)538-0066x3397,ravenbryan@yahoo.com,303,High
+CUST00152,David Weaver,B0284876-1D4,Savings,Personal Loan,414506,89846.27,1663.82,2023-05-29,Missed,Cynthia Acosta,,47,East,(800)791-5517x097,brownkristi@ayala.net,716,Low
+CUST00153,Timothy Lee,4187DCCD-69B,Credit,Personal Loan,199738,194952.9,5733.91,2023-09-21,Missed,Donald Simmons,,33,South,+1-204-224-6623x64089,tammy09@weaver-lee.info,352,High
+CUST00154,Jeremiah Murphy,5B820443-647,Current,Car Loan,352316,120303.13,5012.63,2024-12-21,Partially Paid,Allison Wang,2024-08-28,30,South,466-392-4502x53993,wrightkyle@archer-jimenez.net,747,Low
+CUST00155,Rebecca Sanford,9FBA8578-DC2,Savings,Personal Loan,194603,56594.36,1414.86,2024-04-06,Missed,Ricardo Welch,,75,North,001-300-849-5059x188,jmonroe@dean.com,425,High
+CUST00156,David Mack,6EDEFEB1-DEF,Savings,Personal Loan,57818,19055.41,680.55,2024-06-27,Missed,Bryce Delgado,,74,North,+1-836-572-3305x006,kellysmith@yahoo.com,618,Medium
+CUST00157,Wanda Harris,59D859CA-D58,Current,Home Loan,144425,81353.1,1564.48,2023-08-14,Paid,Marcus Boone,2023-01-18,0,West,001-327-561-1406x7448,gibsonjessica@clark.com,795,Low
+CUST00158,Jared Donovan,30BF7CEC-411,Current,Home Loan,345844,109900.82,4396.03,2023-06-02,Missed,Brent Rush,,39,West,161.611.7987x9791,gregory32@gmail.com,448,High
+CUST00159,Shawn Watkins,E487E66E-295,Savings,Car Loan,113632,5626.05,234.42,2024-10-17,Paid,Jeremy Hudson,2024-02-11,0,East,+1-084-683-3681x0129,dpeterson@yahoo.com,721,Low
+CUST00160,Shannon Daniel,982E48E0-096,Savings,Home Loan,499506,231685.17,7240.16,2024-05-07,Missed,Daniel Davis,,16,East,188-053-5981,christopher53@hotmail.com,542,Medium
+CUST00161,Chad Williams MD,CDF52352-AA8,Current,Car Loan,446738,157132.93,3142.66,2023-10-15,Paid,Jennifer Ramirez,2023-09-06,0,South,(748)079-3766,cindy74@gmail.com,338,High
+CUST00162,Heather Morales,D8B335BA-B82,Savings,Car Loan,391541,33456.05,608.29,2023-02-27,Missed,Angela Moore,,41,North,+1-932-530-6504,hollowayrenee@yahoo.com,336,High
+CUST00163,Elizabeth Marshall,B676F2A3-DD1,Credit,Home Loan,148715,141260.85,2394.25,2023-04-22,Missed,Thomas Kline,,72,West,+1-229-841-2649,janet34@hotmail.com,316,High
+CUST00164,Sheila Curry,D05A5E87-074,Current,Home Loan,397736,359580.49,7191.61,2024-11-24,Paid,Samuel Johnson,2023-01-18,0,South,+1-642-841-2525,bbutler@decker-patterson.biz,421,High
+CUST00165,Kelli Robbins,D898ED07-C03,Credit,Home Loan,217884,152111.52,3104.32,2024-06-15,Paid,Christopher Miller,2023-10-07,0,North,030.183.5782x26978,rosesarah@castillo.com,585,Medium
+CUST00166,David Eaton,6D2D9376-7B1,Credit,Home Loan,159376,37843.11,946.08,2023-02-23,Missed,Calvin Herrera,,86,West,042.092.2311x499,danielparks@roman-davis.com,843,Low
+CUST00167,Laura Little,CBCD376D-18D,Current,Personal Loan,362237,122665.81,2555.54,2023-05-09,Paid,Christopher Sampson,2023-01-27,0,South,017-655-1632x4487,shane29@abbott.com,834,Low
+CUST00168,Linda Johnson,E89E14B4-6D7,Current,Personal Loan,478115,180490.17,3405.47,2024-03-10,Missed,Edward Hernandez,,28,East,115-948-2171,barbararichardson@jackson.com,474,High
+CUST00169,Mrs. Holly Flores,DFC5F073-488,Credit,Personal Loan,333163,47154.75,3627.29,2023-07-09,Missed,Joseph Solis,,55,West,035-230-2079x25103,ujohnson@hotmail.com,768,Low
+CUST00170,Jeffery Campos,E2010421-C7B,Current,Car Loan,430123,145593.25,3235.41,2023-09-10,Missed,Brenda Lee DDS,,80,South,(874)243-5295,dawnthompson@baker.com,783,Low
+CUST00171,Kevin Cooke,BB25ECC7-920,Credit,Car Loan,82995,28744.27,958.14,2023-07-02,Missed,Cindy Johnson,,59,North,+1-412-127-5836,vanceerica@yahoo.com,827,Low
+CUST00172,Benjamin Clark,5D4874F1-11C,Savings,Car Loan,176161,68214.58,1843.64,2024-12-06,Partially Paid,Joseph Dixon,2024-01-30,88,North,668.280.9632,hartmanthomas@graham-reynolds.org,455,High
+CUST00173,Michael Wagner,967EFDE8-8AF,Current,Personal Loan,436354,148276.82,2907.39,2023-02-25,Missed,Laura Bowen,,31,North,001-641-986-1858x5874,hernandeznicole@yahoo.com,627,Medium
+CUST00174,Timothy Contreras II,843182AA-FA5,Savings,Personal Loan,76138,51631.92,992.92,2023-07-20,Partially Paid,Nicholas Lawson,2023-05-01,7,East,001-037-315-8776,vlozano@garcia.com,683,Medium
+CUST00175,Michael Avery,F295F171-429,Savings,Home Loan,110156,23484.66,398.05,2023-05-16,Partially Paid,Kimberly Tucker,2023-01-28,15,West,001-918-123-3177x025,melinda52@cook.com,794,Low
+CUST00176,Jesse Harper,8E56211E-8A4,Savings,Car Loan,239936,94715.28,1753.99,2024-10-28,Missed,Larry Thomas,,44,West,001-787-783-6511,usmith@long.com,591,Medium
+CUST00177,Janet Collins,15279F1C-859,Savings,Personal Loan,52741,32908.89,2350.63,2023-03-16,Missed,William Morgan,,76,East,(500)070-8777x33615,stevensonmatthew@whitehead.com,510,Medium
+CUST00178,Tyler Conway,0721D641-277,Savings,Car Loan,306465,10171.65,299.17,2023-07-26,Missed,Nicole Rodriguez,,59,East,001-775-865-1866,kellypena@gmail.com,678,Medium
+CUST00179,Sandra Blanchard,221C6D7F-4B3,Savings,Home Loan,59881,3708.07,115.88,2023-07-01,Paid,Tammy Williams,2023-02-09,0,North,001-243-898-8010x23637,michaelcrawford@yahoo.com,797,Low
+CUST00180,Sandra Cannon,ACA39F62-A5A,Credit,Home Loan,255225,163985.38,2733.09,2024-12-14,Partially Paid,Matthew Ford,2023-02-27,24,South,(807)949-6766x4283,villegasmorgan@smith.com,558,Medium
+CUST00181,Maria Lee,6322ABDC-27D,Credit,Car Loan,156512,1762.88,103.7,2023-03-14,Partially Paid,Todd Wallace,2023-03-01,74,West,428.751.5518x2220,xhuang@frye-wells.biz,309,High
+CUST00182,Jennifer Haynes,E62F85F9-845,Credit,Car Loan,18391,9576.0,299.25,2024-09-09,Partially Paid,Bonnie Hodges,2024-07-12,11,West,(298)286-5636,stonemarie@hughes.com,636,Medium
+CUST00183,Joe Gonzalez,EF5F9B39-E4C,Credit,Car Loan,266679,64584.09,1218.57,2023-11-10,Missed,Beth Pierce,,58,West,812-105-2731x92201,pjensen@yahoo.com,760,Low
+CUST00184,Dustin Mclaughlin,E85DA73B-0D7,Credit,Car Loan,244127,239549.09,10415.18,2024-09-06,Missed,Richard Thomas,,75,East,414-771-7253,karinagreen@gmail.com,807,Low
+CUST00185,Kenneth Bates,C8793514-DDB,Savings,Home Loan,58452,43339.5,1884.33,2024-07-03,Partially Paid,Jennifer Smith,2024-06-30,14,North,0069232964,btrujillo@faulkner-riley.com,548,Medium
+CUST00186,Joseph Roberts,EF13D52F-96E,Credit,Personal Loan,332071,263344.8,9080.86,2023-09-06,Missed,Garrett Jones,,27,North,+1-036-060-9342,smithvalerie@white.org,379,High
+CUST00187,Glen Ramirez,7EBA4BAA-D5A,Savings,Personal Loan,228634,107752.91,8288.69,2023-02-28,Paid,James Miller,2023-02-24,0,North,+1-408-325-0704x07747,russellporter@browning.com,846,Low
+CUST00188,Michael Huffman,4DF1C48A-1CA,Credit,Personal Loan,126717,82582.37,1474.69,2023-11-06,Paid,Erin Smith,2023-04-18,0,West,497-217-5760,zimmermanjames@cook.biz,546,Medium
+CUST00189,Chase Carter,0551FBA6-363,Credit,Car Loan,70615,64943.91,4638.85,2024-04-27,Paid,Patricia Riley,2024-03-21,0,South,237.001.2407x7726,zunigajeremy@hotmail.com,619,Medium
+CUST00190,Mark Mueller,67E97DDD-D79,Credit,Personal Loan,117873,45015.81,1500.53,2023-08-15,Missed,Matthew Smith,,0,West,636.912.2494x2072,jasonsummers@gmail.com,781,Low
+CUST00191,Kayla Jones,2CE3C55B-DF1,Savings,Personal Loan,265539,165562.9,6367.8,2024-09-19,Partially Paid,Michael Lopez,2024-07-08,30,East,0701038224,jonesemily@thompson.biz,812,Low
+CUST00192,Mr. Sean Pena,4F7E897B-774,Savings,Personal Loan,299380,63509.38,1476.96,2024-03-30,Paid,Julie Hernandez,2024-03-26,0,South,+1-352-642-3403x81162,gclark@gmail.com,407,High
+CUST00193,Natasha Castro,50A42309-D4F,Credit,Personal Loan,427197,15403.96,334.87,2024-09-22,Partially Paid,Nicholas Garcia,2024-06-21,55,North,386.741.8010x86392,smithjeffrey@yahoo.com,421,High
+CUST00194,Megan Irwin,5C3AF656-6EA,Credit,Personal Loan,193441,51349.13,1656.42,2024-10-01,Partially Paid,Cameron Ford,2023-07-05,82,South,(575)493-3129x30178,heidi28@gmail.com,562,Medium
+CUST00195,Jared Mathews,5F972B47-D0E,Credit,Car Loan,350232,74030.14,2741.86,2023-06-12,Paid,Elizabeth Calhoun,2023-04-13,0,North,(501)862-2680,hmiller@smith-harris.org,436,High
+CUST00196,Rhonda Bailey,257F63E1-448,Credit,Home Loan,21703,13697.65,622.62,2024-12-08,Partially Paid,Aaron Silva,2024-12-05,20,West,001-376-539-2797x831,butlerterri@silva-briggs.org,383,High
+CUST00197,Tyler Martin,F1B56E04-587,Current,Car Loan,400099,342074.58,13682.98,2023-03-25,Missed,Margaret Alexander,,9,South,159.626.2704x90986,dsalazar@jackson-wong.com,738,Low
+CUST00198,Timothy Young,C3589363-9A1,Credit,Personal Loan,224253,49673.79,3548.13,2024-09-30,Missed,Steven Zuniga,,54,South,+1-750-603-8776x61262,stephanietownsend@powers.biz,585,Medium
+CUST00199,Erin Riggs,8CF6761A-693,Credit,Car Loan,347449,93203.6,1902.11,2024-09-23,Paid,Anne Wagner,2023-06-30,0,West,874-023-7797x6848,elizabeth89@osborne-sandoval.org,648,Medium
+CUST00200,Amy Jennings,82C86440-1F2,Credit,Home Loan,202974,177693.04,5552.91,2024-12-10,Missed,Margaret Young,,13,East,(493)633-5153,morabrandon@hill-levy.com,737,Low
+CUST00201,Michele Hogan,24FC025B-E7D,Credit,Home Loan,415756,399658.86,8503.38,2023-03-11,Missed,Jason Edwards,,80,South,001-074-895-8628x6683,ghampton@sanford.com,802,Low
+CUST00202,Joshua Pratt DVM,AF0FEDB2-773,Savings,Personal Loan,436249,399689.61,7012.1,2024-07-30,Paid,Connie Stevens,2023-07-03,0,East,641-286-1210x64367,fredpeters@sanchez.com,486,High
+CUST00203,Ashley White,2B22E674-B35,Savings,Car Loan,382527,109023.93,3516.9,2023-07-31,Missed,Kerry Ward,,67,North,836.714.8228x962,geraldleach@oliver.com,523,Medium
+CUST00204,Patricia Murphy,EC22D0AB-E69,Current,Home Loan,128022,70745.06,1241.14,2023-08-27,Partially Paid,Eric Dixon,2023-01-09,6,West,748-569-1488,yho@sandoval.biz,536,Medium
+CUST00205,Heather Brown,54D865EC-E23,Savings,Personal Loan,293803,55978.43,1365.33,2024-09-17,Partially Paid,Samantha Kelly,2023-04-11,70,East,(731)077-3346,jessicagreene@ford.com,526,Medium
+CUST00206,Timothy Sheppard,54EF1CD8-CF0,Savings,Car Loan,328351,321053.39,17836.3,2024-01-06,Paid,Justin Frost,2023-03-14,0,South,498.769.8278,bethanybutler@gmail.com,409,High
+CUST00207,Matthew George,B8121941-01D,Current,Home Loan,56526,6966.55,151.45,2024-05-10,Paid,Kenneth Smith,2023-11-01,0,East,(451)273-9844x054,jason15@yahoo.com,821,Low
+CUST00208,Michelle Mendoza,EBF609EF-3E8,Savings,Personal Loan,362777,348786.29,11626.21,2024-05-13,Paid,Paul Medina,2024-03-19,0,South,947-822-0691,anthony67@gmail.com,515,Medium
+CUST00209,Kimberly White,62F0D776-439,Credit,Personal Loan,494433,192550.38,6639.67,2023-10-16,Missed,Shawn Carpenter,,58,South,(455)500-4650x38995,tgibson@mitchell-williams.com,365,High
+CUST00210,Jay Frye,C5929696-85E,Savings,Home Loan,224455,153671.26,3841.78,2023-08-07,Paid,David Hicks,2023-01-18,0,South,(421)545-9194x5220,washingtonjohn@guerrero.net,600,Medium
+CUST00211,Mark Walker,9D04903F-687,Current,Car Loan,190787,38796.48,1939.82,2023-08-12,Partially Paid,Kyle Lucero,2023-04-26,50,South,729-594-0631x333,wchase@yahoo.com,317,High
+CUST00212,Amy Hill,A77C0360-B82,Credit,Personal Loan,435365,246700.32,12335.02,2024-11-19,Missed,Tara Poole,,4,East,972-641-1984x06157,vandersen@gmail.com,431,High
+CUST00213,John Hunt,52C667DF-54A,Credit,Car Loan,247728,158632.88,3965.82,2023-03-05,Missed,Jessica Mcdaniel,,34,South,571.795.7933x63785,ramseymichelle@yahoo.com,494,High
+CUST00214,Adam Stephens DVM,CEB7E18D-0FD,Savings,Personal Loan,342726,210780.77,5018.59,2024-02-15,Missed,Chelsea Williams,,82,South,+1-294-379-2819x383,pdorsey@yahoo.com,544,Medium
+CUST00215,Keith Brock,3AC3C880-F27,Savings,Car Loan,291782,279639.7,4739.66,2023-09-18,Missed,Kelly Dorsey,,73,North,643-581-9475x14097,fjackson@yahoo.com,662,Medium
+CUST00216,Joseph Gregory,27F1C232-FF3,Credit,Home Loan,118647,66874.16,2572.08,2024-11-14,Partially Paid,Madison Foster MD,2023-08-29,43,North,001-168-822-0831x624,parkerjose@mitchell.com,324,High
+CUST00217,Jordan Wolfe,020A6DC0-39C,Savings,Home Loan,354836,313921.75,14948.65,2024-06-20,Paid,Carrie Sanchez,2023-08-25,0,East,9881899540,toddlyons@gmail.com,422,High
+CUST00218,Melinda Beck,2B693423-11B,Current,Personal Loan,100558,32313.31,788.13,2023-10-10,Paid,Jennifer Barnes,2023-10-04,0,North,226.563.2381,vlambert@wilson-james.org,474,High
+CUST00219,Andrew Hudson,028CD2C5-AC1,Credit,Personal Loan,325361,36887.5,709.38,2023-03-17,Missed,Thomas Rose,,31,East,(639)764-5021,lisalam@farrell-kirby.com,356,High
+CUST00220,Clifford Boyer,0CE5B4AF-04B,Credit,Home Loan,342041,270184.22,11257.68,2023-03-26,Paid,Kayla Armstrong,2023-03-23,0,North,938.244.8777x0245,lucerodavid@boyd.info,751,Low
+CUST00221,Tracy Berger,E14C1D3D-A31,Credit,Car Loan,448806,382163.81,18198.28,2024-11-08,Missed,Pamela Freeman,,87,South,(258)427-3476,johnsondawn@yahoo.com,778,Low
+CUST00222,Karl Hickman,24EF0421-A0D,Current,Home Loan,15296,901.4,69.34,2024-11-29,Missed,William Briggs,,83,South,001-765-069-8481x4052,johnboyer@hotmail.com,691,Medium
+CUST00223,Charles Howard,B7EC2A13-CE9,Current,Car Loan,51406,27105.75,521.26,2023-03-09,Missed,Nathan Rojas,,10,North,001-734-543-9588x80748,kingtoni@gmail.com,575,Medium
+CUST00224,Hayley Andrade,F872B744-E8F,Savings,Car Loan,70669,44322.69,1846.78,2023-04-09,Partially Paid,Peter Stevens,2023-01-14,16,North,816-275-9179x3864,hernandezjermaine@brown-rodriguez.info,770,Low
+CUST00225,Joshua Mckee,13FD6664-3A6,Savings,Home Loan,78222,72579.51,2073.7,2024-11-01,Missed,Ryan Miller,,71,North,4872357805,caseyjohnson@hunt.com,835,Low
+CUST00226,Joshua Huffman,19EAD1C5-C66,Credit,Car Loan,436772,248814.13,7539.82,2024-09-15,Missed,Mr. Garrett Larson MD,,5,West,001-585-983-2096x688,mdunn@freeman-fuller.net,432,High
+CUST00227,Anthony Robertson,82B28344-670,Credit,Home Loan,386946,242291.63,9691.67,2023-10-19,Missed,Crystal Evans,,8,North,439.078.1965x2441,josephjoshua@yahoo.com,741,Low
+CUST00228,Michelle Campbell,1D6CC313-3B6,Savings,Personal Loan,239253,173432.29,3854.05,2024-10-20,Partially Paid,Kristen Gregory,2023-08-06,42,South,923-216-6385,maryfrey@brown.info,357,High
+CUST00229,Claudia Coleman,CFBF8AAA-E87,Current,Car Loan,197138,129146.37,4304.88,2023-07-18,Paid,Matthew Smith,2023-02-12,0,North,(249)400-8993,allensarah@gomez.net,502,Medium
+CUST00230,Louis King,4F7BCA09-1B0,Savings,Car Loan,464669,30958.45,2579.87,2023-12-28,Missed,Melissa Dominguez,,8,North,(773)620-9388,antonioking@marshall.org,391,High
+CUST00231,Nathan Haas,E6F0356A-386,Current,Home Loan,289574,5696.28,438.18,2023-10-05,Paid,Kathryn Gomez,2023-09-26,0,North,+1-588-520-4268x786,anna78@trujillo.com,303,High
+CUST00232,Lisa Fields,5E2F6F2E-9CA,Current,Home Loan,265554,14736.48,866.85,2023-04-14,Missed,David Payne,,8,East,+1-155-212-9649x10472,rodriguezdavid@hotmail.com,608,Medium
+CUST00233,Rachel Thomas,8F9AC5FC-062,Credit,Personal Loan,102047,48499.05,4041.59,2024-07-21,Partially Paid,Katrina Williams,2024-06-14,11,South,895.209.9062x83295,branchkim@hotmail.com,790,Low
+CUST00234,Angelica Singleton,1BBADC06-560,Savings,Car Loan,120642,37179.48,1429.98,2024-02-29,Partially Paid,Jessica Moore,2024-01-03,89,West,293-770-9882x16900,benjamin09@martinez.com,624,Medium
+CUST00235,Gregory Reed,04075C47-EC4,Current,Personal Loan,235087,90421.15,4110.05,2023-09-22,Missed,Kara Shepherd,,26,West,242.909.1394x74902,lisa29@yahoo.com,558,Medium
+CUST00236,Deborah Williams,3F3551C9-64D,Savings,Car Loan,26519,20701.42,1150.08,2023-08-18,Paid,Andrea Miller,2023-02-27,0,South,238-644-6558x13464,chull@yahoo.com,362,High
+CUST00237,Shelia Hoffman,6936C0A6-DB0,Savings,Car Loan,184169,59299.5,2371.98,2024-02-12,Partially Paid,Amanda Moran,2023-12-10,45,West,(781)931-3683x94849,nathan62@warren.com,796,Low
+CUST00238,Amy Patton,098411FA-2FD,Current,Personal Loan,238292,131071.22,3855.04,2023-05-10,Missed,Laurie Bass,,57,South,419-149-0454x651,lhogan@tate.com,804,Low
+CUST00239,Kristina Marshall,61139076-48F,Savings,Home Loan,58899,42730.86,1526.1,2024-11-06,Missed,Christopher Ayala,,6,West,268.456.3331x6717,ghowe@hotmail.com,485,High
+CUST00240,Paige Montgomery,B555C4D3-628,Credit,Home Loan,390359,329275.2,7839.89,2024-06-20,Missed,Robert Myers,,12,South,+1-098-659-1807x5684,elizabethsanchez@gmail.com,759,Low
+CUST00241,Christopher Watson,2D6F0CDB-6EF,Current,Home Loan,139550,80192.43,3084.32,2023-09-02,Partially Paid,Jennifer Chen,2023-02-05,43,East,+1-254-043-0000x8030,devon45@hotmail.com,364,High
+CUST00242,Sharon Haynes,9D4BBC11-39A,Savings,Car Loan,94644,76429.54,1777.43,2024-12-08,Missed,Jonathan Barber,,25,West,039.007.5901,wigginskayla@hotmail.com,619,Medium
+CUST00243,Robert Gross,4A6E33A3-870,Credit,Personal Loan,308139,52464.95,971.57,2023-02-24,Partially Paid,Kenneth Harrison,2023-01-15,60,North,618-084-6063,guzmanjulia@gmail.com,375,High
+CUST00244,Paula Parker,DB8E420D-E8E,Current,Home Loan,343410,43141.71,798.92,2024-09-06,Paid,Jeffrey Alvarez,2023-08-12,0,North,928.887.5702x25621,jason06@gmail.com,317,High
+CUST00245,Steven Sanders,784EC33E-F3D,Current,Car Loan,374526,197593.2,4116.53,2024-03-05,Partially Paid,Benjamin Martinez,2023-11-03,82,South,(277)166-3291x849,rwilson@hotmail.com,537,Medium
+CUST00246,Michael Hammond,B44DF6DD-A6B,Savings,Car Loan,68489,12544.6,597.36,2024-11-09,Paid,Taylor Sandoval,2023-12-18,0,North,+1-449-362-7880x48644,courtney40@wang.com,327,High
+CUST00247,Jeffrey Peterson,5D80DA9B-635,Credit,Home Loan,391615,316825.06,5558.33,2023-01-10,Paid,Michael Martinez,2023-01-09,0,West,001-222-267-6507x28559,ruizsarah@hendrix.com,459,High
+CUST00248,Kristin Davis,40D541F8-803,Current,Personal Loan,132456,63857.23,3360.91,2023-06-09,Missed,James Jacobs,,28,West,+1-009-019-3273x347,zalexander@waller-cabrera.com,676,Medium
+CUST00249,Christopher Evans,F787377E-C64,Current,Personal Loan,193116,65128.92,3831.11,2023-08-01,Paid,Tony Bush,2023-06-17,0,North,(429)222-2173x23087,clarkashley@howard-smith.com,800,Low
+CUST00250,Maria Johnson,9109509A-C93,Credit,Car Loan,71989,44171.25,1027.24,2024-06-29,Paid,Karen Hanson,2024-04-27,0,West,9276455043,belltanya@hotmail.com,653,Medium
+CUST00251,Sheryl Wilcox,82D243D8-3BF,Savings,Personal Loan,391636,217702.34,12806.02,2024-04-05,Missed,Sabrina Bush,,30,North,095.586.6001,jeffreyross@jackson.com,597,Medium
+CUST00252,Christopher Vazquez,A769E818-0F9,Savings,Home Loan,91081,57788.01,1203.92,2023-05-18,Partially Paid,Amy Thomas,2023-01-19,14,South,+1-361-544-9442x873,bradley23@yahoo.com,640,Medium
+CUST00253,Tammy Ramos,94B1B60F-DBD,Credit,Car Loan,338080,102203.58,6011.98,2023-07-23,Paid,Tim Stanton,2023-03-07,0,South,866-672-6863,acox@carter.info,304,High
+CUST00254,Peggy Grimes,6D61CA08-D5D,Current,Home Loan,365328,85822.08,3432.88,2024-10-31,Missed,Samuel Salazar,,49,West,(611)970-1549x07180,christophersmith@gmail.com,675,Medium
+CUST00255,Nicole Bond,E783B762-CCF,Savings,Car Loan,188214,97363.05,1770.24,2024-08-16,Paid,Rebecca Mitchell,2023-05-08,0,East,001-061-871-1166,juliaboone@jones-le.net,383,High
+CUST00256,Pamela Green,9F29E96C-8A9,Credit,Car Loan,287764,55300.94,970.19,2023-11-07,Paid,Rebekah Burton,2023-02-17,0,West,431.699.3486x68932,wpena@jackson.com,529,Medium
+CUST00257,Zachary Pennington,0EFB193E-098,Savings,Home Loan,117560,77737.1,1340.29,2023-07-19,Missed,Jeremy Herring,,35,East,+1-058-803-5524,morganwilliams@martin-moyer.net,689,Medium
+CUST00258,Lisa Morgan,B85D20C4-938,Credit,Personal Loan,453136,280457.74,6232.39,2024-11-16,Missed,Donna Tran,,83,South,739.620.6533,fmolina@martin.com,422,High
+CUST00259,Amy Reid,5732E55F-328,Current,Personal Loan,307092,262863.15,10514.53,2023-01-16,Missed,Charles Quinn,,54,North,001-986-608-3747x10738,rebecca39@myers.com,502,Medium
+CUST00260,Luis Chavez,F22B3794-3F8,Current,Personal Loan,111911,105453.13,1850.05,2023-11-20,Missed,Roger Thomas,,67,South,+1-307-432-3390x8349,barneslisa@yahoo.com,551,Medium
+CUST00261,Lisa Green,C5374FB8-0EA,Credit,Car Loan,443227,417789.92,9284.22,2023-09-27,Missed,Dr. Rebecca Miller,,17,West,001-735-516-4048x4751,kevinbrown@hotmail.com,568,Medium
+CUST00262,Mrs. Leah Weiss,F91B8E13-D87,Savings,Personal Loan,339717,208024.78,6500.77,2024-11-15,Paid,Sylvia Baird,2024-09-29,0,North,(886)359-0343x806,sheilafrost@yahoo.com,310,High
+CUST00263,Bonnie Frey,AEC518F9-2D3,Credit,Home Loan,93033,54716.11,1886.76,2024-11-07,Partially Paid,Mr. Michael Day,2024-05-21,61,North,000.135.2010x60947,daviskelsey@wilkins-ellis.com,535,Medium
+CUST00264,Madison Klein,458588EF-554,Credit,Car Loan,339688,98489.58,2009.99,2024-10-11,Paid,Michael Pierce,2023-06-17,0,West,651.768.9846x97560,zreese@gmail.com,794,Low
+CUST00265,Mary Greer,35698915-267,Savings,Car Loan,118851,114357.15,4972.05,2023-08-12,Partially Paid,Anthony Carrillo,2023-04-15,57,West,(066)526-1753,reginaturner@gmail.com,357,High
+CUST00266,Kenneth Mcclure,D10818B6-7C4,Savings,Home Loan,417396,192793.99,3267.69,2023-06-17,Partially Paid,Justin Brown,2023-01-23,29,South,+1-685-701-8438,johnjarvis@hotmail.com,491,High
+CUST00267,Nicholas Hines,0CAE6924-62C,Current,Car Loan,232768,179723.15,4608.29,2024-11-08,Paid,Casey Wade,2024-01-21,0,East,448.595.4431,lewismartha@hotmail.com,805,Low
+CUST00268,Joseph Walton,B1B0443C-888,Current,Home Loan,261142,89793.86,1995.42,2023-11-29,Partially Paid,Bryan Carroll,2023-07-05,39,North,+1-128-005-8204x1789,lnelson@rios.com,582,Medium
+CUST00269,Juan Owens,1C9C5C19-943,Current,Home Loan,78815,74124.43,2003.36,2025-01-03,Partially Paid,Lee Mckinney,2024-05-16,36,West,+1-388-576-0815x90479,williamchavez@moreno.info,575,Medium
+CUST00270,Adam Shepard,A8EE92C8-3DF,Credit,Car Loan,470174,203313.22,3630.59,2023-04-23,Paid,Cody Lewis,2023-01-10,0,North,011.668.8103x2438,ashley35@gmail.com,362,High
+CUST00271,Miguel Lee DDS,9252803F-17B,Savings,Car Loan,210545,23329.61,1110.93,2023-07-24,Paid,Samantha Fernandez,2023-02-18,0,East,314.903.0628x804,lisa90@gmail.com,714,Low
+CUST00272,Tina Palmer,6AFC581B-60A,Savings,Home Loan,201243,71503.45,4468.97,2023-12-28,Partially Paid,Alexander Hodge,2023-06-06,86,East,777.697.2146,annduran@yahoo.com,560,Medium
+CUST00273,Jeffrey Fleming,25DE8C62-870,Current,Personal Loan,299404,69244.56,2233.7,2024-11-08,Partially Paid,Sean Fritz,2023-02-18,25,West,5685852032,brownveronica@phillips-doyle.com,427,High
+CUST00274,Cindy Sanchez,937E6166-565,Current,Car Loan,116651,86083.62,2265.36,2025-01-02,Partially Paid,Melissa Blevins,2024-01-02,77,North,(389)293-1453,matthew96@gmail.com,589,Medium
+CUST00275,Jessica Simpson,8F19A644-B53,Savings,Home Loan,400846,30259.9,864.57,2024-11-27,Partially Paid,William Haley,2023-10-16,4,East,+1-671-518-2280,kim95@gmail.com,470,High
+CUST00276,Alexis Horne,6DB901AB-A82,Credit,Car Loan,149575,94455.72,3632.91,2023-03-02,Paid,Julie Harrell,2023-02-04,0,South,719-141-6021,ericlang@yahoo.com,583,Medium
+CUST00277,Dr. Cassandra Howell,9E35166E-A1B,Savings,Home Loan,210710,79588.48,2567.37,2024-12-26,Missed,Katherine Gibson DVM,,41,West,(244)998-0460,huertatimothy@yahoo.com,826,Low
+CUST00278,Samantha Lee,3AE57CA1-F37,Credit,Personal Loan,17212,2608.22,217.35,2023-08-23,Missed,Melissa Perry,,39,South,185-326-0620x25728,lbrady@hotmail.com,510,Medium
+CUST00279,Kathryn Boone,F0EE917C-4C7,Credit,Car Loan,188899,130094.33,4646.23,2023-09-13,Paid,Jennifer Sosa,2023-02-12,0,North,(521)754-3156x8788,gainesgabriel@yahoo.com,786,Low
+CUST00280,Renee Bryan,4747EA9D-174,Savings,Home Loan,383642,287966.23,9598.87,2024-09-01,Partially Paid,Anna Reynolds,2023-08-26,33,West,173.908.6096x34656,pgonzalez@gmail.com,715,Low
+CUST00281,Zachary Jones,EF6AF098-6D6,Credit,Car Loan,399066,57059.95,1630.28,2023-07-15,Paid,Christian Martin,2023-01-13,0,North,434-652-7428x27219,emily97@hotmail.com,676,Medium
+CUST00282,Benjamin Carlson,529E09C8-6A0,Credit,Home Loan,280378,53046.15,2947.01,2024-10-09,Partially Paid,James Ortiz,2024-01-17,75,North,+1-931-981-8552x104,wle@gmail.com,554,Medium
+CUST00283,Michelle Wolfe,A40DC53A-1B2,Current,Personal Loan,182609,96079.56,2401.99,2023-10-29,Paid,Sherry Rivas,2023-02-18,0,North,1177037782,tinamyers@reed-adams.net,373,High
+CUST00284,Beth Warren,9945E069-C61,Savings,Car Loan,443441,94001.93,5222.33,2023-10-14,Partially Paid,Martin Lopez,2023-01-15,84,West,(688)638-9752x6985,jbrown@ellison-townsend.com,818,Low
+CUST00285,Julie Santos,70A5F7A1-56D,Credit,Personal Loan,463787,336348.49,19785.21,2024-04-08,Paid,Tracy Garrett,2023-10-20,0,South,001-242-894-4340,sandersdenise@yahoo.com,431,High
+CUST00286,Daniel Rice,8D6AC33A-0B6,Savings,Personal Loan,14503,7909.17,219.7,2023-09-25,Partially Paid,Mercedes Washington MD,2023-04-26,49,North,603.553.6328x6693,russellronald@yahoo.com,808,Low
+CUST00287,Michael Smith,C3C9DB61-A44,Current,Car Loan,88010,9112.47,759.37,2023-06-30,Partially Paid,Vincent Ibarra,2023-03-08,46,East,+1-813-890-4600x76469,susanburns@yahoo.com,389,High
+CUST00288,Keith Henson,FD27DE99-6F2,Savings,Personal Loan,419410,214478.94,13404.93,2023-04-28,Missed,Sergio Howard,,23,East,001-880-801-0969,allison77@gmail.com,831,Low
+CUST00289,Emily Lutz,1DFD249C-360,Current,Car Loan,326713,226629.74,16187.84,2023-04-11,Paid,Keith Hamilton,2023-01-25,0,East,256-955-1226x252,wilsondiane@knapp.com,629,Medium
+CUST00290,Jerry Rogers,B62596C2-6AA,Savings,Home Loan,365064,110186.21,4080.97,2023-10-15,Partially Paid,Tracy Stewart,2023-07-02,59,East,454-698-5555,roberttaylor@vincent.com,638,Medium
+CUST00291,Krystal Reed,70AFB6E8-256,Credit,Car Loan,300514,221006.03,15786.15,2024-07-13,Partially Paid,Leah Lucas,2024-06-18,73,South,005.755.5436,simpsonrachel@hotmail.com,532,Medium
+CUST00292,James Sullivan,27236881-325,Credit,Personal Loan,162473,13762.09,983.01,2023-09-02,Partially Paid,Eric Hunt,2023-02-19,11,West,9055560274,millerjennifer@ramirez-rodriguez.com,743,Low
+CUST00293,Shari Goodman,FC1B7024-6ED,Credit,Personal Loan,318159,69530.62,1241.62,2023-08-05,Partially Paid,Gina Mejia,2023-05-21,17,East,595.548.2492x5518,hmurray@yahoo.com,714,Low
+CUST00294,Lisa Hernandez,163F3448-FE1,Credit,Personal Loan,253602,149417.57,6791.71,2023-03-24,Partially Paid,Anna Herman,2023-02-26,33,North,001-485-675-2304,garciamatthew@hotmail.com,792,Low
+CUST00295,Samuel Hansen,40706FB5-D31,Savings,Home Loan,434054,206981.98,5174.55,2023-08-01,Partially Paid,Rhonda Vargas,2023-05-23,43,South,1042704622,imedina@hotmail.com,510,Medium
+CUST00296,Eric Meyer,DE005A00-F9D,Savings,Car Loan,16012,14511.89,500.41,2023-02-05,Partially Paid,William Kelly DDS,2023-01-10,89,North,001-090-640-1125,brandy48@gmail.com,724,Low
+CUST00297,Dean Morris,8283DF26-776,Savings,Personal Loan,407666,277224.14,4620.4,2024-09-08,Missed,Andrea Fischer,,32,East,061.760.5962x9521,mstephens@gmail.com,615,Medium
+CUST00298,Jose Martin,ED68EFF8-473,Current,Personal Loan,107980,17544.81,302.5,2024-09-08,Missed,Andrew Hernandez,,53,North,0731431858,natasha51@hill.net,567,Medium
+CUST00299,Mark Solomon,2019F332-DA4,Current,Home Loan,39832,21440.34,382.86,2023-12-26,Missed,Mrs. Diane Farmer,,23,South,672-107-7627,wwall@vargas.info,307,High
+CUST00300,Sean Huff,67C5ED86-7F7,Current,Personal Loan,204648,46857.04,807.88,2023-11-29,Missed,Cynthia Brown,,27,North,569-304-4333x9608,silvasheri@yahoo.com,385,High
+CUST00301,Elizabeth Brown,425B33F3-A2B,Credit,Car Loan,227569,149280.91,2985.62,2023-10-31,Missed,Katie Hernandez,,83,North,(266)204-0001,jeffreyjones@thornton.com,355,High
+CUST00302,Stacy Bean,F4436F6B-D33,Current,Personal Loan,353602,141473.74,3722.99,2024-03-18,Partially Paid,Holly Jordan,2024-01-13,20,South,+1-242-182-1192x8525,dylanedwards@gmail.com,449,High
+CUST00303,Kyle Porter,D37FFD9C-4B4,Savings,Personal Loan,440013,191863.84,9136.37,2024-05-09,Partially Paid,Anthony Hernandez,2023-10-31,59,West,(266)519-6386,hilleric@williams-turner.com,538,Medium
+CUST00304,Frederick Alvarez,49DFC987-EF5,Current,Home Loan,372362,138947.27,3656.51,2023-12-08,Partially Paid,Gary Blankenship,2023-04-23,11,West,9504285239,garciacorey@gmail.com,556,Medium
+CUST00305,Danny Madden,F2D09237-0D2,Savings,Car Loan,186095,157334.99,7492.14,2023-05-23,Partially Paid,Vicki Walker,2023-03-02,69,South,589.038.6577,rmartinez@small.com,798,Low
+CUST00306,Rachel Kim,D7D2B1C6-FCE,Savings,Home Loan,302086,241525.89,8945.4,2024-09-07,Partially Paid,Eric Davis,2024-05-27,48,West,549-545-0028,bhill@hotmail.com,560,Medium
+CUST00307,James Murphy,1A926B40-E4C,Credit,Car Loan,241693,200354.37,4452.32,2024-05-30,Paid,Jodi Boyd,2023-01-30,0,West,032.457.1178,shawn22@yahoo.com,503,Medium
+CUST00308,Kelly Nguyen,D73C21AB-ECF,Credit,Car Loan,120933,92411.72,1711.33,2023-11-11,Paid,Ryan Hansen,2023-06-25,0,North,(284)837-2754x317,mikayla91@yahoo.com,748,Low
+CUST00309,Elizabeth Patterson,B0C97FB7-908,Credit,Car Loan,365516,170299.97,3041.07,2023-11-06,Paid,Diamond Martinez,2023-10-20,0,North,(292)161-0241x0577,mwilson@schroeder-smith.com,538,Medium
+CUST00310,Jennifer Smith,3ED32F81-047,Savings,Car Loan,407954,166394.88,11885.35,2023-01-13,Missed,Scott Dunlap MD,,74,North,001-215-463-4296,eperkins@ortiz.info,363,High
+CUST00311,Scott Hamilton,6A7441B2-E56,Credit,Car Loan,340416,11547.84,320.77,2024-03-30,Paid,Barbara Walsh,2023-05-31,0,South,391-430-0088x6033,greg29@martin.com,688,Medium
+CUST00312,Jessica Harrison,180D163A-364,Current,Personal Loan,240887,172024.1,4195.71,2023-01-30,Paid,Jessica Hudson,2023-01-15,0,North,(082)489-3017,carterjames@hotmail.com,332,High
+CUST00313,Courtney Tran,2215A856-199,Credit,Home Loan,223852,30719.71,667.82,2024-04-02,Missed,Richard Turner,,90,South,001-688-442-7882x5152,zestrada@ingram-fowler.net,332,High
+CUST00314,Olivia Payne,8023EC27-9D6,Savings,Home Loan,478142,20045.7,572.73,2023-04-03,Paid,Michele Clark,2023-01-07,0,South,(222)170-0523,joannewade@roach.com,566,Medium
+CUST00315,Karen Turner,3D7ED08F-EB7,Credit,Car Loan,425869,92658.02,4412.29,2023-08-25,Missed,Daniel Vasquez,,33,South,(566)823-0714x60887,brandonjackson@thornton.org,649,Medium
+CUST00316,Jennifer Lane,C604542B-66E,Savings,Car Loan,489744,333326.89,7407.26,2024-11-06,Missed,Jeffery Perez,,67,West,+1-446-094-5276x652,marywhite@ryan-welch.biz,768,Low
+CUST00317,Jessica Dennis,4287A87A-957,Savings,Personal Loan,196445,12923.99,307.71,2023-06-21,Paid,Shelly Freeman,2023-05-28,0,West,527-432-6751x47147,dawnjohnson@guzman-lamb.com,669,Medium
+CUST00318,Michael Davis,CB074EE7-DC2,Savings,Home Loan,251890,114426.42,2434.6,2024-10-24,Paid,Virginia Thompson,2023-11-19,0,South,688-550-4654x4163,othompson@chandler.com,598,Medium
+CUST00319,Courtney Nelson,C349530B-4B2,Current,Personal Loan,262912,19621.42,1090.08,2023-05-13,Paid,Zachary Burch,2023-01-16,0,West,357.344.3463x443,vanessatran@becker.info,749,Low
+CUST00320,Gavin Keller,CB9EF260-256,Current,Home Loan,54101,39480.77,669.17,2023-06-05,Paid,Michael Flynn,2023-06-04,0,North,(074)748-7725x7430,tammyparker@flores.com,596,Medium
+CUST00321,David Fuentes,39CF0E3D-0BB,Credit,Home Loan,379516,366040.88,21531.82,2024-01-14,Partially Paid,Taylor Schwartz,2023-05-28,14,East,499-968-8348x753,robert12@yahoo.com,607,Medium
+CUST00322,Steven Miller,045FCCD9-EDA,Savings,Car Loan,116583,13742.36,352.37,2023-04-10,Paid,James Avila,2023-03-23,0,West,+1-631-304-6092x4432,eric98@yahoo.com,792,Low
+CUST00323,Paige Trujillo,F430F8A1-839,Current,Home Loan,135459,98698.28,3796.09,2024-11-29,Partially Paid,Vickie Gonzalez,2024-06-25,22,South,(917)915-6222,waterskim@wilkerson.com,338,High
+CUST00324,Mary Scott,744908D2-F16,Credit,Home Loan,492191,233187.56,4239.77,2024-04-25,Partially Paid,Johnny Browning,2023-09-14,68,West,001-784-962-8494x350,mcdanieljennifer@howard-riley.com,670,Medium
+CUST00325,Jordan Dunlap,94BCD348-AEE,Savings,Home Loan,105330,86827.6,1471.65,2023-11-03,Paid,Natalie Cook,2023-02-01,0,North,992.839.9840x405,xjackson@hotmail.com,811,Low
+CUST00326,Mr. Albert Miller,0824ECDE-F6D,Savings,Car Loan,96976,82155.9,1825.69,2023-06-22,Paid,Beth Allen,2023-04-09,0,West,676-171-4632,abigailburns@hotmail.com,369,High
+CUST00327,Elizabeth Lindsey,102FA0EA-311,Savings,Personal Loan,282065,66207.63,1249.2,2023-03-21,Paid,Patrick Atkinson,2023-02-04,0,West,001-560-812-1381,kristinblackburn@hotmail.com,759,Low
+CUST00328,Jennifer Barker,E76BE229-11B,Current,Personal Loan,58770,58044.05,1349.86,2024-06-16,Missed,Robert Ayala DVM,,4,West,001-218-411-0914x03169,carlsonlynn@moore.com,639,Medium
+CUST00329,Marc Johnson,E97A25D5-4CB,Credit,Car Loan,247355,74200.19,2318.76,2023-04-16,Paid,Patrick Chen,2023-02-01,0,East,888.444.4303x57514,rachelmiles@chambers.com,654,Medium
+CUST00330,Tracy Pratt,5069387C-D32,Savings,Home Loan,497989,469155.26,11442.81,2024-11-14,Paid,Joshua Little,2023-01-29,0,West,658-690-7532x78605,zmoreno@gmail.com,558,Medium
+CUST00331,Lauren Rojas,EBB47ECF-F93,Credit,Car Loan,208206,137321.6,3269.56,2023-06-07,Paid,David Smith,2023-05-18,0,East,327-088-4950,cooperjonathan@hotmail.com,341,High
+CUST00332,Stephen Gill,59FB78F0-F7F,Credit,Car Loan,425402,314012.72,5709.32,2024-09-13,Partially Paid,Terry Robinson,2023-11-07,15,North,061.283.6116,laracameron@robinson.com,326,High
+CUST00333,Sarah Luna,39C591E1-FCF,Current,Home Loan,485583,179598.92,4854.02,2023-04-20,Partially Paid,Dr. Brian Crawford,2023-04-14,51,North,287.830.9142,mariah48@fox.com,387,High
+CUST00334,Michael Hayes,F3E11524-41A,Credit,Home Loan,23956,18658.42,1554.87,2023-05-22,Missed,Linda King,,71,North,284.495.1038,williamgonzalez@medina.org,642,Medium
+CUST00335,Candace Fischer,567AF1E9-4F5,Current,Home Loan,183173,69779.66,1993.7,2023-04-21,Paid,Jeffrey Bishop,2023-03-06,0,West,188.435.7164x6253,nobledevin@byrd.com,697,Medium
+CUST00336,Emily Henderson,14E40460-29F,Credit,Car Loan,76012,14904.11,465.75,2024-08-02,Missed,Christina Yates,,4,West,0288735240,juliepeterson@gmail.com,491,High
+CUST00337,Michelle Ramsey,C31C3B4C-C2D,Savings,Car Loan,139917,106436.21,2217.42,2024-01-25,Partially Paid,Anthony Rios,2023-11-03,13,South,553-892-8591x029,agarcia@pollard.com,724,Low
+CUST00338,Gabriela Cameron,CD73E1CE-181,Current,Home Loan,124169,107861.64,1859.68,2023-01-30,Paid,Jared Gibson,2023-01-10,0,East,591-883-0726,fguzman@gmail.com,494,High
+CUST00339,Steven Baldwin,3A02CCD1-4EC,Credit,Car Loan,44644,40486.37,736.12,2024-11-16,Paid,Kevin Good,2023-09-16,0,North,001-195-764-7409x60788,beckerelizabeth@dawson.com,607,Medium
+CUST00340,Justin Page,9F7D1E10-F7C,Credit,Home Loan,379263,228655.05,4011.49,2023-12-15,Partially Paid,John Fuller,2023-12-14,52,East,001-435-396-9213,holderdonna@white.info,704,Low
+CUST00341,Daniel Martinez MD,113FF8C4-CF8,Current,Car Loan,84542,22835.0,422.87,2024-08-14,Partially Paid,Roger Johnson,2024-04-29,45,North,(308)578-5003,brian18@rodriguez.com,503,Medium
+CUST00342,Amanda Ferguson DDS,3111BBE7-985,Current,Car Loan,226461,173953.09,2948.36,2023-09-19,Partially Paid,Jimmy Carpenter,2023-05-27,57,East,556-256-5850,williammitchell@hotmail.com,419,High
+CUST00343,Brandy Welch,8DAFCB41-758,Credit,Home Loan,212179,12752.48,797.03,2024-12-08,Missed,Tammy Ayala,,44,North,613-795-4425x1679,meghan20@hardy.net,648,Medium
+CUST00344,William Gutierrez,6E7ED582-BBE,Current,Car Loan,113511,77761.37,1690.46,2023-04-08,Missed,Joseph White,,12,East,(904)688-5004x59381,jmurphy@yahoo.com,729,Low
+CUST00345,Amy Edwards,C7659684-21A,Savings,Home Loan,407670,301331.65,8609.48,2024-07-14,Partially Paid,Amanda Hester,2023-06-14,45,North,(190)602-7794x402,riverastephen@campos-woods.com,728,Low
+CUST00346,Christian Tate,77AB6C60-7F5,Savings,Personal Loan,118141,101132.96,3745.67,2024-06-27,Partially Paid,Elizabeth Smith,2023-04-01,60,West,+1-700-135-1269x84792,nknight@yahoo.com,615,Medium
+CUST00347,Kayla Williams,D383A0FA-311,Current,Personal Loan,44148,14212.24,710.61,2023-03-18,Paid,Eric Hudson,2023-01-27,0,North,761-022-5704,holdenjacqueline@yahoo.com,689,Medium
+CUST00348,Heather Jefferson DDS,CF30B2A7-71F,Savings,Home Loan,298441,263813.84,5276.28,2024-05-15,Partially Paid,Victoria Taylor,2023-03-31,83,North,001-462-759-1985x83413,amiller@gmail.com,591,Medium
+CUST00349,Sandra Alexander,2FF16BD1-B5D,Credit,Personal Loan,84902,59452.21,1080.95,2023-10-24,Paid,Cody Gordon,2023-08-02,0,North,456.481.5946x39434,matthew32@hale-rivera.com,618,Medium
+CUST00350,Jason Luna,458CB905-201,Savings,Personal Loan,404735,329638.09,21975.87,2024-03-07,Missed,Gina Williams,,49,East,362-903-5656x85169,jessicahenry@robinson-nguyen.com,394,High
+CUST00351,Jennifer Price,EFC615E5-5DD,Current,Home Loan,260879,157890.64,13157.55,2023-08-19,Paid,Justin Brown,2023-06-30,0,East,(033)234-1691x5533,donald94@gmail.com,831,Low
+CUST00352,Austin Reese,24C773AC-274,Savings,Personal Loan,35004,964.07,18.19,2024-04-04,Partially Paid,Victoria Whitehead,2023-12-31,77,North,7675703685,mcdonaldtracy@weeks.org,597,Medium
+CUST00353,Mindy Patel,C4E68A4A-776,Current,Car Loan,66103,4455.0,171.35,2024-04-15,Paid,Elizabeth Pratt,2023-10-02,0,South,0115643392,margaretparker@white.com,475,High
+CUST00354,William Clark,18B49A5D-6D6,Savings,Personal Loan,409460,364214.41,7141.46,2023-09-27,Paid,Tammy Wilson,2023-05-08,0,North,608-951-3377x8094,nunezjeremy@wilson.com,690,Medium
+CUST00355,Donald Ballard,C1F87011-9DC,Credit,Car Loan,215996,4777.22,136.49,2023-08-28,Paid,Theresa Sanchez,2023-01-12,0,North,8088978703,ucrawford@brooks.biz,423,High
+CUST00356,Phillip Vargas,F8D120B1-42C,Savings,Personal Loan,127422,36343.23,1580.14,2024-12-16,Paid,Michael Dougherty,2024-05-09,0,North,+1-425-572-7138x61020,melinda09@mitchell-hodges.info,382,High
+CUST00357,Mrs. Kristi Vargas,C76141C6-F9F,Credit,Home Loan,395527,255073.98,11594.27,2023-03-26,Missed,Teresa Lewis,,53,South,+1-307-038-7698x811,bking@noble.org,436,High
+CUST00358,Lisa Cox,271FC13F-399,Credit,Home Loan,340058,44215.93,1105.4,2025-01-02,Paid,Debra Evans,2023-04-26,0,South,622-539-9095x0979,christopher60@gmail.com,366,High
+CUST00359,Colleen Moore,69833AEC-680,Savings,Personal Loan,445364,52205.94,1273.32,2024-04-01,Partially Paid,Brandon Myers,2023-06-26,74,South,510-725-3056x180,iortiz@hotmail.com,467,High
+CUST00360,Jeffrey Neal,6BC9877B-80C,Savings,Personal Loan,467495,226226.31,6463.61,2023-05-05,Partially Paid,John Bray,2023-03-26,40,North,001-119-524-6407x013,robertsonsara@brown.net,524,Medium
+CUST00361,Brooke Torres,33603A97-74B,Savings,Home Loan,53980,16712.9,696.37,2024-11-12,Missed,Mr. Thomas Henderson,,8,West,920-323-6268x05334,john65@tanner.com,802,Low
+CUST00362,Nicole Jackson,80B0F913-822,Savings,Home Loan,304304,229899.02,5224.98,2023-02-06,Missed,Sandra Garner,,59,South,519-811-1977,garyford@gmail.com,825,Low
+CUST00363,Victoria Miller,6B7EAD12-1CC,Savings,Personal Loan,385686,227650.67,17511.59,2023-09-03,Paid,Nathaniel Weber,2023-01-17,0,South,814-956-3699x9841,chaneymichael@gray.com,440,High
+CUST00364,James Smith,8D7585D3-A95,Credit,Car Loan,52815,4.0,0.07,2024-10-16,Partially Paid,Miguel Kemp,2023-05-14,30,South,317-791-9734x3681,usmith@meadows.com,576,Medium
+CUST00365,David Michael,E0B486E2-410,Current,Personal Loan,111195,44767.37,2238.37,2024-08-06,Partially Paid,Daniel Escobar,2024-06-03,84,South,3573672086,benjaminwest@hotmail.com,381,High
+CUST00366,Joseph Gordon,DCE04392-411,Savings,Home Loan,492613,313392.25,6026.77,2024-10-06,Missed,Chloe White,,19,West,(401)875-0525,victoria32@gmail.com,553,Medium
+CUST00367,Adam Ray,33ED767E-541,Current,Car Loan,182676,98335.07,6145.94,2024-07-09,Missed,Robert Thompson,,88,East,(248)214-9104x1143,patricia42@yahoo.com,700,Medium
+CUST00368,Scott Smith PhD,0FA3155D-315,Credit,Car Loan,485478,6802.85,272.11,2023-06-17,Missed,Lisa Olson,,19,West,+1-193-124-4258,kcaldwell@burns-perry.com,622,Medium
+CUST00369,Jamie Silva,B8A0DBC8-4A0,Credit,Personal Loan,99764,66613.83,1850.38,2023-07-16,Paid,Linda Moore,2023-01-12,0,East,(063)421-8676x365,kclark@black-mcguire.com,679,Medium
+CUST00370,Thomas Stephens,AFFD9064-7D1,Savings,Home Loan,407812,118930.65,2585.45,2024-01-01,Missed,Paul Lewis,,60,East,549-444-7394x2836,marksanchez@hotmail.com,537,Medium
+CUST00371,Richard Hansen,12AF5B5F-F7B,Current,Home Loan,169789,39065.24,2297.96,2023-05-25,Missed,Mckenzie Dixon,,11,East,001-598-088-1501,frank09@gmail.com,590,Medium
+CUST00372,James Mckenzie,818F9137-8B9,Savings,Home Loan,228491,168212.46,3115.05,2023-04-08,Missed,James Watkins,,54,North,156.098.7153,samuel70@frey.net,674,Medium
+CUST00373,Daniel Palmer,96827CEC-45D,Savings,Car Loan,484059,33866.83,2419.06,2023-12-12,Missed,Margaret Nguyen,,74,West,859.656.2957,melissa49@roy.com,469,High
+CUST00374,Linda Adkins,3CAB4CEA-7E8,Credit,Personal Loan,269715,261407.65,9681.76,2024-04-04,Paid,Gina Martin,2023-02-03,0,South,001-196-301-0646x320,fclarke@black.com,763,Low
+CUST00375,Kevin Alvarez,B792C967-7AF,Credit,Personal Loan,45165,16491.95,279.52,2023-12-20,Missed,Mr. Jordan Rivera,,66,West,(270)585-2501,campbellrenee@mcknight.biz,364,High
+CUST00376,Amber Espinoza,FEA233DA-292,Savings,Car Loan,468817,296116.21,14805.81,2024-03-10,Paid,Martin Miller,2024-02-14,0,East,+1-548-597-5957x210,rsalinas@barnes.com,767,Low
+CUST00377,Logan Johnson,E6436C62-381,Credit,Personal Loan,479727,64689.66,1096.43,2023-02-25,Missed,Melissa Compton,,51,East,460.192.7462,robert22@williams.info,773,Low
+CUST00378,Trevor Lowe,8F84EB7B-34C,Savings,Home Loan,352003,212162.4,6240.07,2023-08-03,Missed,Tracey Smith,,79,South,001-158-004-1664x9083,thomas14@montgomery.com,762,Low
+CUST00379,Brandon Rosario,734E9685-553,Savings,Personal Loan,449491,248849.03,5294.66,2023-12-31,Partially Paid,Marisa Shaw,2023-12-15,40,East,6977259294,alexander29@yahoo.com,705,Low
+CUST00380,Melanie Perez,80C7B7D3-867,Current,Personal Loan,296251,148743.21,3627.88,2023-11-02,Paid,Alexis Hodges,2023-01-18,0,West,9960970970,tracyjones@davis.com,465,High
+CUST00381,Anna Mccoy,F9908469-B6E,Savings,Home Loan,228784,124860.98,4162.03,2024-06-02,Partially Paid,Scott Smith,2023-02-14,87,North,2090686457,kathykelley@garcia.com,606,Medium
+CUST00382,William Weaver,4F0F1929-879,Credit,Personal Loan,9992,2910.46,207.89,2024-04-10,Partially Paid,Joel Hughes,2023-01-17,40,North,274-589-3582x744,jillgood@jordan-cochran.com,651,Medium
+CUST00383,Robert Carlson,09BDA14F-B5E,Current,Home Loan,139488,17832.76,524.49,2023-04-08,Partially Paid,Michelle White,2023-02-01,62,East,001-053-506-7003,vstevens@gmail.com,670,Medium
+CUST00384,Briana Brooks,492684C2-C45,Savings,Car Loan,300524,259417.43,12970.87,2023-03-13,Missed,Virginia Cole,,35,North,+1-620-397-4807x69494,kaguilar@levine-mills.com,450,High
+CUST00385,Cory Campbell,873B72FF-940,Credit,Personal Loan,117937,113427.55,2062.32,2024-07-13,Missed,Jon Turner,,37,North,(364)503-8003,carrlisa@johnson.com,707,Low
+CUST00386,John Cooper,8EF5AEF7-1E9,Credit,Home Loan,269127,232419.77,7747.33,2024-07-05,Partially Paid,Steve Webster,2023-10-27,43,West,1431744113,marciaheath@gmail.com,671,Medium
+CUST00387,Brian Boyd,169EFEEC-C85,Credit,Home Loan,199698,18441.51,737.66,2023-08-23,Partially Paid,James Davis,2023-04-12,82,South,087-375-7632x553,hullwhitney@yahoo.com,432,High
+CUST00388,Kelly Ware,11F6AAEB-F03,Savings,Car Loan,498077,52002.42,1405.47,2024-07-06,Missed,Stacy Lewis,,82,West,191.995.7407,lisa06@washington.com,421,High
+CUST00389,Kathryn Gray,FBD16E0E-555,Savings,Car Loan,497731,72054.63,1637.61,2023-09-01,Paid,Kyle Simon,2023-07-19,0,South,(841)748-9802,susan17@yahoo.com,322,High
+CUST00390,Sarah Willis,ACA6FC41-016,Credit,Car Loan,285116,158610.56,3050.2,2023-08-23,Partially Paid,Robert Schneider,2023-03-07,18,East,001-647-075-5845x61321,garzalydia@gmail.com,794,Low
+CUST00391,Lindsey Taylor,3547B95F-D36,Credit,Car Loan,495063,114613.46,4093.34,2023-10-05,Missed,Valerie Holmes,,64,South,988.119.9354x663,joshuaharrington@marshall.com,724,Low
+CUST00392,Mary White,D19D05DF-ED9,Savings,Car Loan,499362,203384.31,8135.37,2024-12-04,Missed,Christina Gamble,,51,South,142.990.2456,bjarvis@yahoo.com,693,Medium
+CUST00393,Hannah Soto DDS,CB554674-5E3,Savings,Home Loan,354660,9068.39,348.78,2024-06-15,Missed,Sara Wilcox,,89,West,+1-118-094-3346x775,james70@yahoo.com,606,Medium
+CUST00394,Cathy Thompson,658E5688-76E,Savings,Personal Loan,264215,244506.62,5556.97,2023-12-19,Paid,Gabriela Flynn,2023-10-22,0,South,001-411-718-8190x636,gortiz@hotmail.com,723,Low
+CUST00395,Lori Murphy,2E1009A8-392,Savings,Home Loan,416154,412625.12,9169.45,2023-07-03,Missed,Jessica Ferguson,,20,West,+1-540-106-4520x5653,michael57@gmail.com,558,Medium
+CUST00396,Kayla Jackson,AE00EF5B-31E,Credit,Home Loan,375967,150460.42,3669.77,2023-08-04,Partially Paid,Robert Suarez,2023-02-23,64,East,8479816895,oray@gmail.com,850,Low
+CUST00397,Kathy Wallace,FB043D06-C83,Current,Personal Loan,257172,134662.48,6733.12,2024-09-14,Partially Paid,Dr. Dawn Brown,2023-08-12,12,South,(610)126-3210x931,lindamoreno@chapman-robertson.org,469,High
+CUST00398,Christina Dudley,2A021F46-005,Current,Car Loan,196822,160543.09,6421.72,2024-01-25,Partially Paid,Lindsey Forbes,2023-06-21,2,South,451-323-4250x485,pjacobson@yahoo.com,720,Low
+CUST00399,Christina Andrews,9EB59F62-2A8,Credit,Car Loan,127195,105532.51,3517.75,2023-02-25,Paid,John Miller,2023-02-08,0,West,+1-133-149-1836x50301,dawnwarren@gmail.com,751,Low
+CUST00400,Jaime Parks,49A46A2C-7D4,Credit,Personal Loan,259441,201570.85,3359.51,2024-04-13,Partially Paid,Paul Hernandez,2023-11-03,17,East,391-645-1939x2861,michaelmorales@vargas-clay.org,464,High
+CUST00401,Carl Perez,2927AB70-E3D,Current,Home Loan,120150,87377.36,1618.1,2024-01-09,Missed,Amy Howard DVM,,15,North,267-467-2109x406,bsweeney@clark-gilbert.info,713,Low
+CUST00402,Lydia Chavez,7F5D9EF2-03B,Credit,Home Loan,411974,113223.42,7548.23,2023-12-08,Partially Paid,Kurt Compton,2023-02-26,70,South,830-331-3111x152,kburns@robertson.com,596,Medium
+CUST00403,Patrick Hernandez,F3B27FBF-973,Savings,Home Loan,140085,112332.96,2674.59,2023-06-16,Paid,Darren Parks,2023-06-08,0,North,001-381-740-5726,dominic67@gmail.com,681,Medium
+CUST00404,Tammy Short,03FC3EAB-1E0,Current,Personal Loan,118209,21270.98,354.52,2023-09-04,Partially Paid,Tyler Nielsen,2023-07-08,89,North,+1-366-627-2625,stewarttony@hotmail.com,746,Low
+CUST00405,Michael Peck,0E6281C3-E33,Savings,Home Loan,310092,168920.03,3016.43,2023-01-25,Partially Paid,Julie Rose,2023-01-16,28,West,+1-753-182-7824x93515,mariacooper@williams-hess.com,462,High
+CUST00406,Nathaniel Baird,CDB4D718-C33,Current,Personal Loan,390797,52089.55,4340.8,2023-07-09,Partially Paid,Taylor Garner,2023-06-11,62,West,(487)574-6099,jacob78@martinez-ruiz.com,653,Medium
+CUST00407,Matthew Duran,8C94B21B-DE7,Current,Car Loan,17461,3077.15,181.01,2023-09-10,Missed,Alyssa Lopez,,85,North,001-183-984-1831x03435,roger49@hotmail.com,630,Medium
+CUST00408,Alyssa Fisher,9A6371AD-50C,Credit,Car Loan,40378,18795.8,399.91,2023-02-25,Missed,Kelly Smith,,90,North,+1-607-974-5131x47557,debra77@mckinney.com,395,High
+CUST00409,James Osborne,83720F95-D84,Credit,Personal Loan,454320,50732.67,1749.4,2024-02-10,Paid,Donald Pitts,2023-10-31,0,South,+1-204-343-1166,eric68@jackson.com,846,Low
+CUST00410,Crystal Lopez,0B7FF750-F64,Current,Personal Loan,146260,78279.03,6021.46,2024-06-27,Paid,Megan Collins,2023-03-23,0,West,658-812-9723,heather50@silva.info,468,High
+CUST00411,Brittany Garcia,33A4F125-471,Savings,Car Loan,408551,66176.27,1350.54,2024-09-27,Paid,Aaron Harrell,2024-08-19,0,South,001-495-244-1929x7458,gsmith@yahoo.com,603,Medium
+CUST00412,Caitlyn Garrett,B17D246D-E35,Credit,Personal Loan,103774,22947.89,1274.88,2024-05-14,Partially Paid,Valerie Carroll,2023-11-14,21,South,2146265528,combsdouglas@hotmail.com,537,Medium
+CUST00413,Tyler Stuart,99ED2276-73D,Savings,Personal Loan,95188,10335.53,449.37,2024-02-16,Partially Paid,Linda Salas,2023-05-18,8,South,981-598-6848x87400,clewis@hotmail.com,592,Medium
+CUST00414,Andrew Jones,7524006E-CAC,Savings,Personal Loan,249859,174938.8,4998.25,2023-12-12,Partially Paid,Christine Osborn,2023-03-21,87,East,703.871.3655,vboyer@yahoo.com,346,High
+CUST00415,Matthew Henry,F22EA819-DAD,Credit,Home Loan,345546,12393.91,258.21,2024-08-29,Paid,Mark Hawkins,2023-02-27,0,West,483.160.9823,cody57@jones.com,583,Medium
+CUST00416,Elizabeth Silva,0736A9ED-4EE,Current,Personal Loan,316375,83588.93,2882.38,2024-08-30,Missed,Curtis Morrison,,74,West,+1-264-277-5552,adamsnathaniel@hotmail.com,658,Medium
+CUST00417,Thomas Gomez,F5D2B25B-714,Credit,Personal Loan,300073,260276.45,15310.38,2024-06-07,Paid,Bridget Reynolds,2024-04-04,0,South,738-026-1361x43701,hartmanmichael@gmail.com,334,High
+CUST00418,James Johnston,19FB24A1-BA1,Credit,Car Loan,445539,256.96,13.52,2024-06-02,Paid,James Miller,2023-06-21,0,South,213-986-1838,jeremy93@kent-smith.org,696,Medium
+CUST00419,Pamela Kelley DDS,9A9C4911-498,Credit,Personal Loan,134901,30459.42,1384.52,2023-07-27,Missed,Roger Mendoza,,42,West,656.336.5112,sjohnson@gmail.com,519,Medium
+CUST00420,Joseph Trevino,5EBFBB46-26B,Savings,Personal Loan,134878,93188.51,3451.43,2024-10-08,Missed,Anthony Cummings,,78,East,207-629-1532x63438,hallnancy@fernandez.com,327,High
+CUST00421,Chase Clayton,05F2DB03-AE6,Current,Home Loan,189088,58187.54,2237.98,2023-05-02,Paid,Brandy Gordon,2023-02-17,0,West,862.018.6289,oharrison@trevino-wong.com,470,High
+CUST00422,Jordan Adams,DA5D7B2D-69C,Savings,Home Loan,92650,80303.49,1433.99,2024-04-30,Partially Paid,Corey Hughes,2023-04-25,79,East,908.819.3807x4128,christinekrause@gmail.com,505,Medium
+CUST00423,Steven Buckley,DAFE230A-977,Current,Car Loan,70347,8540.0,474.44,2023-08-21,Missed,Vincent Mckenzie,,74,South,+1-663-594-3738,bakercrystal@gmail.com,429,High
+CUST00424,Daniel Tyler,EED30680-8CE,Credit,Car Loan,183011,87872.81,2143.24,2024-11-15,Missed,Evan Payne,,17,North,(497)137-2581,areyes@gmail.com,527,Medium
+CUST00425,William Scott,2C157E0E-564,Current,Car Loan,360181,74158.76,2852.26,2023-04-19,Paid,Justin Freeman,2023-04-01,0,South,083.955.4295,garrettellen@york.com,666,Medium
+CUST00426,Gary Anderson,8961DFE2-26A,Current,Personal Loan,72307,36217.71,953.1,2023-10-18,Missed,Michael Murphy,,17,East,001-447-121-8869,chart@harrison.org,635,Medium
+CUST00427,Christina Chavez,43570DAC-173,Savings,Car Loan,303286,83017.49,3459.06,2023-09-06,Partially Paid,Krystal Bowen,2023-03-07,46,East,023.044.6122,david50@rhodes.com,659,Medium
+CUST00428,Susan Lynch,F6C4B218-641,Savings,Home Loan,123640,9610.31,384.41,2024-12-24,Missed,Paul Bailey,,77,East,754.886.7515x7127,johnbranch@hayes.net,824,Low
+CUST00429,Lori Jones,F17CD3D0-9CD,Current,Car Loan,374315,14751.73,867.75,2024-11-01,Missed,Connie Gilbert,,47,South,+1-067-545-8447x92674,cunderwood@gmail.com,495,High
+CUST00430,Robert Gutierrez,06991C3F-9EF,Credit,Home Loan,265125,200837.38,7172.76,2024-03-03,Partially Paid,Angelica Kirk,2023-07-24,48,East,001-172-948-9427x6602,blackalicia@yahoo.com,362,High
+CUST00431,Nicole Ryan,E7401C5E-C9B,Savings,Car Loan,398482,58015.34,3412.67,2023-08-24,Paid,Michael Grimes,2023-04-11,0,South,(571)743-8602,greenestacie@williams-walker.com,547,Medium
+CUST00432,Rachael Koch,F5A9779E-681,Current,Car Loan,307434,20418.41,434.43,2023-02-11,Paid,Brianna Alvarado,2023-01-09,0,West,(847)187-4614x6379,carellano@yahoo.com,345,High
+CUST00433,Amanda Boyd,45E4ED18-78E,Savings,Car Loan,201045,22877.53,953.23,2024-03-08,Missed,Chloe Brown,,90,West,619-948-2490,wramos@thomas.com,389,High
+CUST00434,Kenneth Collins Jr.,38DA64B4-67E,Current,Car Loan,85341,57422.16,1083.44,2023-10-11,Partially Paid,Willie Nguyen,2023-03-24,86,South,(339)354-5437x844,malvarez@hotmail.com,528,Medium
+CUST00435,Nancy Lyons,883DA694-678,Credit,Personal Loan,165100,136767.58,5065.47,2023-12-13,Paid,Christopher Lyons,2023-05-11,0,West,601-255-5058x8096,richard44@yahoo.com,469,High
+CUST00436,Eddie Brown,BADA4C3E-024,Credit,Personal Loan,426291,299105.65,7477.64,2024-06-09,Partially Paid,Jessica Hernandez,2024-04-14,68,North,(451)662-2014x943,jenniferthompson@browning.net,639,Medium
+CUST00437,Dawn Leblanc,86AB1052-4CA,Credit,Personal Loan,71168,46040.54,1644.31,2023-03-13,Missed,Colleen Hoover,,20,North,003.220.3065x21935,heatherwise@wall.org,564,Medium
+CUST00438,Amber Smith,920C073D-26A,Savings,Home Loan,119539,5447.63,92.33,2024-12-24,Partially Paid,Jeremy Farrell,2024-02-18,6,East,041.476.7704x843,inguyen@gmail.com,643,Medium
+CUST00439,Jason Davis,63701CA9-788,Current,Personal Loan,461317,158557.14,9909.82,2024-11-04,Missed,Ray Reyes,,25,South,(049)387-3313,annevans@fletcher.com,678,Medium
+CUST00440,Taylor Acevedo,EAD14A3C-F82,Credit,Personal Loan,115833,41850.06,930.0,2024-12-17,Partially Paid,Christopher Carr,2024-05-28,15,West,+1-458-395-2931x145,hullroberta@gmail.com,643,Medium
+CUST00441,Linda Hoffman,1AE64131-A54,Current,Home Loan,348875,289862.14,10735.63,2024-06-11,Missed,Dr. Morgan Valencia,,34,South,001-577-710-9785x11870,madisonmooney@hotmail.com,735,Low
+CUST00442,Bobby Evans,D664D0BE-1C7,Savings,Car Loan,478157,444025.51,13059.57,2023-06-16,Partially Paid,Steven Pineda,2023-05-30,90,East,+1-529-324-2731x985,michaelmccullough@gmail.com,829,Low
+CUST00443,Elizabeth White,8B0D0BCB-B64,Savings,Car Loan,107346,12227.59,230.71,2024-09-16,Missed,Leah Davis,,69,West,001-045-196-0677,lisa64@yahoo.com,503,Medium
+CUST00444,Sylvia Brooks,960C0C1F-847,Savings,Personal Loan,418992,329157.16,5774.69,2023-10-03,Paid,Jasmine Solomon,2023-04-11,0,North,371.295.4814x748,martinezcody@hotmail.com,365,High
+CUST00445,Theresa Reid,A68B029E-AFF,Credit,Home Loan,242038,52854.85,1036.37,2023-07-01,Partially Paid,David White,2023-02-01,0,South,(732)345-3622,reginaldmontgomery@yahoo.com,378,High
+CUST00446,Andrew Foster,35C2AD02-59C,Credit,Home Loan,238153,57143.5,1020.42,2023-12-03,Paid,Angela Griffin,2023-01-08,0,North,+1-841-793-5415x81344,epace@torres-berry.net,827,Low
+CUST00447,Carla Rivera MD,083AA09E-664,Current,Car Loan,339314,2341.32,39.02,2023-02-05,Missed,Juan Roberts,,1,East,+1-249-470-9309x7609,sarahho@hotmail.com,433,High
+CUST00448,Joshua Hernandez,1CA461E3-184,Current,Car Loan,330018,7968.94,209.71,2023-01-10,Paid,James Smith,2023-01-07,0,South,(077)240-0644,morgandavid@gmail.com,620,Medium
+CUST00449,Michael Moore,422903CD-30A,Credit,Personal Loan,18891,16961.25,326.18,2024-05-19,Partially Paid,Michael Smith,2023-05-31,40,East,1123686659,tandersen@hotmail.com,561,Medium
+CUST00450,Ashley Buck,728BA4B6-71F,Current,Personal Loan,334760,281607.46,7611.01,2023-08-11,Paid,Lisa Stephens,2023-05-01,0,North,(568)808-7748x0870,cgonzalez@yahoo.com,580,Medium
+CUST00451,Dana Blackwell,A153C86C-0A4,Savings,Home Loan,322733,25219.47,969.98,2024-02-15,Paid,Thomas Rich,2023-06-08,0,East,(779)356-1496x5512,daviscatherine@gmail.com,581,Medium
+CUST00452,David Deleon,FFE5A629-B28,Savings,Personal Loan,26979,5201.47,192.65,2023-12-08,Partially Paid,Karen Johnston,2023-09-27,70,West,(827)135-7245,steven31@vargas.com,308,High
+CUST00453,Vincent Campbell,CFCD3954-3BF,Credit,Personal Loan,215447,129381.24,6469.06,2024-12-10,Partially Paid,Ryan Fox,2023-03-02,83,West,107.542.4418,nlloyd@hudson-thompson.com,378,High
+CUST00454,Jordan Neal,02751AE3-014,Current,Personal Loan,201659,53438.18,971.6,2024-02-26,Partially Paid,Tara Chambers,2023-12-24,25,West,+1-675-133-9508x4844,jessicastone@anderson.net,464,High
+CUST00455,Elizabeth Graves,5F1A23E9-5B6,Current,Car Loan,40106,24701.79,411.7,2024-07-19,Paid,Jacqueline Burns,2023-09-11,0,West,526-009-1918,tpayne@gmail.com,359,High
+CUST00456,Ronnie Daniels,FEA5E2EC-59F,Savings,Home Loan,17630,4323.68,86.47,2023-07-07,Paid,Meghan Wells,2023-04-16,0,East,(585)267-4987x374,zamorajamie@hotmail.com,609,Medium
+CUST00457,Andrew Archer,077D2A56-E87,Current,Car Loan,121594,10218.12,309.64,2023-11-04,Paid,Tristan Anderson,2023-08-23,0,North,+1-202-555-6880x25626,rebecca42@nguyen.com,565,Medium
+CUST00458,Amy Graham,3B5C2D7A-E5B,Current,Home Loan,473530,183531.48,3670.63,2024-07-29,Partially Paid,Michelle Pearson,2023-12-03,37,South,320-133-5648x581,jacksonamanda@hotmail.com,610,Medium
+CUST00459,Stephanie Benson,08DE8AA5-1AB,Current,Personal Loan,35870,21258.98,1250.53,2024-08-12,Partially Paid,Yvonne Perez,2023-07-26,16,West,+1-449-831-7359x503,perezpamela@yahoo.com,721,Low
+CUST00460,Angela Carter,624B9751-6AA,Current,Home Loan,429487,116521.32,3149.22,2023-05-11,Missed,Sheila Porter,,90,North,4079124029,mccoyrussell@thornton-mcintyre.net,538,Medium
+CUST00461,Taylor Murphy,759D3993-62C,Savings,Home Loan,348673,148435.18,6453.7,2023-09-21,Partially Paid,Amanda Bishop,2023-02-24,84,South,001-862-826-0058x577,wendy06@davis.com,766,Low
+CUST00462,Zachary Parks,205E487C-783,Savings,Personal Loan,49465,12373.68,343.71,2024-05-20,Paid,Stacey Steele,2023-05-31,0,East,518.794.2655x3721,curtis94@hotmail.com,620,Medium
+CUST00463,Andrew Clark,A8FFA3FA-1A2,Credit,Home Loan,261177,240079.26,5716.17,2023-09-08,Paid,Nicholas Nichols,2023-05-21,0,West,+1-317-760-2125,grahamricky@yahoo.com,444,High
+CUST00464,Carrie Shelton,EDB5957B-9A1,Savings,Personal Loan,240243,164675.9,2940.64,2024-02-11,Missed,Ashlee Brown,,27,West,964.963.3616x11995,kevin18@powell.com,318,High
+CUST00465,Linda Hernandez,5F0D5BA0-0E2,Credit,Personal Loan,132090,63613.31,1767.04,2024-03-21,Paid,Stefanie Pena,2023-08-05,0,South,(302)848-3339,robertphillips@weaver.net,635,Medium
+CUST00466,Lisa Walker,47D6DD42-6D0,Current,Personal Loan,436821,27182.73,578.36,2024-02-10,Paid,Amanda Patterson,2023-06-10,0,West,(225)647-9096x31057,reyesjames@orr-miller.com,722,Low
+CUST00467,Zachary Burke,73725F17-74D,Current,Car Loan,243182,65142.97,1809.53,2024-05-05,Missed,Nathan Potter,,62,South,449-580-4539,nwilliams@gmail.com,499,High
+CUST00468,Todd Jimenez,CB3CE899-994,Savings,Home Loan,482503,3785.14,80.53,2023-02-14,Paid,Martin Gutierrez,2023-01-11,0,East,+1-919-116-6576x7742,melissa72@mason-garza.info,483,High
+CUST00469,Danny Simmons,5AA08CEA-E89,Savings,Home Loan,102110,33567.96,1017.21,2024-12-21,Partially Paid,Elizabeth Willis,2024-02-03,90,West,001-520-395-3697x21816,denise25@gmail.com,655,Medium
+CUST00470,Daniel Chambers,EC5D3262-F5B,Credit,Car Loan,88655,88539.13,1736.06,2023-02-26,Missed,Anthony Hall,,2,South,734-873-8579,elizabeth14@mclaughlin-knox.org,543,Medium
+CUST00471,Brianna Smith,A426849B-914,Savings,Car Loan,146481,78720.07,2127.57,2024-12-15,Missed,David Thomas,,84,North,001-088-171-4897x5567,anne14@whitehead.biz,421,High
+CUST00472,William Hampton,7E5FDEC7-1F9,Credit,Home Loan,111437,3920.19,126.46,2023-10-15,Partially Paid,Robert Prince,2023-03-16,41,South,9735680946,robertsondaniel@hotmail.com,663,Medium
+CUST00473,Bradley King,BAE5BB6F-E98,Savings,Car Loan,129410,96945.42,2769.87,2023-08-09,Partially Paid,Martha Gomez,2023-03-04,77,South,7816696545,owhite@stone.com,704,Low
+CUST00474,Jessica Kline,5A75F389-72E,Credit,Home Loan,130915,53387.56,1007.31,2024-11-25,Partially Paid,Jeffrey Lewis,2023-07-13,81,West,001-844-906-6948,holmesbrooke@gmail.com,756,Low
+CUST00475,Becky Adams,1B8770A0-083,Current,Personal Loan,39970,16924.64,307.72,2023-07-06,Missed,Anthony Mcdonald,,42,East,7378658322,joshuatorres@gmail.com,802,Low
+CUST00476,Steven Thompson,5426DF51-DF9,Credit,Personal Loan,222429,125782.07,4658.6,2024-04-22,Paid,David Brown,2023-02-06,0,South,431.352.6860x91698,baileymichael@hotmail.com,834,Low
+CUST00477,Michael Weber,C9C6C982-63F,Credit,Personal Loan,301112,213554.3,3882.81,2024-07-24,Paid,Ashley Branch,2023-10-19,0,East,897-597-3621x5546,tylersantos@gmail.com,645,Medium
+CUST00478,Corey Briggs,41D94625-BA6,Savings,Personal Loan,314200,15081.82,793.78,2023-10-28,Missed,Victoria Marquez,,40,East,(002)694-7321x66740,brooksholly@gmail.com,316,High
+CUST00479,Victoria Ross,900E422F-67F,Credit,Home Loan,58858,16642.01,616.37,2024-07-18,Missed,Tammy Campbell,,66,North,(504)035-9199x04212,melissa39@shaw.com,396,High
+CUST00480,Julie Phillips,BFC1827F-C1B,Credit,Personal Loan,491602,159936.04,2710.78,2024-05-01,Paid,Jason Hamilton,2023-02-13,0,South,001-285-265-7489x40289,emilyjones@yahoo.com,703,Low
+CUST00481,Charles Garcia,CFE723FC-2F0,Current,Car Loan,439433,147163.49,2581.82,2023-01-23,Missed,Danielle Clark,,16,West,(696)727-4406,steven62@miller-shaw.org,622,Medium
+CUST00482,Kevin Mejia,97E8D96D-1A2,Savings,Personal Loan,195327,157660.1,5630.72,2024-11-02,Partially Paid,Spencer Scott,2023-11-26,77,South,351.342.2208,ryan07@williams-smith.info,687,Medium
+CUST00483,Michael Stevens,3E27C47D-AF1,Current,Personal Loan,210229,167523.07,4527.65,2023-06-02,Partially Paid,Catherine Wagner,2023-03-26,70,South,759-296-2226x92079,hodgesmichael@rodriguez-blevins.com,639,Medium
+CUST00484,Paul Jones,0CB87F03-C46,Credit,Home Loan,461514,106020.11,4240.8,2023-01-30,Missed,Mark Hicks,,37,West,(218)775-6405,mooresteven@hotmail.com,636,Medium
+CUST00485,Tamara Garrison,0E449121-F43,Savings,Car Loan,245615,218301.58,5457.54,2023-01-27,Missed,Cassandra Jones DVM,,90,North,134.508.9067x73597,jean57@hamilton.com,675,Medium
+CUST00486,Marie Coleman,9A4BD121-63A,Current,Car Loan,52027,34648.03,1082.75,2024-04-29,Partially Paid,Randall Hill,2023-01-12,35,North,3732385445,christine80@delacruz.com,756,Low
+CUST00487,Jeffrey Fleming,7AE5CC98-0B1,Current,Home Loan,184780,5758.77,151.55,2023-08-24,Missed,David Richards,,47,South,+1-229-314-7529,kwarren@shields-peck.com,844,Low
+CUST00488,Joseph Williams,F18EAF8B-A38,Savings,Home Loan,45856,34631.55,597.1,2024-04-25,Missed,Paul Horn,,10,North,+1-476-907-1850x17018,kkelly@gmail.com,346,High
+CUST00489,Traci Stokes,E0D20A0E-637,Savings,Personal Loan,425551,189239.76,7278.45,2023-02-07,Partially Paid,Bradley Palmer,2023-01-30,23,North,909-225-0635x41654,nicholsangela@branch.info,582,Medium
+CUST00490,Nicholas Anderson,D05AD519-6BF,Savings,Personal Loan,139734,139269.48,2486.96,2024-08-28,Missed,Kathleen Frederick,,50,South,490.480.8871x11578,ashley04@hotmail.com,592,Medium
+CUST00491,Sabrina Rivera,D253516A-64A,Savings,Car Loan,306380,140672.87,3126.06,2024-09-24,Partially Paid,Scott Moyer,2023-07-28,58,North,+1-825-786-8816,mooreandrew@martinez.net,595,Medium
+CUST00492,James Daniels,A9FEF622-52C,Credit,Personal Loan,103501,43029.84,768.39,2024-03-05,Partially Paid,Taylor Mcconnell,2023-07-15,12,West,+1-447-182-8549,ogregory@gmail.com,428,High
+CUST00493,Robert Cole,B3A5BE11-540,Savings,Home Loan,179898,131629.48,10969.12,2023-07-29,Missed,Vicki Hanson,,15,North,855-231-3286,lindajenkins@rodriguez.info,741,Low
+CUST00494,Vanessa Pugh,5F1D2CD1-31F,Credit,Personal Loan,400381,349818.61,6727.28,2024-05-29,Partially Paid,Melissa Walton,2023-02-06,63,South,560-946-4694x83685,stevenroberts@benson-white.com,364,High
+CUST00495,Angela Williams,2E9B8FF6-9BB,Current,Car Loan,67657,62103.21,1267.41,2024-09-22,Partially Paid,Robert Farley,2023-09-22,88,North,4673912636,kiarafox@reyes.info,679,Medium
+CUST00496,Daniel Smith,50BB4485-226,Current,Personal Loan,419416,16104.53,322.09,2024-05-20,Partially Paid,Michelle Cole,2023-04-19,21,West,(066)982-3357x29574,tiffany28@campbell.com,692,Medium
+CUST00497,Debra Morgan,DCC0A937-B3A,Credit,Car Loan,233736,101205.05,2735.27,2024-12-06,Missed,Kaitlyn Rice,,69,West,(380)697-1537x16109,nathaniel80@morrison-elliott.com,590,Medium
+CUST00498,Sara Rivera,12231F28-5D2,Savings,Car Loan,274630,210514.87,6191.61,2024-06-03,Paid,Katelyn Tran,2023-08-17,0,North,001-188-414-5748,delgadorandall@gmail.com,821,Low
+CUST00499,Kim Shields,0A4C16CA-D96,Current,Personal Loan,14451,7340.98,146.82,2023-12-04,Partially Paid,Nicole Taylor,2023-08-02,89,North,+1-689-058-9483,rrogers@mcguire-rodriguez.com,536,Medium
+CUST00500,Melissa Green,0633C54F-3F3,Current,Home Loan,326374,13267.28,294.83,2023-04-02,Missed,Mrs. Alexandra Carson,,52,East,+1-846-384-8914x71102,pdaniel@gmail.com,461,High
+CUST00501,Mackenzie Duke,8B182317-27E,Current,Personal Loan,489256,124629.65,2492.59,2024-08-09,Partially Paid,John Walter,2024-08-01,44,North,001-101-368-8644x2120,kingjuan@hotmail.com,649,Medium
+CUST00502,Alyssa Erickson,AE33ABD1-1CF,Current,Car Loan,290988,159939.55,4101.01,2024-04-13,Paid,Edward Evans,2024-03-12,0,West,8457921592,christopherhardy@mcconnell.org,446,High
+CUST00503,Erin Vega MD,5A8C1948-FD7,Current,Home Loan,399390,192126.0,4468.05,2023-11-29,Partially Paid,Anthony Barnes,2023-11-28,12,North,+1-832-182-4480x152,jennifer88@yahoo.com,570,Medium
+CUST00504,Melinda Miller,BB126E7C-0C7,Savings,Personal Loan,280428,46506.42,1011.01,2024-12-07,Partially Paid,Joseph Floyd,2024-05-25,28,North,001-757-712-0237x03409,halljennifer@hopkins-dixon.com,644,Medium
+CUST00505,Brandy Kim,162A6501-337,Savings,Personal Loan,261176,83495.9,2256.65,2023-05-18,Partially Paid,Hannah Pierce,2023-04-08,76,West,374.368.6892x84721,jaclynfuller@roberson.com,614,Medium
+CUST00506,Lisa Ruiz,E9A34BEC-859,Credit,Home Loan,419014,81286.35,5419.09,2023-05-03,Paid,Megan Eaton,2023-03-10,0,North,274-598-3358x794,stevenwong@smith-ibarra.org,504,Medium
+CUST00507,Heidi Castro,90A3CF93-EA6,Savings,Car Loan,480911,344177.39,12747.31,2024-10-28,Missed,Rickey Wilson,,84,North,001-768-128-0438x7847,jacksoncynthia@yahoo.com,309,High
+CUST00508,Robert Byrd,2F63BF11-F3F,Credit,Home Loan,44128,21692.72,1807.73,2023-08-27,Partially Paid,Ernest Young,2023-06-30,10,West,+1-482-927-4988,christine56@white-collins.com,624,Medium
+CUST00509,James Duran,60A42384-DC8,Credit,Car Loan,281844,239589.53,6845.42,2024-12-19,Partially Paid,Robert Mcdonald,2023-12-28,27,North,+1-682-075-7505x20434,copelandsarah@reynolds.com,708,Low
+CUST00510,Sabrina Parrish,6AFE1333-98D,Current,Personal Loan,384671,348968.8,15172.56,2023-05-20,Partially Paid,Adam Thompson,2023-04-19,53,South,4542219524,xbender@gmail.com,308,High
+CUST00511,Erika Dyer,7798DEA7-B7C,Current,Home Loan,94757,34521.38,575.36,2024-06-11,Missed,Steven Lane,,38,West,001-965-255-2871x319,mollyjimenez@gmail.com,330,High
+CUST00512,John Carson,24F1368B-BBB,Credit,Home Loan,399898,258915.89,5284.0,2024-10-29,Partially Paid,Danny Gibson,2024-05-31,3,West,(161)612-2645x0456,hmiller@marsh.com,594,Medium
+CUST00513,Ashley Ortiz,6FDED131-1B5,Savings,Home Loan,327899,185971.65,4042.86,2023-05-09,Missed,Mark Olson,,89,East,+1-897-778-1641x3351,penny45@yahoo.com,664,Medium
+CUST00514,Molly Perez,8134648D-BB4,Current,Personal Loan,340464,61436.91,2047.9,2024-03-21,Missed,Nicholas Wyatt,,70,North,815-269-4652x2406,coltongillespie@weaver.com,542,Medium
+CUST00515,Amber Gonzalez,04988D74-EFD,Savings,Home Loan,107286,37808.27,663.3,2024-12-26,Missed,Travis Wong,,51,West,+1-289-134-6571x56785,diazgina@gibbs.com,451,High
+CUST00516,Richard Howard,73D882CA-E07,Current,Personal Loan,260620,92031.49,1643.42,2023-01-27,Missed,Jennifer Guerra,,10,South,001-595-475-4847,patriciaanthony@gonzalez.com,308,High
+CUST00517,Marissa Thomas,E5E92005-B8B,Current,Home Loan,323618,79608.85,1895.45,2024-03-16,Missed,Jennifer Bond,,22,South,(536)777-9401x993,bailey35@hawkins-gonzalez.com,442,High
+CUST00518,Alexandra Zuniga,BBE15B2C-4B2,Current,Home Loan,476117,78038.05,2167.72,2024-02-06,Missed,Rhonda Webster,,21,North,001-026-744-9734x9744,amyjohnson@hotmail.com,808,Low
+CUST00519,Valerie Hodge,29E40262-B29,Savings,Home Loan,88825,12454.66,311.37,2023-12-18,Partially Paid,Jacqueline Thompson,2023-09-13,59,West,989.186.9896x18983,juliemonroe@vega.info,836,Low
+CUST00520,Joseph Coffey,B6D10501-052,Current,Personal Loan,356357,355767.93,7411.83,2024-05-24,Missed,Juan Thompson,,18,South,001-096-470-6538,danny07@rowland.com,496,High
+CUST00521,Michael Villanueva,91E9FC41-A92,Current,Home Loan,323516,177499.62,5546.86,2023-08-01,Partially Paid,Matthew Jackson,2023-04-21,31,South,+1-172-896-8527x8849,watsonthomas@yahoo.com,308,High
+CUST00522,Kimberly Sandoval,1EFC8762-F8D,Current,Home Loan,427052,262591.84,6404.68,2023-06-29,Paid,Mary Collins,2023-02-06,0,East,7164893193,sherylcarlson@fitzpatrick.com,317,High
+CUST00523,Michael Rosales,A16A863D-0E2,Credit,Personal Loan,194128,164967.5,2945.85,2024-01-03,Missed,Ashley Chapman,,35,South,937-565-3448x84935,kleinsusan@patel.com,650,Medium
+CUST00524,Brian Jones,E9510332-6F3,Credit,Personal Loan,54800,24283.14,2023.6,2023-05-16,Partially Paid,Christopher Wallace,2023-02-10,8,East,354-792-1976,qhale@griffin-carpenter.net,481,High
+CUST00525,Samantha Wood,AD7CDA16-F3E,Credit,Car Loan,344338,313621.01,5407.26,2024-03-02,Paid,Elizabeth Phillips,2023-05-05,0,North,(512)375-5696x6893,beltranyvette@yahoo.com,310,High
+CUST00526,Ronald Taylor,E2117424-527,Savings,Car Loan,142726,80753.85,3364.74,2024-02-11,Partially Paid,Erica Hernandez,2024-01-15,32,North,644-758-4659,bfoley@pena.net,803,Low
+CUST00527,Jennifer Arias,8C5FFBE7-C1A,Savings,Personal Loan,25626,17699.96,655.55,2024-06-03,Partially Paid,Stephanie Smith,2023-03-14,42,South,001-364-321-1374x56987,espinozatanya@yahoo.com,808,Low
+CUST00528,Tiffany Davis,F395E393-564,Credit,Car Loan,206985,173873.04,13374.85,2023-06-05,Paid,Heather Carter,2023-02-05,0,North,+1-542-006-5216x2363,hoffmanmitchell@vasquez.com,481,High
+CUST00529,Clayton Brooks,755E6460-667,Current,Car Loan,227701,32472.18,877.63,2024-02-27,Missed,Elizabeth Hamilton,,19,West,134.951.8077x4114,michellebaker@good-matthews.org,690,Medium
+CUST00530,Patrick Flowers,6DC90FEE-C88,Credit,Car Loan,194205,32367.68,980.84,2023-12-31,Missed,Paul Johns,,7,South,263-344-0301x216,christopher47@duarte-cannon.com,780,Low
+CUST00531,Ruth Palmer,370BD625-C98,Current,Car Loan,313932,277762.68,19840.19,2024-01-15,Partially Paid,Stephanie Murphy,2023-03-04,3,West,743-199-5667,ikirk@hotmail.com,432,High
+CUST00532,Jennifer Wagner,9992E77C-233,Current,Car Loan,377144,121744.46,2099.04,2024-09-17,Partially Paid,Larry Smith,2023-11-11,43,South,+1-515-138-7876x75535,ronnie35@rosario.com,606,Medium
+CUST00533,Tammy Martinez,7B9E606D-062,Current,Home Loan,447389,52460.09,989.81,2023-07-16,Paid,Robert Hines,2023-01-22,0,East,895-294-4046x693,nicholsonjennifer@miller-reyes.net,555,Medium
+CUST00534,Jessica Blankenship,5865E9D7-BE7,Credit,Personal Loan,102492,40921.97,1636.88,2023-12-26,Paid,Michael Dean,2023-11-01,0,South,8906646337,joseph49@gmail.com,482,High
+CUST00535,Gregory Burgess,62D3F18E-3A6,Credit,Home Loan,361035,243500.11,20291.68,2023-04-14,Missed,Paige Johnson,,74,West,001-045-260-2120x679,ubarnes@hotmail.com,473,High
+CUST00536,Melissa Hughes,712B3785-8DB,Savings,Car Loan,171567,48334.77,1726.24,2023-04-21,Paid,Jack Hill,2023-03-30,0,North,440-381-4144x59852,jenniferalexander@gmail.com,619,Medium
+CUST00537,Michael Myers,31F9A83B-8C4,Credit,Personal Loan,368429,32640.93,906.69,2023-02-01,Missed,Abigail Greer,,17,East,359-828-8860x5906,fedwards@juarez.com,579,Medium
+CUST00538,Jeffrey Harris,DB0F3106-9C2,Savings,Personal Loan,386506,68934.38,2223.69,2024-03-18,Partially Paid,Ricky Baldwin,2023-11-25,89,South,7208093690,sflores@holmes.com,843,Low
+CUST00539,Susan Mercado,6F5B4BE5-52E,Current,Car Loan,292212,172423.76,7496.69,2024-02-23,Paid,Richard Hunt,2023-08-26,0,South,(501)953-8000,nathan36@hotmail.com,648,Medium
+CUST00540,William Walker,73385C24-9DA,Savings,Car Loan,30653,10810.22,225.21,2023-01-18,Paid,Terri Myers,2023-01-11,0,West,001-148-312-5060,rpeters@gordon.biz,841,Low
+CUST00541,Samantha Harrison,7D419AE7-94E,Credit,Home Loan,319977,296992.74,10999.73,2023-01-31,Paid,William Mckay,2023-01-23,0,North,641.179.4920x1722,emily51@yahoo.com,422,High
+CUST00542,Beth Todd,6EB9A306-CFE,Credit,Car Loan,121256,94862.27,3271.11,2024-08-31,Paid,Brandon Harrington,2023-09-17,0,West,+1-109-307-8570,andrew79@hotmail.com,341,High
+CUST00543,Taylor Thompson,9E5373B9-656,Savings,Car Loan,487167,477281.66,11099.57,2024-03-17,Partially Paid,Michael Green,2023-10-20,59,West,158.221.8738x98401,kanderson@thomas.com,741,Low
+CUST00544,Peter Sawyer,E6A8E2DC-B83,Savings,Home Loan,64081,31535.29,563.13,2024-08-23,Missed,Casey Wilson,,37,North,3448494481,peter04@smith.com,739,Low
+CUST00545,Kim Gonzalez,0FBA0258-5DF,Current,Home Loan,347548,9709.8,323.66,2023-07-31,Missed,Kari Ruiz,,82,West,+1-006-570-2541x641,catherinesantos@yahoo.com,340,High
+CUST00546,Kristine Hughes,DFB7E52B-C22,Savings,Personal Loan,181464,12631.91,1052.66,2023-11-17,Missed,Jeffrey Perkins,,49,East,+1-962-792-4076x7307,fdurham@buchanan.com,784,Low
+CUST00547,Richard Olson,E6BA3650-94C,Savings,Home Loan,492256,333249.97,15869.05,2023-08-30,Missed,Victoria Christensen,,41,North,+1-989-171-4648x08615,brandon96@yahoo.com,515,Medium
+CUST00548,Teresa Burke,CF17EDE7-668,Current,Home Loan,89624,34783.46,2675.65,2024-11-10,Paid,Brent Evans,2023-02-13,0,West,069-935-1619,hannahgray@yahoo.com,560,Medium
+CUST00549,Sophia Pennington,DB561211-438,Savings,Home Loan,191948,64339.33,1109.3,2024-01-05,Paid,Monica Johnson,2023-10-27,0,North,788-151-0924,jweaver@hotmail.com,377,High
+CUST00550,Vincent Reyes,5A0B90EF-D5E,Savings,Home Loan,140122,117124.56,2296.56,2023-05-31,Paid,Jamie Peterson,2023-01-14,0,East,+1-435-955-3083,william97@may.org,585,Medium
+CUST00551,James Wallace,8354EE1F-5CD,Current,Car Loan,327186,98264.14,5171.8,2023-03-10,Partially Paid,Theresa Brown,2023-02-07,51,North,363-979-4074,crodriguez@yahoo.com,520,Medium
+CUST00552,Michael Cortez,02C0E9B8-224,Savings,Home Loan,60954,14922.48,339.15,2024-12-10,Missed,Joseph Hamilton,,16,East,+1-214-499-8845x651,alejandro83@yahoo.com,443,High
+CUST00553,Kathleen Jackson,7525AA0C-286,Credit,Car Loan,170600,7047.29,201.35,2024-09-05,Paid,Keith Baker,2024-07-12,0,North,6316585087,andrea89@carter.biz,371,High
+CUST00554,Jennifer Green,F2174D23-D46,Credit,Home Loan,417945,163645.6,3481.82,2024-12-15,Paid,Cody Butler,2024-07-05,0,South,811.770.2007,richardperez@neal.com,495,High
+CUST00555,Peter Nash,BC902DC5-A8A,Current,Home Loan,340585,322617.33,26884.78,2024-08-04,Missed,Bridget Hawkins,,18,North,1835093134,lindsay27@yahoo.com,647,Medium
+CUST00556,Jasmine Scott,DA32E0BF-DE9,Credit,Car Loan,22448,11132.12,371.07,2023-02-12,Partially Paid,Brandon Pierce,2023-01-26,26,North,(119)482-3071,feliciasanchez@gmail.com,736,Low
+CUST00557,Rachel Chavez,77363FA0-FD0,Savings,Personal Loan,325691,77655.64,1894.04,2024-07-03,Paid,William Butler,2024-03-27,0,West,172.054.5726x68046,torresthomas@yahoo.com,371,High
+CUST00558,James Haley,9C498F16-543,Savings,Home Loan,326541,205381.58,12081.27,2024-03-05,Missed,Steven King,,34,East,276.665.3714x86411,morrowcharles@gmail.com,352,High
+CUST00559,Karen Reeves,AF0690FD-F41,Credit,Personal Loan,94471,19441.11,747.74,2024-09-10,Paid,Melissa Daniel,2023-04-18,0,East,330-848-8475x42692,greerlaura@gmail.com,774,Low
+CUST00560,Sonia Sanchez,9F49A27B-251,Credit,Car Loan,63494,50937.5,2315.34,2023-07-25,Paid,Michael Martinez,2023-06-22,0,South,766-841-9272x13224,ericagutierrez@gmail.com,764,Low
+CUST00561,Barry Diaz,B04B71C8-3A9,Savings,Personal Loan,434161,158184.22,3438.79,2023-09-17,Missed,Traci Parsons,,49,South,299.771.8092x7328,johnjimenez@gmail.com,798,Low
+CUST00562,Andrew Stevens,EC9CEEA6-E4F,Savings,Home Loan,26241,909.43,45.47,2023-03-05,Paid,Tommy Anderson,2023-01-29,0,South,001-107-573-8850x76172,palmershelley@schmitt.com,375,High
+CUST00563,Mark Hull,6E92EFA0-D98,Credit,Car Loan,6594,3396.98,199.82,2023-04-12,Missed,Sarah Ward,,57,West,001-541-799-3171x5916,clarkmichael@hotmail.com,358,High
+CUST00564,Jack Brown,0BA1AB54-CA6,Credit,Car Loan,259666,90439.45,3617.58,2023-06-01,Paid,Aaron Gutierrez,2023-04-19,0,North,084.299.9379,zbryant@hernandez.com,622,Medium
+CUST00565,Kari Hale,505EA308-F98,Current,Car Loan,23934,4105.48,205.27,2024-05-04,Partially Paid,Brian Bowers,2024-02-28,75,North,735.923.6577x947,kimberly84@sullivan-martin.net,759,Low
+CUST00566,Joel Garza,682B29A5-9D4,Credit,Home Loan,291395,184309.62,5945.47,2023-02-12,Missed,Jennifer Taylor,,3,South,8682515130,glenn50@hotmail.com,464,High
+CUST00567,Catherine Schmidt,AC687876-A8E,Current,Home Loan,171142,75103.52,1706.9,2023-01-26,Missed,Alison Burton,,18,West,+1-408-236-1313x2639,melissa04@collins-tate.com,426,High
+CUST00568,Michael Torres,9474FE39-1A6,Current,Personal Loan,199966,6401.63,125.52,2024-10-21,Paid,Joanne Buckley,2023-04-11,0,East,001-564-948-3615,ywade@gmail.com,731,Low
+CUST00569,Stephanie Henry,213C0AF0-F7E,Savings,Home Loan,72758,31611.29,702.47,2024-06-06,Paid,Darlene Graham,2023-03-22,0,East,001-106-866-1106x1056,danieljacobs@morgan.info,308,High
+CUST00570,Michelle Olson,D7D84EA5-186,Credit,Car Loan,151789,105640.25,2296.53,2023-10-12,Paid,Jessica Newman,2023-06-02,0,West,001-332-553-9943x777,thomaskelly@hodges.org,622,Medium
+CUST00571,Christopher Perry,638E4FBB-71A,Credit,Personal Loan,230296,51518.47,972.05,2023-02-20,Partially Paid,Bradley Butler,2023-01-07,69,East,9822412815,carrdiane@oconnell-mann.net,770,Low
+CUST00572,Robert Davis,8A6EB8DE-0D7,Savings,Car Loan,388636,25400.26,769.7,2023-11-06,Partially Paid,Crystal Cummings,2023-03-29,3,East,(429)611-0946x492,jeffreygonzalez@stark-harvey.com,491,High
+CUST00573,Sandra Johnson,A9395F10-25E,Current,Home Loan,426024,229998.21,5609.71,2023-11-06,Paid,Amanda Randall,2023-02-23,0,North,288.878.1686,stanley96@fox.biz,438,High
+CUST00574,Amanda Lynn,159AFC03-B16,Savings,Car Loan,110525,32826.02,965.47,2024-04-19,Partially Paid,Allison Sullivan,2023-02-16,71,North,(730)129-0651x9528,aarongrimes@harris-thompson.com,418,High
+CUST00575,Corey Martin,06E8E126-E5D,Savings,Home Loan,491933,306863.82,8293.62,2024-01-20,Partially Paid,Reginald Kim,2023-07-10,50,South,(947)601-7736x83082,kathleen23@carroll.com,575,Medium
+CUST00576,Harold Russell,45FAC23E-CCF,Current,Car Loan,47969,12275.41,231.61,2024-04-07,Partially Paid,Joseph Jordan,2023-10-09,88,North,816.388.4073,christianchan@hotmail.com,630,Medium
+CUST00577,Duane Gibson,A0616BFA-12E,Savings,Home Loan,249848,26304.5,548.01,2023-04-15,Partially Paid,Amanda Myers,2023-02-07,90,South,+1-384-407-2630x08089,michelle34@hotmail.com,490,High
+CUST00578,Madison Frank,493A08F3-1D0,Credit,Home Loan,395885,254449.22,7269.98,2024-08-17,Partially Paid,Dawn Parker,2023-12-04,89,North,(906)544-5667x7043,alejandrawhite@brown.com,850,Low
+CUST00579,Michael Preston,9390208C-CF9,Savings,Home Loan,145661,39392.06,2073.27,2023-06-16,Paid,Sheila Fuller,2023-05-29,0,North,4664886006,fwolfe@cuevas.com,682,Medium
+CUST00580,Emma Hendricks,A1C6A46B-B37,Savings,Home Loan,380594,299683.62,6969.39,2023-03-15,Partially Paid,Julie Oliver,2023-01-23,40,East,(889)378-4160x749,lmiller@russo.org,746,Low
+CUST00581,Jack Daniels,F6D102D2-D09,Credit,Personal Loan,314945,13162.41,365.62,2024-02-27,Paid,Tamara Barrett,2023-01-22,0,West,0241332937,welchjuan@levine.net,670,Medium
+CUST00582,Veronica Simpson,20173E18-737,Credit,Home Loan,416013,90989.14,6499.22,2023-03-19,Partially Paid,Shari Johnson,2023-03-08,64,West,+1-492-705-7918x902,sarah26@hotmail.com,834,Low
+CUST00583,Megan Gray,CEFE038A-7BD,Current,Personal Loan,253151,162540.77,3187.07,2024-03-28,Paid,Laura Jones,2023-08-16,0,West,801.308.7676,sarathompson@reyes.info,836,Low
+CUST00584,Amanda Martinez,3A413696-F9F,Current,Home Loan,252304,217376.8,5720.44,2024-12-27,Paid,Cody Hernandez,2024-03-02,0,South,163.459.4921x847,taylorholder@yahoo.com,741,Low
+CUST00585,Jasmine Shelton,BFA6822A-1B1,Savings,Personal Loan,164394,109284.33,2101.62,2023-04-08,Missed,Bonnie Gallagher,,18,West,992-260-3098,yhayes@clark-moore.net,407,High
+CUST00586,John Lewis,4A13AD4D-AE1,Current,Personal Loan,28175,5185.53,157.14,2024-10-05,Partially Paid,Emily Morris,2024-08-01,32,South,001-043-053-9523x050,garnermichael@williams.com,331,High
+CUST00587,Stephen Morrison,14ACC28B-79A,Savings,Home Loan,445126,267394.36,11625.84,2024-12-24,Missed,Joan Little,,15,North,795-495-2877,uchurch@huff-davis.org,519,Medium
+CUST00588,Andrew Mcdaniel,3E4F2C2D-6F2,Current,Car Loan,136689,64594.95,4306.33,2023-01-06,Missed,Sheila Evans,,10,West,846.520.2024x06119,ricardobuckley@gmail.com,406,High
+CUST00589,Nancy Rubio,3DCAD569-DFE,Current,Personal Loan,24431,7205.0,327.5,2024-10-08,Paid,Julie Fernandez,2024-04-11,0,South,216-689-1358,nhall@cooper-beck.org,715,Low
+CUST00590,Michael Robinson,16439FF4-406,Current,Car Loan,88277,10616.11,225.87,2024-07-22,Missed,Rodney Hansen,,14,North,(961)778-9249x3842,amy42@guzman.info,696,Medium
+CUST00591,Veronica Obrien,5AA291BE-FB4,Current,Personal Loan,170585,39531.25,1129.46,2023-08-18,Partially Paid,Lance Farmer,2023-05-11,36,North,(077)903-8698,davidyates@reyes.org,555,Medium
+CUST00592,Steven Walker,F4B1343D-2F9,Savings,Personal Loan,65740,54907.67,1220.17,2024-07-28,Partially Paid,Sarah Brown,2023-10-06,21,North,131.907.6701x0662,sanchezsummer@cisneros-ortiz.info,335,High
+CUST00593,Cynthia Wilson,4EED70B9-C15,Savings,Car Loan,480959,18851.92,1256.79,2024-09-14,Missed,Sara Garcia,,71,West,(847)893-5590x5433,gilberterickson@brown.org,388,High
+CUST00594,Michele Higgins,6F4088FB-C4F,Credit,Personal Loan,115402,12209.5,297.79,2024-07-05,Paid,Cody Myers,2024-04-01,0,East,(273)502-1024x71555,tayloralicia@terry-davis.com,572,Medium
+CUST00595,Cheryl Fisher,DDA8527F-6F6,Savings,Car Loan,115674,53519.02,2058.42,2023-08-14,Partially Paid,Kylie Campos,2023-03-17,47,West,(089)343-8616,williejohnson@hotmail.com,561,Medium
+CUST00596,Michael Gardner,211CF924-3B7,Credit,Home Loan,118267,1031.91,22.43,2023-09-08,Missed,Joseph Davis,,5,South,8875461913,patricia63@hotmail.com,617,Medium
+CUST00597,Benjamin Ferrell,1E291D3A-EA9,Current,Personal Loan,232324,167514.58,3160.65,2024-11-29,Missed,Maurice Morgan,,66,North,(607)872-4948,djones@gmail.com,329,High
+CUST00598,Paige Charles,3EFD25FB-90D,Savings,Car Loan,243626,1974.33,40.29,2023-07-04,Partially Paid,James Cooper,2023-02-09,40,East,314-778-5268x170,veronicahamilton@gmail.com,634,Medium
+CUST00599,Donna Phillips,0AE48BCA-AFC,Current,Car Loan,468583,309440.26,6067.46,2023-08-08,Paid,Jason Burgess,2023-01-12,0,South,491.666.5640x439,jasmineparker@taylor.net,631,Medium
+CUST00600,Steven Wilson,47B31C86-B1E,Savings,Personal Loan,428591,297625.94,5131.48,2024-12-01,Paid,Natasha Hayes,2024-08-10,0,South,085-070-1701,vcunningham@gmail.com,738,Low
+CUST00601,Kelsey Thomas,5B7C7F06-14A,Savings,Car Loan,368399,22294.24,1393.39,2023-09-08,Missed,William Reeves,,25,South,8726323723,brenda37@miller.com,719,Low
+CUST00602,Robert Foster,205F4244-6F0,Savings,Personal Loan,381158,162519.45,4924.83,2023-06-07,Missed,Brandon Bruce,,89,East,(221)422-1527,johnnymunoz@yahoo.com,832,Low
+CUST00603,Patrick Mendoza,A1F9AED4-6E7,Savings,Personal Loan,165007,4693.51,97.78,2023-04-06,Paid,Kenneth Rowland,2023-01-16,0,East,869-852-0587,yatesashley@smith-green.com,508,Medium
+CUST00604,Jennifer Soto,FB307C89-3D8,Credit,Car Loan,139470,100933.71,7209.55,2024-05-30,Missed,Jonathan Bell,,64,North,151.119.8839,jonathanblack@yahoo.com,838,Low
+CUST00605,Dorothy Robinson,CDEF0087-552,Current,Car Loan,264735,239954.91,7271.36,2024-08-31,Partially Paid,Michelle Hodge,2023-11-14,53,South,(764)460-1140,fandrade@hotmail.com,599,Medium
+CUST00606,Laurie Cantu,96F2905B-646,Credit,Personal Loan,75094,19598.59,816.61,2024-01-05,Missed,Brandi Thomas,,82,East,233-921-3595x35879,egiles@thomas.com,495,High
+CUST00607,Cory Andersen,33CB83BD-1DF,Credit,Home Loan,108076,1342.46,78.97,2024-03-28,Missed,Sharon Wright,,27,South,(814)073-4370,sknight@davidson-lawson.biz,667,Medium
+CUST00608,Debra Scott,B496F1DE-9D8,Current,Car Loan,240239,51300.89,932.74,2023-08-19,Partially Paid,Larry Kelley,2023-05-31,28,South,5434825079,sharon63@hooper.com,584,Medium
+CUST00609,Courtney Miller,D49239CF-81E,Current,Car Loan,282013,187181.82,6932.66,2024-10-15,Partially Paid,Ashley Gomez,2023-11-20,32,West,755-809-0683,lisagates@west.net,535,Medium
+CUST00610,Cynthia Chapman,F3B33A70-D31,Savings,Home Loan,173862,59223.45,2115.12,2023-11-27,Paid,Tammy Walton,2023-03-03,0,West,2238649200,frank87@short-cummings.info,812,Low
+CUST00611,John Sanchez,70B5945B-1BA,Credit,Personal Loan,104040,92025.75,5413.28,2023-06-25,Paid,Sydney Martinez,2023-05-31,0,North,+1-343-389-9372x94042,hilltammy@crawford.com,563,Medium
+CUST00612,Peter Brown,6449AC31-85E,Credit,Car Loan,256364,39467.14,805.45,2023-11-15,Missed,Maria Hughes,,50,South,(141)512-8063x6445,patelclinton@hotmail.com,552,Medium
+CUST00613,David Scott,1C07C713-45F,Savings,Personal Loan,187218,57110.69,3569.42,2023-08-18,Missed,Angela May,,35,North,001-417-574-2269x611,monica81@yahoo.com,557,Medium
+CUST00614,Patrick Smith,64303B53-48F,Credit,Personal Loan,348672,192587.73,4186.69,2024-03-03,Partially Paid,Derrick Ortega,2023-04-07,3,West,+1-288-319-9878,rfrazier@gmail.com,408,High
+CUST00615,Caleb Webb,829A0794-CE8,Savings,Home Loan,354382,172017.5,5931.64,2024-01-17,Partially Paid,Cynthia Mathews,2023-03-25,7,West,266.562.7835x5803,patrick29@hotmail.com,733,Low
+CUST00616,Madison Davis,83E37821-712,Current,Car Loan,302365,87703.35,1566.13,2023-11-21,Partially Paid,Renee Nixon,2023-03-17,7,East,(555)891-6950x069,cynthiapatel@hotmail.com,495,High
+CUST00617,Juan Becker,93D6AF51-3D8,Current,Car Loan,55211,22089.27,1162.59,2024-02-11,Partially Paid,Sarah Williams,2023-02-21,57,North,221-646-3127,autumn19@fowler.org,381,High
+CUST00618,Peter Barron,32802BA6-18F,Savings,Home Loan,116612,79530.14,2149.46,2024-05-24,Missed,Samuel Evans,,26,South,+1-496-316-6807x268,wmunoz@hotmail.com,408,High
+CUST00619,Kayla Davis,B9370BFB-164,Credit,Home Loan,37443,12033.43,334.26,2023-07-02,Missed,Amanda Johnson,,5,South,+1-875-935-2381x97901,comptonelizabeth@green.com,753,Low
+CUST00620,Brandon Aguilar,2A99A1BF-022,Current,Home Loan,271928,100849.03,2401.17,2024-04-04,Missed,Anthony Johnson,,6,North,0596961060,joseph17@hotmail.com,784,Low
+CUST00621,Michael Lam,0062288E-A72,Current,Home Loan,227774,123368.96,4569.22,2023-05-21,Paid,Claudia Moody,2023-01-06,0,North,2181741765,ibarrett@farmer-hess.biz,450,High
+CUST00622,Jennifer Townsend,CC87652B-15D,Current,Home Loan,323800,275777.07,4674.19,2024-12-17,Partially Paid,Alison Reynolds,2024-08-16,24,East,+1-423-906-1948x605,jenniferbest@yahoo.com,451,High
+CUST00623,Kayla Walter,2ED53A0C-9E3,Savings,Car Loan,334615,326026.47,9589.01,2023-04-01,Partially Paid,James Ford,2023-02-10,32,North,964-162-4127,yraymond@yahoo.com,392,High
+CUST00624,Philip Fowler,0EBE0243-0CA,Savings,Car Loan,205359,52435.7,1310.89,2024-03-16,Paid,Ryan Robinson,2023-06-12,0,East,003.272.5613x5452,johngarcia@spencer.com,587,Medium
+CUST00625,Ashley Moran,6C28C966-BBF,Credit,Home Loan,259879,99409.71,2028.77,2024-03-12,Missed,Jordan Hart,,68,West,001-570-620-9732,melinda04@perry.net,591,Medium
+CUST00626,Donald Mahoney,B291808E-577,Current,Home Loan,118250,59719.41,2714.52,2024-10-16,Paid,Gerald Barnett,2023-12-19,0,West,139-642-1826x18508,harrisonjennifer@alexander-hernandez.net,375,High
+CUST00627,Gregory Macias,663E05B5-271,Current,Personal Loan,119150,51982.55,1181.42,2024-09-10,Paid,Jennifer Smith,2024-05-22,0,North,511.466.6639,mherrera@taylor.org,708,Low
+CUST00628,Sandra Baldwin,5AB5DA83-2D5,Savings,Car Loan,428092,244114.61,11624.51,2024-05-19,Missed,Timothy Wright,,25,North,+1-584-342-7019x616,amy45@garcia-stephens.info,760,Low
+CUST00629,Nichole Hernandez,AD28C40D-A3B,Credit,Car Loan,277247,32226.14,537.1,2023-07-17,Paid,Lawrence Carter,2023-03-17,0,East,353.387.8505x60862,lesliebeck@hotmail.com,622,Medium
+CUST00630,Wanda Williams,801A2FA9-CA8,Credit,Home Loan,108994,60521.85,3560.11,2023-05-10,Paid,Shane Carlson,2023-02-05,0,East,(730)039-9402,robinsonelizabeth@martinez.com,793,Low
+CUST00631,Christopher Tate,B973CBDB-344,Credit,Home Loan,462501,23753.0,659.81,2024-10-13,Missed,William Clay,,70,South,569-109-9141,billy61@yahoo.com,754,Low
+CUST00632,Tracy Jones,9EEC59B5-EF9,Savings,Car Loan,298831,51762.55,1056.38,2023-06-23,Missed,Jason Mueller,,80,North,(233)093-0954x1100,billy59@armstrong-mora.com,321,High
+CUST00633,Linda Garcia,93A9447A-DD2,Current,Personal Loan,490686,222832.4,14855.49,2023-05-11,Paid,Crystal Deleon,2023-04-10,0,East,(087)097-2811x83030,xwhite@anderson.biz,500,High
+CUST00634,Andrew Lane,CFE0A378-723,Credit,Car Loan,270054,1689.73,31.29,2024-12-16,Partially Paid,Emily Martinez,2023-10-24,82,South,001-171-954-9986x88367,bwilliams@gmail.com,312,High
+CUST00635,Erin Brewer,5B2BD465-12E,Credit,Personal Loan,488501,28993.79,1525.99,2024-03-30,Missed,Troy White,,43,North,816-861-3801x58657,cmills@burgess-vaughn.net,775,Low
+CUST00636,Louis Murphy,08B2E406-34F,Current,Personal Loan,49744,27612.64,476.08,2024-06-11,Paid,Dale Porter,2023-10-17,0,North,297.316.5531x9488,dawn47@baker.biz,519,Medium
+CUST00637,Victor Scott,B577941C-A31,Savings,Home Loan,325380,245574.0,11694.0,2024-10-03,Missed,Richard White,,77,West,205.850.3442x5991,jamesevans@jones-williams.net,426,High
+CUST00638,Christopher Hammond,661953D9-116,Savings,Home Loan,249062,87020.53,2175.51,2023-10-31,Missed,Heather Brown,,7,West,1540679105,aguilarjohn@yahoo.com,829,Low
+CUST00639,Jasmine Byrd,348F89EC-1C5,Current,Personal Loan,44785,22923.69,849.03,2024-11-24,Missed,Ashley Thompson,,79,East,659-812-2754x419,melissa03@patel.com,536,Medium
+CUST00640,Clinton Daniels,3EBA333A-D76,Credit,Car Loan,249256,183220.19,6785.93,2023-08-09,Missed,Marcus Reynolds,,34,North,358.291.1447x0403,uwilliams@gmail.com,545,Medium
+CUST00641,Anthony Hayes,B49E857C-C69,Current,Personal Loan,42383,20811.89,612.11,2023-10-01,Partially Paid,Alexis Henderson,2023-01-18,17,South,(492)344-3527,shortricky@carrillo-todd.com,673,Medium
+CUST00642,Steven Stuart,2CC40827-C19,Credit,Car Loan,493671,289873.76,12078.07,2023-08-01,Partially Paid,Lauren Sullivan,2023-03-19,4,South,001-067-458-5104x46925,oknapp@hotmail.com,486,High
+CUST00643,Theresa Carter,801E106F-143,Current,Home Loan,345759,274857.9,6703.85,2024-01-15,Partially Paid,Kristie Walker,2023-08-23,64,North,390-492-1405x85468,jreese@perry.net,625,Medium
+CUST00644,Jennifer Burch,54CC935C-823,Current,Home Loan,431349,345942.04,6289.86,2023-10-13,Paid,Jessica George,2023-03-13,0,East,(068)971-7949x39942,pamela90@hotmail.com,563,Medium
+CUST00645,Alexander Dawson,7F1AE65B-3AD,Credit,Home Loan,362137,108717.82,8362.91,2024-10-10,Missed,Michael Robinson,,23,South,197-532-5983,michaelwallace@yahoo.com,704,Low
+CUST00646,Andrea Kelly,71224B4C-F1A,Credit,Personal Loan,131030,34301.53,581.38,2023-09-08,Missed,Calvin Foster,,43,North,(025)348-3453x58472,joeschultz@hotmail.com,522,Medium
+CUST00647,Madison Gill,29E5360F-85D,Current,Home Loan,286430,273796.23,6222.64,2023-03-08,Partially Paid,Willie Brown,2023-01-09,46,West,(151)010-8267x929,frederickbuck@evans.info,597,Medium
+CUST00648,Timothy Escobar,20966260-D6D,Current,Home Loan,335769,257727.71,17181.85,2023-05-16,Partially Paid,Thomas Gallagher,2023-03-01,37,North,328-947-2539,travismichael@yahoo.com,619,Medium
+CUST00649,Rachael Macdonald,E06AD098-F6E,Savings,Car Loan,226507,126199.3,7011.07,2023-07-31,Paid,Laura Morgan,2023-01-06,0,West,(119)489-4524,ublankenship@gmail.com,392,High
+CUST00650,John Martinez,97BCE9EC-584,Savings,Car Loan,210317,163771.4,5282.95,2024-07-22,Missed,Kristen Rubio,,28,North,675-139-1170x80159,vlewis@dunn.com,518,Medium
+CUST00651,Steven Scott,E107FD00-4F9,Credit,Personal Loan,376732,175566.57,2975.7,2023-03-30,Partially Paid,Michelle Estrada,2023-01-16,77,West,161-964-0494x4729,bensonnoah@morrison-williams.com,463,High
+CUST00652,Johnny Stewart,341EBF2E-A2A,Credit,Car Loan,371685,15998.34,355.52,2023-02-11,Partially Paid,Thomas Porter,2023-01-21,38,South,001-034-427-0075,austin86@garcia.com,597,Medium
+CUST00653,Duane Jones,637A6D5D-81D,Current,Home Loan,259979,104446.25,5497.17,2024-07-06,Missed,Karen Lewis,,70,North,(645)730-1370x769,xgriffith@stevens-rivera.biz,696,Medium
+CUST00654,David Harris,396B4DE9-CA4,Credit,Home Loan,482501,13713.54,279.87,2023-06-18,Partially Paid,Carl Brewer,2023-03-22,16,East,+1-722-704-5405x27750,lynchchristopher@dixon.org,371,High
+CUST00655,Mike Powell,78FB2979-08A,Savings,Personal Loan,444816,32932.11,748.46,2023-06-02,Partially Paid,Danielle White,2023-01-17,59,West,(146)497-3092x121,christopher27@johnson.com,495,High
+CUST00656,Dale Beasley,39AD70B9-03E,Current,Car Loan,282202,14989.26,1249.11,2024-09-25,Missed,Darrell Austin,,3,East,355.841.5863x02983,leejames@yahoo.com,382,High
+CUST00657,Lisa Perez,AA56339A-932,Credit,Personal Loan,109909,30379.91,1598.94,2024-09-01,Partially Paid,Lori Perez,2024-06-25,58,East,704.175.5410,marysimon@gmail.com,555,Medium
+CUST00658,Sabrina Baker,35A31297-325,Current,Personal Loan,370669,90445.37,2153.46,2024-07-18,Partially Paid,Valerie Wallace,2023-12-21,38,West,+1-042-896-1591x937,watkinsrachael@allen.com,652,Medium
+CUST00659,Tracy Smith,A0397C72-DB5,Current,Home Loan,455034,7574.4,280.53,2023-03-14,Partially Paid,Michael Nolan,2023-01-22,77,North,726-160-8320x033,antoniobrady@yahoo.com,327,High
+CUST00660,Justin Williams,52F620BE-940,Current,Car Loan,310222,52087.45,1302.19,2023-09-27,Partially Paid,Sean Reyes,2023-06-05,49,South,253-299-2707,adrian03@smith.org,807,Low
+CUST00661,Martha Day,EC1B62D4-2A5,Savings,Home Loan,453312,85764.38,1864.44,2023-12-22,Paid,Diane Brown,2023-06-17,0,West,630.100.7915x9519,wayne21@hotmail.com,369,High
+CUST00662,Elizabeth Morrison,9001A1B3-B8A,Credit,Home Loan,213298,126886.24,2950.84,2024-02-08,Paid,Sarah Hill,2023-09-30,0,East,121.402.3793,yhicks@hernandez.com,412,High
+CUST00663,Eric Murphy,A92EF450-E3C,Credit,Home Loan,361492,309748.98,6453.1,2024-11-24,Missed,Misty Mendoza,,24,East,(856)146-0982,keith18@schultz.com,786,Low
+CUST00664,Samantha Bell,EDB92D23-7D4,Savings,Personal Loan,142205,101677.74,3389.26,2023-06-16,Missed,Derrick Smith,,5,West,611.923.5155x442,jonesdavid@lamb.biz,396,High
+CUST00665,Grant Evans,24D62448-C59,Credit,Personal Loan,211396,143447.01,4946.45,2023-01-30,Partially Paid,Brandi Hinton,2023-01-14,68,South,6415930327,kevin57@moore.com,600,Medium
+CUST00666,Anne Massey,5506304C-4C3,Credit,Home Loan,117768,107614.91,2690.37,2024-07-12,Missed,Michael Brown,,54,North,(901)949-6689x288,rodney68@roberts.com,832,Low
+CUST00667,Kristin Roberts,5A974BDA-2DD,Credit,Home Loan,315798,107398.97,7159.93,2024-09-11,Paid,Amanda Cordova,2023-05-15,0,East,5809450887,michellelewis@hoover-johnson.com,500,High
+CUST00668,Nicole Johnson,27EED5E9-FCC,Current,Home Loan,289572,37507.27,2679.09,2024-02-14,Missed,Erin Brooks,,29,North,827-069-3419x43036,burgesstammie@hatfield-leach.net,358,High
+CUST00669,Zachary Myers,DCB8B048-3C4,Savings,Car Loan,429593,222455.49,4361.87,2024-08-26,Partially Paid,Roger Burns,2023-10-06,25,West,001-808-648-8129x860,qpitts@hotmail.com,705,Low
+CUST00670,Kenneth Cook,E88231A8-969,Current,Home Loan,472188,261666.19,6541.65,2024-12-19,Missed,David Lowery,,90,West,+1-296-456-0713,ygoodman@padilla.info,538,Medium
+CUST00671,Casey Ingram,DF02D498-75C,Credit,Personal Loan,464611,169216.13,9400.9,2024-03-25,Partially Paid,Jonathan Garcia,2023-11-12,79,South,810-919-7065x29804,keyadam@cruz.com,379,High
+CUST00672,Brenda Carter,F1B62932-1AF,Savings,Home Loan,381629,340415.99,7736.73,2023-08-21,Missed,Alicia Erickson,,68,South,001-866-204-3688x1668,francesbartlett@ramos.com,735,Low
+CUST00673,Bianca Allen,FA5013EB-03D,Credit,Car Loan,48945,17103.77,380.08,2024-01-18,Missed,Annette Garcia DDS,,66,North,556.406.1970x33689,myersshawn@hotmail.com,728,Low
+CUST00674,Rachel House,B6114DEE-F0A,Savings,Personal Loan,214976,106409.59,2875.93,2023-12-11,Paid,William Stevens,2023-05-15,0,East,(954)461-4505x1587,fernandezalexa@yahoo.com,359,High
+CUST00675,Eric Cooper,21DFAE5F-677,Credit,Home Loan,227346,201240.43,5160.01,2023-01-26,Missed,Adam Gardner,,85,South,021.393.3516x3105,jamesdudley@martinez.info,612,Medium
+CUST00676,Christine Bradford,EB4DDB69-159,Savings,Personal Loan,257239,81747.76,1459.78,2023-11-11,Paid,Mitchell Bryant,2023-11-09,0,East,6713625247,yeseniabennett@gmail.com,563,Medium
+CUST00677,Rachel Andrews,DE616C02-52D,Savings,Personal Loan,424919,290592.87,14529.64,2023-02-02,Partially Paid,Peter Burgess,2023-01-14,23,South,230-069-3927x22051,stevenklein@yahoo.com,543,Medium
+CUST00678,Riley Barrett,D1B1E60C-42D,Savings,Car Loan,324803,194765.72,6492.19,2023-09-20,Missed,Patrick Scott,,82,West,363.708.8590x88790,hallpenny@campos-ramirez.info,515,Medium
+CUST00679,Catherine Bautista,FD9E1E83-D8C,Savings,Personal Loan,479784,410192.53,11719.79,2024-05-07,Partially Paid,Jack Olson,2023-03-26,42,West,001-676-109-4563x32602,kristinnovak@hotmail.com,816,Low
+CUST00680,Elaine Parker,3969FED4-65B,Savings,Home Loan,434126,180366.88,3057.07,2023-08-04,Paid,Desiree Saunders,2023-06-22,0,West,(794)624-5306x87594,nfrazier@hotmail.com,391,High
+CUST00681,Melinda Woods,2D19CC16-5AF,Current,Car Loan,449254,281737.84,5315.81,2023-10-16,Paid,Veronica Harrison,2023-07-30,0,West,709-833-4403x551,brendanscott@underwood-pierce.org,417,High
+CUST00682,Ms. Jessica Rubio,72C9B8FA-586,Credit,Personal Loan,456138,390335.66,12197.99,2024-02-20,Missed,Sherry Jackson,,76,West,773.249.0643x1132,qmay@yahoo.com,469,High
+CUST00683,John Rivera,5107C3F9-C84,Credit,Car Loan,391246,200141.21,4002.82,2024-06-10,Missed,Joseph Jimenez,,87,East,(262)997-4864x8764,ndavis@robbins.com,467,High
+CUST00684,James Navarro,32993DF8-664,Savings,Personal Loan,445407,305157.43,6935.4,2024-02-11,Paid,William Taylor,2024-01-29,0,East,655.475.4297,barnesbenjamin@hotmail.com,399,High
+CUST00685,Jesse Short DVM,DBCB2B6C-217,Credit,Personal Loan,193171,146715.26,3260.34,2023-09-27,Paid,Ashley Davis,2023-02-14,0,West,(489)222-4864,juanjuarez@mitchell.com,786,Low
+CUST00686,Brandon Barron,72A05FBF-9B1,Savings,Car Loan,425784,13465.63,708.72,2023-04-02,Missed,Cindy Arnold,,49,East,001-215-134-2367x475,barbara36@hotmail.com,629,Medium
+CUST00687,Anne Castro,CCD466D6-E17,Credit,Home Loan,133587,9993.66,166.56,2024-06-29,Partially Paid,Matthew Singh,2023-03-05,50,East,741.975.8686x92249,tyler92@hotmail.com,400,High
+CUST00688,Jesse Arias,AD2606D4-2A3,Current,Personal Loan,105555,58074.45,1055.9,2024-07-16,Missed,Mark Meyer,,49,South,182.670.3001,ahopkins@may.com,347,High
+CUST00689,Kevin Johnson,E0556792-575,Savings,Personal Loan,297029,27946.34,755.31,2024-08-05,Missed,Jennifer White,,61,East,839-685-4580,bbeltran@gmail.com,731,Low
+CUST00690,Benjamin Krueger,DD1ECFCF-FCE,Credit,Car Loan,311534,30649.89,928.78,2024-01-15,Missed,Douglas Guzman,,30,South,+1-713-285-3649x586,mark60@patterson.com,736,Low
+CUST00691,Haley Henry,17C14A55-95F,Credit,Personal Loan,258133,158030.48,7901.52,2023-03-15,Paid,Kaitlin Barber,2023-03-13,0,North,(665)849-4288x281,dmcknight@gmail.com,817,Low
+CUST00692,Gary Mcdowell,A7E3FA9D-DC9,Savings,Personal Loan,148861,102899.89,3548.27,2024-01-19,Missed,Joanne Sharp,,9,East,851.715.5629x0659,jessica94@cisneros.org,454,High
+CUST00693,Susan Mann,11B6A75B-7C5,Savings,Car Loan,392560,320667.5,8222.24,2023-09-29,Partially Paid,Kristen Rodriguez,2023-05-30,69,North,785-881-0953x089,mgilmore@hotmail.com,655,Medium
+CUST00694,Jennifer Thomas,2F270229-F2D,Savings,Home Loan,336199,167621.96,5587.4,2024-05-10,Paid,Patrick Hanna,2023-11-23,0,South,936-235-3066,michelenichols@gmail.com,580,Medium
+CUST00695,Sherry Morgan,C792A3C0-3F8,Credit,Home Loan,245981,19783.02,860.13,2023-02-14,Missed,Theodore Collins,,71,North,539-110-3059x3973,fergusonjessica@robles.info,665,Medium
+CUST00696,Adam Ramirez,3DBA1456-C72,Savings,Car Loan,215404,115944.29,2760.58,2024-05-28,Missed,Robert Schwartz,,13,South,001-854-489-1081x589,garyday@yahoo.com,329,High
+CUST00697,Mr. Adam Ho III,13349824-3A2,Current,Personal Loan,251888,196581.44,3276.36,2024-12-19,Missed,Dennis Fitzpatrick,,18,North,458.249.2316x838,markmartinez@yahoo.com,791,Low
+CUST00698,Robert Simpson,ADCA4220-318,Credit,Home Loan,116761,95088.37,5282.69,2023-07-15,Paid,Sara Allen,2023-02-02,0,East,8650690841,bryan63@gmail.com,444,High
+CUST00699,Mark Stevens,E19CDEB3-B44,Credit,Home Loan,94326,53223.91,1132.42,2024-07-08,Paid,Timothy Ross,2024-05-12,0,East,(231)544-0760x647,smithtodd@jordan.com,842,Low
+CUST00700,Trevor Cameron,6FA213D4-C6E,Credit,Car Loan,299667,272251.26,17015.7,2024-04-03,Paid,Erika Jones,2023-01-23,0,South,117.795.7241x47874,walkerrebecca@hotmail.com,483,High
+CUST00701,Mark Hardin,9DB7C6D9-F48,Savings,Home Loan,430196,272478.09,6055.07,2023-01-26,Paid,David Garrison,2023-01-19,0,West,+1-236-355-3812,amartin@hotmail.com,371,High
+CUST00702,Clayton Dunlap,312D0BB4-7BA,Credit,Car Loan,66915,55387.17,1420.18,2024-01-29,Missed,Hunter Stewart,,5,North,712.708.8195,thunt@jones-mora.biz,619,Medium
+CUST00703,Ronald Shaw,148DFE5E-5F2,Current,Personal Loan,122792,95170.36,3172.35,2023-06-14,Missed,Dr. Deborah Richardson,,24,West,647.704.8873x97072,bryantmary@wood.info,605,Medium
+CUST00704,Ralph Coleman,C61A5D83-944,Savings,Personal Loan,485579,284847.34,4911.16,2024-07-17,Missed,David Salazar,,76,North,001-249-464-9729x72151,xbarr@shaw.biz,498,High
+CUST00705,Zachary Mendoza,57CBCEE9-5D0,Current,Home Loan,40993,22860.18,586.16,2023-10-23,Partially Paid,Joshua Raymond,2023-01-18,8,West,+1-928-370-0464x0649,kevin98@gmail.com,382,High
+CUST00706,Desiree Duncan,079DB801-D57,Credit,Home Loan,156650,82197.0,2739.9,2023-07-01,Partially Paid,Caroline Stephens,2023-05-23,24,East,471.865.7728x420,klynch@gmail.com,429,High
+CUST00707,Eric Hart,8C272E43-A43,Savings,Car Loan,278353,109390.34,8414.64,2023-01-19,Paid,Jared Daniels,2023-01-15,0,South,001-037-548-0448x05500,sspencer@hotmail.com,837,Low
+CUST00708,Donna Smith,0EF0CE15-687,Current,Personal Loan,267313,57037.51,1839.92,2024-03-08,Missed,Angelica Everett,,82,East,157.938.8881,destinywright@hotmail.com,353,High
+CUST00709,Paige Donaldson,159E1600-987,Savings,Home Loan,10818,851.83,17.75,2024-02-18,Paid,Mary Smith,2023-07-09,0,East,001-817-993-5581x366,graybrett@matthews.com,418,High
+CUST00710,Joseph Herrera,10AA2980-D58,Credit,Personal Loan,478899,22298.03,543.85,2023-01-19,Paid,Daniel Ruiz,2023-01-17,0,South,035.522.7389,heathergilbert@hotmail.com,656,Medium
+CUST00711,Sherri Perry,34DDB969-D44,Current,Car Loan,307905,294254.19,12793.66,2023-06-15,Missed,Julie Ortega,,60,South,(861)637-3932x501,joshuatran@barnett.com,654,Medium
+CUST00712,Emily Baker,AAC49FD2-E24,Savings,Home Loan,126141,90091.85,3753.83,2024-07-04,Partially Paid,Teresa Rivera,2024-03-24,87,West,3203556090,bfrederick@yahoo.com,346,High
+CUST00713,Adam Palmer,A9780EC5-A82,Credit,Personal Loan,308446,11739.78,195.66,2023-05-24,Paid,Christopher Mckenzie,2023-01-20,0,North,(830)701-1603,lisalopez@miller.com,723,Low
+CUST00714,Tara Walls,804F6BCC-636,Savings,Car Loan,264121,175454.58,3190.08,2024-06-02,Paid,Leon Conley,2023-02-23,0,East,(664)818-2648x39366,hayesmonica@vaughan-young.com,379,High
+CUST00715,Maria Orr,D639484D-B9B,Current,Car Loan,429588,386191.11,6775.28,2024-04-17,Missed,Mr. Chad Butler,,44,South,+1-341-906-1871x9540,odelacruz@yahoo.com,663,Medium
+CUST00716,Darius Price,46C39271-0D9,Credit,Personal Loan,214771,145454.74,4155.85,2023-01-06,Paid,Nicolas Berry,2023-01-06,0,West,4894755849,alyssa58@gmail.com,685,Medium
+CUST00717,Stephen Morris,297B224D-859,Savings,Car Loan,214444,75646.66,4202.59,2024-03-09,Paid,Katie Mitchell,2023-02-20,0,South,049-618-4330x307,tracyneal@yahoo.com,456,High
+CUST00718,Bryan Rowland,D30FB867-220,Credit,Car Loan,343627,121581.2,4052.71,2024-05-16,Partially Paid,Sierra Perez,2023-06-16,67,North,8102851781,williamsmichael@tyler.com,592,Medium
+CUST00719,Robert Robinson,8FC299D0-B68,Current,Personal Loan,363651,77228.64,1980.22,2024-12-10,Missed,Tara Davis,,25,South,+1-007-233-9863x6731,ijames@nguyen-contreras.net,325,High
+CUST00720,Heather James,17195D48-697,Savings,Car Loan,312704,77057.87,4055.68,2023-03-11,Missed,John Rodriguez,,84,East,(649)172-9419x6328,ntaylor@hotmail.com,493,High
+CUST00721,Benjamin Garner,8056116D-8A2,Credit,Car Loan,235500,108150.1,3379.69,2023-04-28,Partially Paid,Amy Baird,2023-03-16,6,East,+1-736-009-7985x983,morganblack@yahoo.com,590,Medium
+CUST00722,John Rodriguez,6B72ABE0-505,Current,Personal Loan,225176,170045.0,5001.32,2023-05-10,Paid,Jason Goodman,2023-04-26,0,East,0296214814,susan61@hotmail.com,356,High
+CUST00723,Pamela Lewis,ECEFBA1A-FDF,Current,Personal Loan,227446,74902.6,4681.41,2024-12-22,Missed,Christina Young,,24,West,217.691.3166,kevinlopez@hotmail.com,715,Low
+CUST00724,Caleb Cabrera,EA3CC261-6E7,Credit,Home Loan,311368,58026.98,1487.87,2023-10-06,Partially Paid,Mark Jones,2023-01-12,54,West,926.634.9456x9656,careylaura@yahoo.com,757,Low
+CUST00725,Jacqueline Martinez,ABEB25B7-52C,Credit,Personal Loan,14937,213.52,17.79,2024-08-20,Missed,Chelsea Hawkins DDS,,58,West,486.494.6824,allen94@meyers-hughes.com,306,High
+CUST00726,Dean Cook,405C1860-21E,Current,Home Loan,334598,154225.73,3427.24,2023-11-16,Paid,Daniel Conrad,2023-09-05,0,North,001-040-768-8537x82703,ubrown@wong-powers.info,469,High
+CUST00727,Karina James,F880A1F5-ED0,Credit,Personal Loan,459287,45297.64,3774.8,2023-09-02,Partially Paid,Marco Cummings,2023-01-27,36,West,783-773-0964x325,changthomas@smith.com,324,High
+CUST00728,Mark Klein,2EE279A5-6BA,Credit,Personal Loan,103343,4546.06,98.83,2024-04-05,Missed,Richard Osborn,,60,West,(661)576-0347,vbenton@hayes-jenkins.org,792,Low
+CUST00729,Joe Perez,023C1124-4C8,Current,Home Loan,172524,71173.98,1581.64,2024-12-29,Partially Paid,Aaron Cruz,2024-08-17,57,East,001-228-953-8652x42900,brianna07@torres.com,801,Low
+CUST00730,Mark Bean,8968994E-496,Current,Car Loan,423441,368329.94,8983.66,2023-10-10,Partially Paid,Michael Whitehead,2023-01-13,36,East,006.328.5482,gabrielclark@brown-taylor.com,480,High
+CUST00731,Tyler Dodson,444033D4-EC1,Current,Home Loan,392140,287633.35,8716.16,2024-09-27,Paid,Lori Torres,2024-01-27,0,South,001-951-218-1183,jeffreyprice@hotmail.com,829,Low
+CUST00732,Alexander Smith,E74C5498-4BD,Current,Personal Loan,164529,102155.23,1731.44,2023-04-03,Partially Paid,Christopher Barnes,2023-02-06,4,South,056-140-2215x2507,michellevilla@hotmail.com,715,Low
+CUST00733,Dr. Jared Adams,423DFC3B-39B,Savings,Home Loan,150305,132180.96,7775.35,2023-09-28,Paid,Rachel Hughes,2023-02-28,0,North,839-625-1755,jessicataylor@banks.net,371,High
+CUST00734,Danielle Gardner,A49AC6E2-B1F,Credit,Personal Loan,137358,55771.63,1186.63,2024-03-16,Partially Paid,Douglas Castillo,2023-12-05,87,South,001-055-343-0380,lynnpope@yahoo.com,755,Low
+CUST00735,Amy Martinez,AA1930BA-914,Credit,Home Loan,386744,325560.07,13022.4,2023-05-23,Missed,Rachel Golden,,85,North,(764)842-6049x945,hlang@yahoo.com,459,High
+CUST00736,Caitlyn Moore,1529D873-2FE,Credit,Car Loan,227072,147020.16,3196.09,2024-12-13,Paid,Maria Hardy,2023-02-05,0,East,076-136-6740,kelly61@holmes.info,373,High
+CUST00737,Melody Daniels,5AFC11F1-CF8,Current,Car Loan,160460,25911.72,1295.59,2024-11-14,Missed,Tiffany Reynolds,,62,North,001-317-690-8722x2433,zmorgan@yahoo.com,470,High
+CUST00738,Nichole Freeman,4A21F204-C88,Credit,Car Loan,117278,53935.61,1498.21,2024-05-09,Paid,Kelly Brown,2024-03-21,0,South,(747)516-9230x403,williamhaley@hotmail.com,583,Medium
+CUST00739,Nicole Saunders,52760CE1-7B1,Savings,Personal Loan,198854,55019.82,1222.66,2024-01-23,Partially Paid,Javier Carpenter,2023-12-31,8,East,010-087-4602,jeffrey46@flores.com,674,Medium
+CUST00740,Stephen Small,60014C15-3D1,Savings,Car Loan,71788,26014.8,440.93,2023-10-28,Missed,James Mitchell,,14,South,2511336907,keith49@simpson.net,717,Low
+CUST00741,Miss Mackenzie Sanders,A641F750-34A,Credit,Car Loan,54202,38679.38,644.66,2024-02-21,Paid,Megan Krause,2023-08-09,0,North,001-694-181-7710,dlewis@peterson.com,449,High
+CUST00742,Renee Reyes,C64BECD5-3CB,Savings,Car Loan,161727,136753.72,9768.12,2023-03-28,Paid,Alexander Roberts,2023-02-26,0,South,496.278.6107,nthomas@ramirez-king.net,828,Low
+CUST00743,Andrew Smith,9AB096C4-C32,Savings,Car Loan,83957,59372.41,1746.25,2023-12-08,Partially Paid,Kathleen Walter,2023-06-02,27,West,457-169-4024,dustin64@rivera-jones.net,792,Low
+CUST00744,Kathleen Sullivan,E9161940-C6D,Current,Personal Loan,150271,47807.08,1039.28,2023-06-03,Partially Paid,Pamela Taylor,2023-05-24,22,West,087.775.9632x0123,tstanley@luna-brooks.com,484,High
+CUST00745,Jessica Taylor,431710E4-E22,Savings,Home Loan,365534,160646.72,5737.38,2024-09-22,Missed,Kevin Whitehead,,0,West,+1-143-227-3078x10867,mark12@yahoo.com,485,High
+CUST00746,William Martin,36750D55-B53,Savings,Car Loan,218444,164606.95,3828.07,2023-05-07,Paid,Stacy Johnson,2023-03-19,0,East,(474)386-5637x5120,victoranthony@hotmail.com,466,High
+CUST00747,Sarah Lopez,1976ED05-813,Current,Personal Loan,314924,124594.94,6229.75,2024-12-20,Paid,John Lane,2024-08-18,0,South,5755465862,aalexander@gmail.com,458,High
+CUST00748,Kirk Wheeler,CCD9570B-259,Savings,Home Loan,124863,10973.32,199.51,2023-03-06,Partially Paid,Eric Garcia,2023-01-13,0,West,033-845-9639x71437,jdavis@gmail.com,789,Low
+CUST00749,Emily Melton,AA7996AD-3DB,Credit,Personal Loan,24282,18884.01,410.52,2024-11-24,Paid,Amy Richardson,2024-09-02,0,North,(561)269-4544x8396,ltaylor@hotmail.com,720,Low
+CUST00750,Jessica Coleman,0762E2D1-7F2,Current,Car Loan,130289,25734.3,643.36,2023-09-04,Missed,Ryan Gibson,,35,East,(734)392-4342,ybrennan@harris.com,483,High
+CUST00751,Stephen Hill,BC53C183-E21,Credit,Home Loan,82329,11867.53,269.72,2023-04-05,Partially Paid,John Valencia,2023-03-19,63,East,453.615.4543x19468,sgarrett@gmail.com,780,Low
+CUST00752,Ms. Mindy Burton,7F7A96BE-6F7,Credit,Car Loan,204424,129226.83,4615.24,2024-11-02,Missed,Jack Dixon,,43,South,001-053-887-6958x2318,yvonne14@hotmail.com,691,Medium
+CUST00753,Mikayla Jones,71F61EBF-B84,Credit,Car Loan,19460,9844.21,185.74,2024-09-11,Missed,Caroline Odom,,64,South,001-459-299-8560,ssmith@hotmail.com,823,Low
+CUST00754,Nicole Wright,3B4242E7-9AB,Credit,Car Loan,194708,148056.12,3218.61,2024-07-01,Paid,Regina Robinson,2024-02-08,0,South,949.823.6451,shelby23@yahoo.com,508,Medium
+CUST00755,Joseph Owens,568284C4-A6B,Savings,Home Loan,360382,245302.78,4229.36,2023-06-11,Partially Paid,James Obrien,2023-03-27,74,West,+1-425-684-5053x634,sstrickland@flores.com,740,Low
+CUST00756,Regina Miller,6A072625-249,Credit,Home Loan,419845,23129.15,492.11,2024-11-05,Partially Paid,Kimberly Davis,2023-04-25,80,East,870-988-9411,pwatts@peterson-williams.org,401,High
+CUST00757,Kelly Garcia,D2C7189A-A8E,Credit,Car Loan,162435,132851.08,5535.46,2024-04-26,Missed,Shane Vega,,80,East,4075320612,hallgregory@hansen.com,687,Medium
+CUST00758,Brian Campbell,7D96A413-E21,Current,Home Loan,446506,411918.56,13287.7,2023-11-04,Missed,Mark Evans,,58,East,364.170.0253,anthonyfernandez@smith.biz,799,Low
+CUST00759,John Garza MD,4D7E0F42-CC2,Savings,Car Loan,407340,351309.71,8364.52,2023-06-30,Paid,Stephanie Doyle,2023-04-12,0,North,001-410-959-3687x398,browntyler@bennett.com,506,Medium
+CUST00760,Krista Holloway,19392357-EDC,Savings,Car Loan,493985,364366.54,6506.55,2023-02-20,Missed,Lisa Smith,,32,West,(329)852-8289x00586,julie93@gonzalez.com,753,Low
+CUST00761,Heather Rojas,750A0D66-864,Current,Personal Loan,412720,303105.54,6888.76,2023-07-18,Partially Paid,Joseph Patel,2023-02-28,4,West,(174)741-3128x822,wilsoneric@hotmail.com,468,High
+CUST00762,George Dickson,1874B802-731,Savings,Personal Loan,11052,4722.03,236.1,2023-12-01,Partially Paid,Alex Anderson,2023-03-27,30,North,001-025-008-4837x2122,calvin20@cook.info,799,Low
+CUST00763,Neil Stewart,14D436DE-31E,Credit,Car Loan,240296,84787.34,2569.31,2023-08-09,Partially Paid,Maria Chase,2023-03-04,16,East,001-149-121-0138x43291,kellerpaul@hotmail.com,683,Medium
+CUST00764,Brandy Knight,C923A2DA-233,Current,Car Loan,467546,450651.69,11555.17,2024-05-15,Paid,Natalie Jones,2023-05-09,0,West,361.801.1965,derek36@yahoo.com,405,High
+CUST00765,Kelsey Hughes,F4D6828B-250,Savings,Car Loan,225118,114999.62,8846.12,2023-08-20,Partially Paid,Howard Velazquez,2023-03-07,16,South,722.960.7055,bennettlori@sampson.net,533,Medium
+CUST00766,Amanda Shaw,01663A0B-683,Current,Car Loan,278484,12726.8,212.11,2023-01-19,Partially Paid,Heidi Martinez,2023-01-17,75,East,947-387-6957,ppeterson@thompson.com,410,High
+CUST00767,Mark Skinner,33E4FA61-A5A,Savings,Car Loan,236905,178875.92,4065.36,2023-01-19,Partially Paid,Scott Harris,2023-01-17,53,North,001-690-141-7798x0574,duffytimothy@williams.com,630,Medium
+CUST00768,James Smith,491EBAFD-79F,Savings,Personal Loan,129731,25890.9,588.43,2023-12-12,Paid,Caitlin Carpenter,2023-10-19,0,North,(436)007-1845x840,wrightkelly@gmail.com,820,Low
+CUST00769,Daniel Dixon,1DCDEE80-54B,Current,Personal Loan,424401,39291.56,1061.93,2024-01-07,Paid,Maria Holmes,2023-04-29,0,North,001-183-030-4575x193,mhenry@nelson.org,316,High
+CUST00770,Summer Davis,023E1C6B-B20,Current,Home Loan,80949,5704.33,154.17,2024-08-10,Paid,Patricia Kramer,2023-12-23,0,South,551.268.8045,jose37@gardner.net,601,Medium
+CUST00771,Jennifer Harmon,2D8B62BD-46D,Current,Personal Loan,149561,37286.86,1129.9,2024-01-02,Paid,John Pacheco,2023-07-16,0,West,(114)064-3226x39152,phillipmorris@gmail.com,682,Medium
+CUST00772,Gary Watson,43B90732-805,Credit,Car Loan,264839,58946.08,1901.49,2023-11-06,Paid,Lauren Pace,2023-02-05,0,East,9571051659,nweber@williams-willis.info,825,Low
+CUST00773,Cathy Saunders,1B28A2AF-63C,Credit,Car Loan,411120,132393.79,6304.47,2024-09-22,Partially Paid,Jeremy Griffith,2023-11-15,29,East,654.760.3093x375,selena27@jones.com,408,High
+CUST00774,Mike Brady,81F085A7-255,Credit,Personal Loan,178362,151226.66,3979.65,2024-10-28,Paid,Brittney Austin,2024-08-04,0,West,(976)880-4424x2782,wilsonbrandon@hotmail.com,692,Medium
+CUST00775,Bailey Bennett,D1563DF0-86C,Current,Car Loan,54311,50730.01,1207.86,2023-08-01,Paid,Hailey Martinez,2023-07-18,0,West,+1-319-104-4013x8509,jdiaz@taylor.com,640,Medium
+CUST00776,William Luna,02BAB62F-255,Current,Personal Loan,222581,4870.16,202.92,2023-07-19,Partially Paid,Amanda Arnold,2023-04-14,59,North,055-912-1389x212,zmartinez@guerra.com,505,Medium
+CUST00777,John Torres,3AC70880-AF7,Credit,Personal Loan,13208,7273.4,161.63,2024-08-11,Paid,Billy Curry,2023-09-06,0,East,001-813-493-4682x52058,katie05@hotmail.com,623,Medium
+CUST00778,Andrew Valdez,49B11CD6-F5A,Credit,Car Loan,225810,212651.38,10126.26,2024-04-07,Paid,Michael Chen,2023-08-17,0,South,+1-715-046-8947x0789,kaitlynjuarez@hotmail.com,801,Low
+CUST00779,Caleb Humphrey,648B92E1-C91,Credit,Home Loan,441569,57450.52,2872.53,2024-08-07,Partially Paid,Frank Hoffman,2024-08-06,16,South,(578)758-0488,zacharymcclain@hancock.net,532,Medium
+CUST00780,Kimberly Ross,C6B879BD-C43,Credit,Personal Loan,203596,170480.75,3099.65,2024-12-11,Missed,Joann Tucker,,22,West,048-412-6588,wrightdonna@hotmail.com,833,Low
+CUST00781,Steven Brady,A2D4B68C-763,Credit,Personal Loan,249973,174722.24,8320.11,2024-10-19,Missed,Michael Fox,,42,North,(100)608-9061x4170,lopezeric@roberts.com,848,Low
+CUST00782,Scott Jackson,61EF6494-8BF,Savings,Home Loan,168605,166057.98,5535.27,2024-01-11,Missed,Amber Reyes,,5,East,001-054-041-8887,jill43@yahoo.com,834,Low
+CUST00783,Calvin Carlson,50ECDACB-870,Current,Car Loan,189430,74128.91,4633.06,2023-09-14,Missed,Pamela Paul,,81,East,242.128.0191x87378,deborahchristian@yahoo.com,436,High
+CUST00784,Craig Chung,92C8D290-890,Credit,Car Loan,63057,43324.18,817.44,2023-05-04,Missed,Dr. Jennifer Bright MD,,52,West,001-365-532-3869,tmurphy@gmail.com,547,Medium
+CUST00785,Joshua Miller,F8C76FBD-B1C,Savings,Car Loan,361965,202661.66,15589.36,2024-03-09,Partially Paid,Raymond Daniel,2023-01-15,39,North,001-881-327-3910x71487,farrelljulie@gmail.com,631,Medium
+CUST00786,David Barber,11F470B9-9C6,Credit,Car Loan,213284,85916.9,2095.53,2023-10-16,Paid,Heather Smith,2023-04-30,0,East,001-986-056-4420x6169,jeffery89@michael-sparks.com,502,Medium
+CUST00787,Paula Ryan MD,02FD31C1-A42,Savings,Home Loan,200419,74218.78,3710.94,2024-11-23,Missed,Tiffany Bean,,43,South,+1-153-652-6538x14180,wgarza@hotmail.com,503,Medium
+CUST00788,Valerie Coleman,57BEA974-270,Savings,Home Loan,85789,9008.17,360.33,2023-03-25,Partially Paid,Mr. Joseph Beltran,2023-02-03,9,West,001-284-020-2211,hconner@martinez.com,595,Medium
+CUST00789,Ian Miller,43FFCE4A-BBE,Savings,Home Loan,367472,304098.15,21721.3,2024-04-25,Partially Paid,Emily Wilkerson,2023-11-11,83,South,001-967-612-9615x0853,tdiaz@smith-jones.info,394,High
+CUST00790,Kyle Wu,5E6F2D68-D36,Savings,Personal Loan,399015,337821.16,24130.08,2023-04-17,Missed,Timothy Silva,,26,North,(933)292-1531x7021,cheryl24@yahoo.com,556,Medium
+CUST00791,Mrs. Michelle Mack MD,FDD8A9B0-CB2,Credit,Personal Loan,468391,283270.98,4969.67,2023-12-18,Missed,Tony Jenkins,,62,North,791.338.4051x52457,ali@hotmail.com,845,Low
+CUST00792,Christina Johnson,1B01576F-712,Savings,Car Loan,322484,15726.71,365.74,2023-06-24,Missed,Alyssa Stuart,,34,North,(116)033-0527x95822,elizabeth56@yahoo.com,796,Low
+CUST00793,Christopher Richardson,2D66C7FD-FC3,Credit,Car Loan,349361,305004.21,16944.68,2024-08-28,Missed,Travis Johnston,,66,North,797.718.8352,sfisher@bennett.com,560,Medium
+CUST00794,Stephen Anderson,57553D74-95A,Current,Car Loan,284743,211521.52,4067.72,2023-03-27,Missed,Jennifer Campbell,,21,North,(236)741-4492x232,angeljennings@odonnell-haynes.biz,606,Medium
+CUST00795,Lance Reed,CC410FDB-51E,Credit,Car Loan,452122,152497.32,2932.64,2023-03-18,Paid,Jennifer Stone,2023-01-16,0,West,218-897-8163x36830,barajasjennifer@boyd-harper.com,445,High
+CUST00796,Erica Matthews,2051FF25-83E,Credit,Personal Loan,255811,148871.62,8270.65,2023-12-24,Paid,Traci Larsen,2023-11-24,0,South,482.750.8477x30589,vmiller@garcia.com,845,Low
+CUST00797,Dawn Nguyen,C588A0DB-23D,Credit,Home Loan,196056,94610.27,4300.47,2024-06-20,Partially Paid,Elizabeth Larsen,2024-06-05,5,North,(174)551-1044,kevinmorgan@ray-booker.com,370,High
+CUST00798,Angela Lloyd,DF8FDE96-9FF,Savings,Car Loan,143809,47458.96,832.61,2024-12-13,Partially Paid,Angela Richard,2023-02-17,14,North,(366)891-1678x602,qstephens@porter.com,358,High
+CUST00799,Tracy Huang,D671CD4E-F92,Credit,Personal Loan,322917,295009.95,6704.77,2023-09-17,Partially Paid,Annette Haynes,2023-03-01,75,West,774.989.7533x82003,marie35@hotmail.com,548,Medium
+CUST00800,Joshua Wang,6DF4B632-ECA,Savings,Home Loan,27763,11997.29,428.47,2024-05-02,Partially Paid,Thomas Lynch,2023-08-03,89,North,4774826424,jorge13@gmail.com,590,Medium
+CUST00801,Courtney Johnson,7F409188-F1D,Credit,Personal Loan,145693,106885.79,2226.79,2024-02-26,Paid,Jacqueline Forbes,2023-12-16,0,South,964-834-6091,gregory03@gmail.com,790,Low
+CUST00802,Douglas Francis,313F791A-CFB,Current,Car Loan,76698,25941.49,894.53,2023-12-08,Partially Paid,Amy Nichols,2023-02-24,61,West,481-978-7478x64702,paulaanderson@smith-brown.com,561,Medium
+CUST00803,Mary Bonilla,5173BEA1-FE1,Current,Car Loan,128768,91307.55,1690.88,2023-11-23,Paid,Rebecca Henry,2023-10-08,0,South,001-943-775-3949x00250,jessica43@gmail.com,520,Medium
+CUST00804,Linda Ruiz,20F73072-B0F,Credit,Car Loan,480487,68685.2,1807.51,2024-06-06,Missed,Peter Bridges,,28,North,(331)040-6191,emma13@yahoo.com,378,High
+CUST00805,Amber Garcia,4ACB4247-ACD,Savings,Home Loan,27057,7751.68,455.98,2024-03-16,Partially Paid,John Martinez,2024-03-10,5,West,115.312.1311x65373,malik21@yahoo.com,329,High
+CUST00806,John Davis,11AA3E19-D39,Savings,Home Loan,239085,184533.35,15377.78,2023-02-26,Paid,Mary Miles,2023-01-06,0,South,868-019-8095,conradjoshua@smith-perry.com,437,High
+CUST00807,Bryan Krueger,939887E0-2EF,Savings,Home Loan,330618,121157.65,2088.92,2024-12-06,Missed,Andrew Spence,,37,South,+1-797-885-9499x8543,nicholascooper@hotmail.com,403,High
+CUST00808,Anna Lewis,E64A2976-C3A,Savings,Car Loan,496730,322929.74,11135.51,2023-03-13,Partially Paid,Steven Campbell,2023-02-22,32,North,519-665-1666,shieldsmarcus@gmail.com,675,Medium
+CUST00809,Rachael Anderson,BF8CADAC-C75,Credit,Home Loan,304811,180894.34,4019.87,2024-03-04,Missed,Amy Clark,,12,West,480.042.4697x4655,ivillarreal@hotmail.com,398,High
+CUST00810,Nicholas Sellers,23A41D6F-428,Savings,Home Loan,378432,101952.2,2039.04,2024-12-12,Missed,Bruce Townsend,,54,North,148-708-5846x81988,john18@smith.com,522,Medium
+CUST00811,Charles Dominguez,5F385A6E-169,Savings,Car Loan,31654,4843.41,88.06,2023-10-25,Partially Paid,Kevin Rogers,2023-05-18,38,East,010-206-3815x89897,kimberly43@summers.net,444,High
+CUST00812,Dawn Hogan,10421B1D-536,Current,Home Loan,355804,93457.18,2076.83,2023-02-24,Paid,Stephanie Porter,2023-01-16,0,West,3921444553,morrischeryl@hotmail.com,746,Low
+CUST00813,Ryan Walker,A9D2A460-6EE,Credit,Car Loan,303382,104943.79,2057.72,2023-09-30,Partially Paid,Sheila Bradford,2023-08-14,78,East,(740)819-5121x3741,schultzmaria@hotmail.com,413,High
+CUST00814,Glenda Gordon,2AF67709-20A,Savings,Home Loan,219057,41524.81,847.45,2024-11-22,Paid,John Cox,2023-03-03,0,East,(816)184-5670,tgonzalez@hernandez-long.biz,344,High
+CUST00815,Michael Harrison,976B8A58-736,Credit,Personal Loan,193990,167652.41,13971.03,2023-04-06,Partially Paid,Lance Martinez,2023-01-25,12,North,(964)100-3903x6478,patricia02@gmail.com,331,High
+CUST00816,William Hull,77116983-8AE,Current,Car Loan,159695,47881.8,2520.09,2024-07-24,Missed,Phillip Henry,,2,North,(230)187-2119x245,kimberly88@gmail.com,814,Low
+CUST00817,Jacob Hall,D8925A4A-A27,Savings,Car Loan,75708,14835.9,290.9,2024-11-05,Partially Paid,Kimberly Rodriguez,2023-07-19,73,West,015-715-8120,luis48@graham.net,642,Medium
+CUST00818,Barry Peterson,4BC90637-F66,Current,Car Loan,138830,118715.53,2422.77,2023-08-04,Missed,Jennifer Blanchard,,73,South,001-655-276-0934,diana90@walker-rodriguez.com,504,Medium
+CUST00819,Dr. Jeffrey Mcdonald,1E769B84-514,Credit,Car Loan,261684,102955.93,3431.86,2024-03-01,Paid,Heather Hudson,2024-01-26,0,South,001-755-701-4886x79479,greengregory@james.org,611,Medium
+CUST00820,Douglas Ward,B8629941-D18,Credit,Home Loan,430520,43719.47,1987.25,2023-11-27,Paid,Martin Cole,2023-01-17,0,North,783-116-8468,carrmichele@yahoo.com,406,High
+CUST00821,Katherine Sanchez DDS,3075E24B-D9F,Savings,Car Loan,249600,166010.24,6385.01,2023-10-26,Partially Paid,Hayley Castaneda,2023-03-31,23,West,045-338-6520x922,mathewmiranda@hotmail.com,674,Medium
+CUST00822,Christine Vega,207EC94E-724,Savings,Personal Loan,221821,76141.58,3460.98,2023-09-25,Partially Paid,Pamela Costa,2023-07-01,47,East,037-267-2855x00081,austin84@gmail.com,473,High
+CUST00823,Chelsea Salazar,97A64C07-7D1,Savings,Personal Loan,254368,64640.37,1175.28,2024-05-26,Paid,Eric Walters,2023-06-28,0,South,(126)210-1021,dawnedwards@beltran-baxter.com,799,Low
+CUST00824,Janet Brewer,46A7CFD3-477,Current,Car Loan,432279,258435.86,11747.08,2024-12-03,Paid,Lori Garcia,2024-01-22,0,South,216.757.8320x74245,hwilliams@sheppard-adams.net,541,Medium
+CUST00825,John Herrera,A18B55B8-B93,Credit,Car Loan,62008,59461.27,2702.78,2023-04-09,Partially Paid,Catherine Beasley,2023-03-18,85,West,116-781-8088,brenda00@gmail.com,400,High
+CUST00826,Kelly Ritter,05367805-D5E,Savings,Personal Loan,267300,178990.52,2983.18,2024-09-02,Missed,Haley Baker,,9,East,310-977-9685,davidturner@gmail.com,528,Medium
+CUST00827,Daniel Flowers,8C74EDB9-234,Credit,Personal Loan,349808,270613.12,8729.46,2024-07-27,Missed,Lisa Brown,,2,North,+1-964-886-8023x869,brownsierra@yahoo.com,577,Medium
+CUST00828,Jason Campbell,6C75A85A-D85,Savings,Personal Loan,117418,86041.97,5377.62,2024-05-10,Missed,Kenneth King,,46,East,(673)726-7836x880,iwade@dodson-bender.com,593,Medium
+CUST00829,Charles Bridges,B25DC93F-C58,Current,Car Loan,207017,15467.29,309.35,2023-03-16,Missed,Amber Bond,,44,West,530-681-7549x225,flewis@yahoo.com,568,Medium
+CUST00830,Linda Jones,A65AB495-6B4,Current,Home Loan,6278,571.3,13.6,2023-12-14,Paid,James Santiago,2023-05-25,0,North,499.962.2377x4040,lfernandez@hotmail.com,700,Medium
+CUST00831,Maria Gibson,A5CECBC5-363,Credit,Home Loan,388585,144688.62,2630.7,2023-02-06,Paid,Eric Larson,2023-01-25,0,South,(914)949-5247x128,twalker@yahoo.com,734,Low
+CUST00832,Cindy Gregory,A9AC30AC-FC4,Credit,Personal Loan,154850,123481.24,3087.03,2023-08-30,Partially Paid,Daniel Santiago,2023-05-12,42,North,(899)834-6450,foxlisa@hotmail.com,744,Low
+CUST00833,Diana James,AA5F17B0-002,Savings,Car Loan,491162,129530.59,9252.18,2023-04-20,Missed,Theresa Raymond,,30,West,001-464-103-3662x90955,qthompson@harris-soto.net,510,Medium
+CUST00834,Kendra Lopez,852C2A66-2AE,Credit,Home Loan,306985,98414.06,2460.35,2023-07-09,Paid,Dr. James Farmer,2023-03-16,0,West,691.915.5049x7821,dmitchell@yahoo.com,683,Medium
+CUST00835,Ryan Wong,B73E6BC7-A6E,Current,Personal Loan,423225,12402.91,729.58,2024-09-14,Partially Paid,Johnathan Collins,2023-03-15,82,South,1006372857,jotaylor@hotmail.com,665,Medium
+CUST00836,Kelli Holland,869436AD-EF5,Current,Home Loan,374784,233154.07,4571.65,2024-02-13,Partially Paid,Patricia Pierce,2023-07-07,45,East,541-204-7629x42454,maldonadojeffrey@hotmail.com,734,Low
+CUST00837,Jennifer Coleman,7C317EDF-643,Current,Car Loan,209803,154253.99,7712.7,2024-05-24,Partially Paid,Leslie Mcdowell,2023-03-04,58,South,590.386.4615x31481,ymay@gmail.com,373,High
+CUST00838,Timothy Sanford,EBDCC873-82D,Credit,Home Loan,162900,75131.44,4695.72,2023-04-07,Paid,Jessica Moore,2023-03-23,0,South,001-437-237-0094x221,christinacampbell@west.info,444,High
+CUST00839,Catherine Davis,A50E2B8A-674,Current,Personal Loan,194230,187516.47,7500.66,2024-10-11,Partially Paid,Beverly Price,2024-05-05,60,South,(610)724-6474,robert14@jackson.com,360,High
+CUST00840,Amy Ashley,032A4F5A-C93,Current,Car Loan,238977,152787.81,3726.53,2024-10-18,Missed,Cody Moore,,16,West,(933)176-1506,jcruz@yahoo.com,345,High
+CUST00841,Richard Reed,B140493B-214,Credit,Car Loan,460956,372346.35,9081.62,2023-06-20,Missed,Larry Bentley,,39,West,375-258-6140x93970,thomas40@hotmail.com,312,High
+CUST00842,Patricia Mueller,36720ED3-B36,Credit,Car Loan,84293,46777.51,1375.81,2024-03-01,Missed,Laura Roman,,42,East,(549)124-6318,brendaphillips@hotmail.com,711,Low
+CUST00843,Brian Mason,5A32EB56-209,Savings,Personal Loan,308188,185836.05,15486.34,2023-01-29,Paid,Crystal Mann DDS,2023-01-06,0,West,988-782-2268x8172,dwiley@gmail.com,524,Medium
+CUST00844,Gregory Rodriguez,4E20CFC1-F43,Savings,Car Loan,113541,18143.6,549.81,2023-08-30,Paid,Michele Johnson,2023-03-17,0,West,910-822-3195,april15@miller-berger.info,307,High
+CUST00845,Keith Russell,CED142DF-450,Current,Personal Loan,182953,109890.45,2616.44,2023-08-22,Missed,Amy Adams,,88,North,001-445-756-1046x05468,karen62@hotmail.com,674,Medium
+CUST00846,Ronnie Dorsey,38F130C7-4B7,Current,Home Loan,373806,195149.05,3364.64,2023-08-03,Partially Paid,Jessica Coleman,2023-02-09,26,North,+1-877-170-4246x565,susancarter@gmail.com,685,Medium
+CUST00847,Maria Johnson,CB73E9FC-112,Credit,Car Loan,154301,121869.42,6414.18,2023-09-10,Paid,Daniel Mitchell,2023-08-21,0,North,576-167-8975x34930,bthompson@johnson.net,772,Low
+CUST00848,Carol Chang,4A3D6A7F-728,Current,Home Loan,90430,75445.47,2694.48,2023-12-28,Paid,Elizabeth Jennings,2023-05-30,0,South,(284)376-5061x56528,shelby84@gmail.com,633,Medium
+CUST00849,Anita Gonzalez,A5B40734-AD8,Savings,Personal Loan,311306,93844.17,2040.09,2023-06-14,Paid,Kathleen King,2023-01-12,0,North,702.572.0309x5698,sharongomez@hotmail.com,386,High
+CUST00850,Zachary Allen,305E2C59-783,Savings,Car Loan,200703,199652.75,7394.55,2024-03-20,Paid,Sydney Hensley,2024-01-05,0,North,832-718-5955,emilycasey@andrews.biz,358,High
+CUST00851,Carlos Jacobs,99D671FB-D5A,Current,Personal Loan,293134,85130.83,2182.84,2024-05-15,Partially Paid,Beverly Garner,2023-05-29,83,West,204-918-3175x71499,priscilla25@gmail.com,818,Low
+CUST00852,Sarah Pratt,6F794FB2-B0D,Credit,Car Loan,409314,244249.06,14367.59,2024-04-25,Missed,Andrea Adams,,6,East,259-100-2942x1845,natalie83@hotmail.com,468,High
+CUST00853,Richard Patel,D6BC31A8-37B,Savings,Home Loan,218732,200619.64,3582.49,2024-08-16,Partially Paid,Jeanne Maddox,2023-02-14,21,South,001-055-142-3622x153,christina87@morales.info,415,High
+CUST00854,Connie Mitchell,FB92DF3D-833,Savings,Personal Loan,7217,4796.04,239.8,2024-11-13,Partially Paid,Melanie Smith,2024-03-10,49,North,315-252-1124,kennethlee@gmail.com,328,High
+CUST00855,Katherine Wilkins,00234E5B-A74,Current,Home Loan,11142,8876.53,174.05,2024-07-28,Missed,Jason Young,,3,West,+1-849-175-5667,jacob37@hotmail.com,320,High
+CUST00856,Willie Price,724C4A00-324,Savings,Home Loan,78522,43902.78,3377.14,2023-11-02,Missed,Robert Walton,,68,South,208-009-6013,rodriguezmark@ortiz.com,636,Medium
+CUST00857,Mrs. Margaret Crawford DDS,98FF1D8A-AB3,Credit,Personal Loan,295810,32719.56,1722.08,2023-12-23,Paid,Peggy Jackson,2023-02-14,0,South,280.283.3606x291,sward@wilson.org,455,High
+CUST00858,Kelly Davis,7EEDA561-EFB,Current,Home Loan,195560,90317.76,6021.18,2023-01-15,Missed,Karen Edwards,,84,East,+1-842-623-2013x501,rsanders@yahoo.com,521,Medium
+CUST00859,Jonathan Sullivan,B974F067-C4C,Current,Personal Loan,90098,49106.34,1403.04,2023-12-12,Missed,Ian Fisher,,78,West,915.715.8264,ngamble@yahoo.com,841,Low
+CUST00860,Natalie Baker,213A479D-8FA,Credit,Personal Loan,94798,4101.04,151.89,2023-12-20,Paid,Jill Knight,2023-04-16,0,South,904-371-8656x02882,fmorgan@short.net,624,Medium
+CUST00861,Jacob Curtis,B726026C-91B,Savings,Personal Loan,328113,301900.02,5919.61,2024-05-19,Partially Paid,Richard Tate,2023-07-31,60,North,(155)287-0971x58265,matthew28@cooper-powell.org,579,Medium
+CUST00862,Trevor Turner,9A9B24D0-3B1,Credit,Personal Loan,112840,9481.8,557.75,2024-10-29,Paid,Adam Harper,2023-10-16,0,East,5907965530,ramirezcorey@hubbard.info,611,Medium
+CUST00863,Megan Wright,9A69C033-798,Credit,Home Loan,12378,2371.91,118.6,2023-08-29,Paid,Carly Hood,2023-03-23,0,North,(757)587-4441x7663,dennis45@joseph.com,414,High
+CUST00864,Suzanne Pruitt,B3495167-F3D,Credit,Personal Loan,39394,32197.93,564.88,2024-03-30,Partially Paid,Rachel Miles,2023-03-23,60,East,001-071-479-4268,andrewarren@henderson-best.com,377,High
+CUST00865,Brenda Freeman,8324AD61-366,Credit,Home Loan,11472,10251.39,292.9,2024-07-16,Missed,Joyce Stout,,9,West,152.727.7157,mackenzie55@gmail.com,796,Low
+CUST00866,Miranda Brown,5DD16A10-AD4,Credit,Personal Loan,201774,48633.68,1314.42,2023-08-31,Missed,Amber Anderson,,14,South,9850875046,juliechandler@gmail.com,388,High
+CUST00867,Hannah Dickson,6D352080-5E4,Credit,Personal Loan,416162,105695.21,2577.93,2024-05-18,Paid,Justin Ramos,2023-11-24,0,North,783.125.7366,angela68@gmail.com,817,Low
+CUST00868,Michael Austin,64B03A01-17A,Savings,Personal Loan,253489,80263.77,3822.08,2024-02-20,Missed,Jennifer Pierce,,7,West,(987)544-7334,sanchezmichael@gmail.com,462,High
+CUST00869,Matthew Washington,0E689DF6-EC4,Current,Home Loan,5085,3537.36,59.96,2023-04-18,Paid,Daniel Smith,2023-02-08,0,East,(773)210-2429,brian49@hotmail.com,489,High
+CUST00870,Jesus Carter,13D38471-1B9,Savings,Car Loan,228346,180296.47,10605.67,2023-10-10,Paid,Bradley Holmes,2023-08-11,0,South,001-315-809-5059x81679,steven08@williams.com,596,Medium
+CUST00871,Juan Cherry,AE7E8273-61D,Current,Home Loan,212346,6470.06,124.42,2024-12-15,Partially Paid,Samantha Schneider,2024-01-26,54,West,652.416.1994x955,samanthaanderson@rogers.info,741,Low
+CUST00872,James Scott,FFB3293D-609,Current,Car Loan,191068,43903.17,3135.94,2024-10-18,Paid,Heidi Matthews,2024-08-24,0,East,001-974-928-5673x114,trodriguez@gmail.com,399,High
+CUST00873,Dr. Stephen Buchanan MD,699591C6-365,Current,Car Loan,191563,121163.63,3106.76,2024-08-10,Partially Paid,Patricia Thompson,2023-07-31,68,East,(859)171-1679x30863,jacquelinethomas@yahoo.com,692,Medium
+CUST00874,Beth Osborne,C2601F07-BB4,Credit,Car Loan,177683,75482.15,1372.4,2024-04-05,Partially Paid,Patricia Boyd,2023-04-17,85,South,395-798-5430x075,kimberly82@gmail.com,324,High
+CUST00875,Ethan Davis,65317A4C-101,Credit,Car Loan,129052,71362.63,4460.16,2023-07-31,Paid,Kevin Tran,2023-03-08,0,East,(848)628-5964,parkermarvin@keith-mills.com,659,Medium
+CUST00876,Kristin Hunt,BB9CDEA8-270,Current,Home Loan,458926,242705.34,5393.45,2024-06-19,Paid,Christopher Olson,2023-11-15,0,West,(803)528-5217x91754,smithsean@yahoo.com,721,Low
+CUST00877,James Walters,74234E9C-1FC,Savings,Personal Loan,486988,66258.67,3155.17,2024-02-27,Partially Paid,Jennifer Tate,2023-07-09,81,West,+1-289-674-9428x83944,jacksonjames@gmail.com,334,High
+CUST00878,Anna Mcpherson,64BD9845-7C0,Savings,Home Loan,14210,2986.51,114.87,2024-06-24,Missed,Kim Parker,,45,East,253-682-3076x88162,ellen06@gmail.com,693,Medium
+CUST00879,Nicholas Edwards,67D33380-8A3,Savings,Car Loan,413597,85018.81,3036.39,2023-06-06,Paid,Jamie Marshall,2023-02-28,0,East,(547)741-3160,perezalicia@anderson.com,652,Medium
+CUST00880,Kathryn Kerr,0E342802-58E,Current,Car Loan,495588,260454.38,5919.42,2023-12-09,Partially Paid,Brett Orozco,2023-06-22,60,North,3738444856,shanedavis@bautista-mccarthy.com,692,Medium
+CUST00881,Olivia Swanson,BF114614-D47,Current,Personal Loan,202940,37432.23,1134.31,2023-04-09,Paid,Lisa Webb,2023-02-07,0,South,001-132-126-4199,ykennedy@kelly.com,550,Medium
+CUST00882,Abigail White,419D1DC8-8A0,Current,Car Loan,307988,159240.93,3619.11,2023-10-25,Paid,Jason Navarro,2023-10-07,0,South,565-340-0084x7359,mmeyers@walker.net,552,Medium
+CUST00883,Michael Roberts,0E825CAF-7A4,Credit,Car Loan,76944,57589.19,959.82,2024-09-16,Partially Paid,Willie Smith,2023-01-29,11,North,6429039938,blawrence@hotmail.com,546,Medium
+CUST00884,Christina Clark,F64D4B75-8AF,Savings,Home Loan,174763,169965.47,3777.01,2024-12-03,Partially Paid,Faith Taylor,2023-11-05,60,East,+1-269-174-8290x2922,archerjennifer@bowman.com,460,High
+CUST00885,Vincent Conner,54CB3CE9-722,Current,Car Loan,412314,23121.06,1156.05,2024-12-11,Paid,Kelly Washington,2023-12-10,0,North,690.023.6947,lesliedixon@hotmail.com,558,Medium
+CUST00886,Linda Ortega,3C812DBC-E17,Savings,Home Loan,48049,37177.81,641.0,2024-06-14,Missed,Lisa Lane,,88,South,8454550352,scott39@carney-wilson.biz,602,Medium
+CUST00887,Crystal Pope,DA7A9975-3DB,Credit,Home Loan,341477,15918.96,418.92,2023-07-10,Paid,Monique Silva,2023-01-22,0,North,7347030560,royandrew@wood.com,652,Medium
+CUST00888,Kathryn Knox,C24112D9-8F6,Current,Car Loan,70939,7706.18,321.09,2023-09-16,Missed,Sarah Dunn,,45,East,+1-662-818-4569x661,ysmith@carson.com,806,Low
+CUST00889,Anne Petersen,64DB9330-B8F,Current,Personal Loan,461710,150493.07,10032.87,2024-03-26,Partially Paid,Anthony Strong,2023-09-29,42,North,+1-529-326-0676x93041,sarah21@yahoo.com,328,High
+CUST00890,Teresa Clark,280E2B8E-118,Savings,Car Loan,364821,95827.48,2395.69,2024-03-02,Paid,Aaron Cook,2023-04-21,0,North,1636548621,richardglover@gmail.com,471,High
+CUST00891,Sarah Doyle,5EB178B2-F1B,Savings,Home Loan,420095,170462.96,3874.16,2024-01-14,Paid,Caitlin Guzman,2023-09-25,0,West,142.729.6789,samantha00@weiss.com,771,Low
+CUST00892,Tiffany Owen,5A5EF086-D6E,Credit,Personal Loan,267362,204768.72,3723.07,2023-05-24,Missed,Ronald Bailey,,55,West,(867)867-5885,mirandaveronica@hendrix.com,328,High
+CUST00893,Phillip Williams,97F3C69F-B05,Current,Home Loan,391653,46612.84,913.98,2023-10-18,Missed,William Wilson,,29,West,126.301.3067x59003,mauriceberry@vaughn.net,805,Low
+CUST00894,Kaitlyn Johnson,8C32B4B0-758,Credit,Home Loan,345380,108911.56,1944.85,2023-08-27,Paid,Sarah Mann,2023-08-16,0,West,103.877.9997,websterheather@hotmail.com,338,High
+CUST00895,Daniel Tucker,5F095AD9-3D9,Credit,Personal Loan,286526,100063.1,1924.29,2023-12-25,Missed,Stacy Montgomery,,75,North,(823)082-8516x1253,myersdonald@yahoo.com,604,Medium
+CUST00896,Joseph Cross,9E2B83A5-8FD,Current,Home Loan,73006,36897.52,1085.22,2023-08-29,Paid,Renee Burch,2023-03-12,0,North,4640790972,michelle14@perry-ellis.com,343,High
+CUST00897,Tracie Lozano,9B15A93B-B34,Savings,Home Loan,437626,300493.66,7512.34,2023-03-13,Partially Paid,Ryan Rojas,2023-02-02,59,West,955.482.1686,gwendolyn98@gmail.com,491,High
+CUST00898,James Francis,1242881B-19F,Current,Home Loan,184015,30652.7,1021.76,2023-02-24,Missed,Michael Ray,,40,East,001-861-886-9444x797,davidvega@campbell-mcguire.org,428,High
+CUST00899,Tara Gamble,CA48916A-09D,Current,Car Loan,269959,103232.47,3128.26,2023-03-13,Paid,April Garner,2023-01-20,0,East,040.679.9133,johngardner@newman.com,301,High
+CUST00900,Brian Wright,F11F657D-707,Current,Car Loan,168659,151137.58,4579.93,2024-01-28,Paid,Sara Ramirez,2023-09-14,0,South,301-052-0533x4282,sarahlee@ross.com,719,Low
+CUST00901,Wayne Holland,2836B141-99B,Current,Personal Loan,6125,3245.01,77.26,2024-05-25,Partially Paid,Jason Dunlap,2023-11-12,83,North,(330)122-6652x80329,melindaortiz@yahoo.com,493,High
+CUST00902,Robert Rose,0274131D-905,Current,Personal Loan,230802,68953.48,4309.59,2023-12-21,Paid,Rodney Rivera,2023-12-17,0,West,689-429-0416,tarascott@gmail.com,849,Low
+CUST00903,Brittany Farrell,6CCD551F-A27,Savings,Personal Loan,266587,88900.78,6350.06,2023-07-04,Partially Paid,Sandra Wilson,2023-03-16,17,North,062.995.2989,littlecheryl@hotmail.com,741,Low
+CUST00904,Kimberly Nash,42599E6A-998,Savings,Car Loan,43627,12801.29,228.59,2024-03-18,Partially Paid,Daniel Fleming,2023-02-15,25,South,(649)820-2797x5231,fosterjennifer@hotmail.com,850,Low
+CUST00905,James Meyer,87D83D0B-E4F,Current,Car Loan,262315,213083.72,9264.51,2023-09-03,Missed,Caitlin Rodriguez,,7,East,642.359.0876x45241,adam11@mason.com,820,Low
+CUST00906,Derrick Palmer,2046037B-652,Current,Car Loan,220647,50776.69,906.73,2024-05-30,Partially Paid,Tara Johnson,2023-02-23,29,West,481.926.5058,uterry@weiss-kennedy.org,627,Medium
+CUST00907,Gabriel Richards,67886EA5-0EA,Credit,Personal Loan,275746,269803.22,5620.9,2023-08-29,Paid,Matthew Ayala Jr.,2023-03-19,0,East,(572)269-7527x73185,anthony53@yahoo.com,340,High
+CUST00908,Tamara Walls,4934F184-57E,Credit,Home Loan,446709,26495.95,456.83,2024-11-01,Paid,Christopher Vance,2024-09-24,0,West,811-280-8107,harrissarah@hotmail.com,375,High
+CUST00909,Joseph Briggs,0B4BA17A-74C,Savings,Car Loan,159535,139529.29,3771.06,2024-09-04,Paid,Ian Kim,2023-05-03,0,North,986.334.1761x2470,perrytodd@drake.org,434,High
+CUST00910,Beverly Parker,5ABEC263-22A,Savings,Personal Loan,335031,225129.06,5235.56,2023-10-24,Partially Paid,Teresa Fernandez,2023-07-08,77,West,555-612-9972,rossamy@yahoo.com,425,High
+CUST00911,Barbara Williams,0C6786E7-8DD,Credit,Home Loan,256928,122421.96,3060.55,2024-02-09,Missed,Jeffery George,,51,West,358.463.5820x1692,jenniferrobinson@gmail.com,647,Medium
+CUST00912,Lori Rivera,829CBFB8-44E,Credit,Car Loan,348018,286466.37,15914.8,2024-12-06,Missed,Ryan Myers,,56,East,(907)441-6262x915,qpeters@yahoo.com,664,Medium
+CUST00913,Francisco Robertson,570B50FD-0D6,Credit,Home Loan,445081,273037.41,12410.79,2024-11-29,Partially Paid,Jason Miller,2024-10-06,45,West,947-609-5272x81120,sandra90@hotmail.com,560,Medium
+CUST00914,Wanda Shepherd,7A78E01A-F3B,Credit,Car Loan,424380,24841.09,1552.57,2023-06-03,Paid,Pamela Irwin,2023-02-13,0,South,700-234-3270x92372,brendan45@clarke.net,822,Low
+CUST00915,Andrea Salas,3EB77F60-B2D,Current,Home Loan,109059,41444.22,740.08,2024-04-01,Partially Paid,Michael Hernandez,2023-06-01,87,North,002.941.9524x52777,dcox@yahoo.com,671,Medium
+CUST00916,Steven Bradshaw,58DA4150-F78,Current,Personal Loan,290116,71938.57,2997.44,2023-09-10,Partially Paid,Zachary Johnson,2023-01-17,89,North,418-572-0600,websterkrystal@myers.biz,322,High
+CUST00917,Sydney Anderson,B5A0E850-82A,Savings,Car Loan,136333,109429.79,2279.79,2023-02-11,Missed,Marcus Craig,,66,South,(255)594-3880x263,mackenzie78@russo-garcia.com,574,Medium
+CUST00918,Jennifer Robinson,8503EDBF-9A4,Current,Personal Loan,106548,37184.9,1032.91,2024-03-10,Paid,Catherine Gardner,2023-03-19,0,West,+1-752-194-1908x1048,patriciamejia@cole.com,515,Medium
+CUST00919,Shannon Morris,EB9AFD8B-077,Savings,Personal Loan,305656,289378.94,11129.96,2023-03-02,Partially Paid,Daniel Willis,2023-01-26,13,East,001-672-410-2390x8801,ddiaz@hotmail.com,739,Low
+CUST00920,Jacqueline Rowe,59D009D4-FB7,Savings,Home Loan,484534,191900.28,6617.25,2024-10-10,Missed,Regina Tate,,80,South,610.986.8144x0441,zamorarachel@hays-berry.com,840,Low
+CUST00921,Jacob Castro,C7AD40C8-26C,Credit,Personal Loan,158637,97649.27,1627.49,2024-03-05,Missed,Frank Rodriguez,,87,East,298.177.5498x708,kaitlynhicks@allen.net,794,Low
+CUST00922,Julia Garrett,D005BF5F-C5F,Credit,Personal Loan,390748,389930.82,19496.54,2024-10-22,Partially Paid,Ann Nolan,2024-07-27,77,North,(915)651-2919x1777,chase18@hotmail.com,453,High
+CUST00923,Daniel Perez,2E6D9279-427,Credit,Car Loan,58593,41356.35,2954.03,2023-11-06,Missed,Adam Brown MD,,42,South,(834)657-1288x36412,charlesross@lawrence.com,733,Low
+CUST00924,Becky Brown,08CBE730-8D2,Current,Personal Loan,474400,183978.97,4181.34,2023-10-17,Partially Paid,Amanda Robinson,2023-05-02,54,South,677.521.1209x8268,evansjonathan@yahoo.com,642,Medium
+CUST00925,Jessica Choi,F9355466-C26,Credit,Car Loan,416771,230172.34,6769.77,2023-10-19,Partially Paid,Mary Mccoy,2023-08-21,63,North,2397485472,josephrichard@hotmail.com,786,Low
+CUST00926,Adam Barton,7F1E12DB-A31,Credit,Car Loan,366106,251798.6,8682.71,2024-01-25,Paid,Paula Logan,2023-06-08,0,West,716-868-7982x5933,nthompson@burke-jones.net,840,Low
+CUST00927,Mark Davis,A3BAB525-C0A,Savings,Home Loan,136049,56612.88,1204.53,2023-08-16,Paid,Lawrence Mendoza,2023-01-24,0,West,(668)233-3375,leemaria@gmail.com,508,Medium
+CUST00928,Mrs. Elizabeth Lawson,458DBA34-407,Current,Personal Loan,227637,200365.52,8348.56,2023-11-06,Partially Paid,Casey George,2023-06-21,11,South,+1-128-514-4835,ramireznathan@gmail.com,655,Medium
+CUST00929,Fred Marks,3760B3B2-DA8,Current,Home Loan,323324,178634.59,7766.72,2024-07-04,Partially Paid,Kathryn Luna,2023-05-30,34,South,001-139-992-7834x748,adam81@hotmail.com,426,High
+CUST00930,Dan Mccarty,0FC2274A-D12,Savings,Car Loan,436645,301959.75,6290.83,2024-11-06,Missed,Leslie Lowe,,4,North,+1-785-304-2367x760,charles86@braun.org,715,Low
+CUST00931,Wendy Edwards,206103CD-28F,Savings,Car Loan,89744,72095.95,4506.0,2023-04-10,Paid,Jessica Jackson,2023-01-22,0,North,+1-574-992-1035,ashleycarter@lutz-hickman.org,740,Low
+CUST00932,Amanda Garcia,E825007E-56E,Savings,Car Loan,214490,63949.83,2205.17,2024-03-27,Missed,Evelyn Charles,,4,South,972.422.1926x7506,whiteryan@yahoo.com,645,Medium
+CUST00933,Taylor Walker,58B748C3-782,Savings,Car Loan,274888,78784.83,3030.19,2023-12-31,Missed,Jennifer Mcintosh,,84,South,784.884.4812x702,qwaller@allen.net,308,High
+CUST00934,Angela Humphrey,04526743-633,Savings,Home Loan,476698,444522.5,21167.74,2023-04-18,Missed,Henry Hill,,79,West,755.570.3646,hendersonkayla@yahoo.com,361,High
+CUST00935,Thomas Silva,E563CC85-809,Savings,Home Loan,213231,80130.28,2584.85,2024-12-05,Paid,Darius Hodge,2023-11-16,0,West,717.092.6320x3503,jefferyhall@gilmore.com,507,Medium
+CUST00936,Amanda Powell,36A958F3-379,Savings,Car Loan,79966,76793.31,4041.75,2023-07-02,Partially Paid,Kara Conrad,2023-02-23,1,South,(298)482-9611x06797,jacksonelizabeth@thompson.net,517,Medium
+CUST00937,Anita Moon,7DA7AF79-73E,Credit,Car Loan,356458,157076.15,5817.64,2024-11-25,Partially Paid,Mark Henderson,2023-04-08,89,East,852-786-3179x1504,emmacardenas@gmail.com,660,Medium
+CUST00938,Kaylee Farrell MD,83394AA7-911,Savings,Home Loan,17590,16194.91,1349.58,2023-04-24,Missed,Amber Lucas,,52,North,639-703-8501x762,qritter@gmail.com,669,Medium
+CUST00939,Phillip Valdez,BB8513C4-8E2,Current,Car Loan,126115,34483.7,689.67,2024-02-20,Missed,Jason Hernandez,,82,North,001-220-526-5901x75991,shawn70@yahoo.com,586,Medium
+CUST00940,Mrs. Laura Villegas,24639AAF-1B4,Current,Car Loan,72569,72554.46,2198.62,2023-11-04,Missed,Holly Ruiz,,65,North,+1-193-059-0476x20454,smithsandra@gmail.com,400,High
+CUST00941,Heidi Knight,C132DCDC-B2C,Credit,Car Loan,140265,41366.96,880.15,2024-12-15,Paid,Jeffrey Gaines,2023-01-26,0,East,5458322416,erhodes@gmail.com,429,High
+CUST00942,David West,15A35441-542,Credit,Home Loan,470497,20621.39,349.52,2023-12-11,Paid,Samuel Trevino,2023-01-19,0,North,9160838879,perrylisa@wilson-estrada.org,484,High
+CUST00943,Mariah Lopez,32A38E69-9CA,Credit,Home Loan,456805,155933.94,5997.46,2023-12-29,Missed,Theresa Lopez,,7,North,311-855-6313x41922,rhiggins@yahoo.com,316,High
+CUST00944,David Davis,C6A3448B-E38,Credit,Personal Loan,375982,49924.3,3328.29,2024-04-17,Missed,Lauren Douglas,,66,South,001-629-316-9632,biancacarrillo@gmail.com,549,Medium
+CUST00945,Susan King,F6027E56-9E0,Credit,Home Loan,291390,253598.87,7458.79,2024-07-16,Paid,Victoria Jenkins,2023-02-22,0,East,(182)283-5893x2185,ahenderson@hotmail.com,433,High
+CUST00946,Anthony Jensen,0D017850-886,Savings,Home Loan,133232,19996.44,908.93,2023-10-30,Paid,Kimberly Cox,2023-08-10,0,North,001-101-355-9524x18027,kstevens@hotmail.com,804,Low
+CUST00947,Denise Craig,05B171EB-249,Current,Car Loan,242842,128230.81,8014.43,2023-11-09,Paid,Jill Jackson,2023-07-25,0,West,+1-539-342-9594,marcusjackson@hotmail.com,825,Low
+CUST00948,Andrea Lucas,F6A86226-590,Credit,Car Loan,128349,38185.21,647.21,2024-08-08,Partially Paid,Richard Montgomery,2024-04-21,16,West,840-613-1784x23284,jglenn@duran-wilson.biz,339,High
+CUST00949,Amy Cruz,BFE7A1F9-D4B,Credit,Personal Loan,260392,36887.19,1536.97,2023-09-16,Partially Paid,Jennifer Keller,2023-04-07,63,South,001-509-334-0732x956,laura30@gmail.com,610,Medium
+CUST00950,Christopher Hart,F98D05E4-13D,Current,Home Loan,102849,39909.81,753.02,2023-10-21,Missed,Allison Gonzalez,,75,North,340-645-8357,bradshawdeborah@wyatt.info,710,Low
+CUST00951,Michael Estrada,B6A286BD-3A8,Savings,Home Loan,72217,57525.5,1027.24,2024-05-20,Paid,Kristin Williams,2023-02-20,0,North,(426)364-0431x668,sabrinahaas@moore-coleman.info,635,Medium
+CUST00952,Cynthia Russell,C94DB41F-400,Savings,Home Loan,126923,35617.35,1113.04,2023-04-24,Missed,Larry Baker,,76,South,(709)098-6650x41688,rodriguezdavid@yahoo.com,425,High
+CUST00953,Charles Green,FC5BF331-9FF,Current,Personal Loan,150964,139341.08,3398.56,2024-03-09,Partially Paid,Jordan Bishop,2023-11-12,0,East,(644)794-4557,reynoldsangela@harris.com,656,Medium
+CUST00954,Miranda Mendoza,C561077E-9C5,Credit,Car Loan,314754,121719.4,5071.64,2023-04-10,Partially Paid,Michael Davidson,2023-01-13,76,West,039-062-8386x902,vchang@hotmail.com,806,Low
+CUST00955,Debra Mahoney,9078C05C-3E9,Savings,Car Loan,381387,263727.29,9094.04,2024-04-02,Missed,Caroline Rivera,,41,North,(324)951-0737,teresa28@lopez.com,716,Low
+CUST00956,Danielle Carney,033B90EB-0ED,Savings,Home Loan,388216,379723.9,11168.35,2024-10-16,Missed,Austin Collins,,69,East,(266)126-8997x00746,joe66@gmail.com,366,High
+CUST00957,Melinda Petersen,B737042F-5F3,Credit,Personal Loan,374534,188866.51,4197.03,2024-09-12,Missed,Steven Williams,,86,East,9215106217,elizabeth39@yahoo.com,303,High
+CUST00958,Rodney Fisher,52C0C145-776,Credit,Personal Loan,144651,140424.43,6105.41,2023-10-22,Paid,Kelly Bautista,2023-03-17,0,South,001-139-030-9802,laura44@lee-clark.info,302,High
+CUST00959,Frances Davis,A730EC90-FA2,Credit,Home Loan,123780,32717.84,545.3,2023-02-09,Missed,Sara Wilson,,28,South,+1-908-558-6739x05835,riverasarah@hotmail.com,786,Low
+CUST00960,Joshua Mcgee,62F1D3F2-F57,Current,Car Loan,199408,21544.46,582.28,2023-12-21,Partially Paid,Sandra Murphy DDS,2023-02-27,61,West,001-936-309-6438,oarmstrong@atkins.info,727,Low
+CUST00961,Julie Murray,85AC8E0F-31F,Credit,Home Loan,237320,171345.21,4079.65,2023-10-18,Partially Paid,Laura Arnold,2023-01-25,60,East,2785915775,walexander@howard.com,764,Low
+CUST00962,Victoria Lewis,0C5D28BB-DFD,Credit,Car Loan,100483,22371.85,466.08,2024-11-05,Missed,Rachel Glover,,13,West,(224)245-9099x062,ynelson@hotmail.com,548,Medium
+CUST00963,Jasmine Mccarthy,B75E0790-3BD,Savings,Car Loan,432297,61850.64,2132.78,2023-02-25,Partially Paid,Linda Marshall,2023-01-29,24,North,4947121640,smithwilliam@hotmail.com,510,Medium
+CUST00964,Stephanie Willis,8EED6BE9-B99,Credit,Home Loan,257822,234331.38,5325.71,2023-08-01,Missed,Bradley Parrish,,89,East,5907770544,xreyes@gmail.com,481,High
+CUST00965,Donna Lester,03A833E5-69B,Savings,Home Loan,324808,155682.51,4207.64,2024-08-12,Missed,Eric Garrett,,72,West,001-785-498-0493x339,goodmaneric@hotmail.com,393,High
+CUST00966,Matthew Rush,EDFBE747-C24,Current,Car Loan,51303,28496.24,1781.02,2023-07-22,Partially Paid,Timothy Rojas,2023-04-12,36,East,957-133-4220x0965,robertssandra@webb.com,343,High
+CUST00967,Christopher Collins,590B2ED2-C84,Credit,Personal Loan,200055,159758.64,2802.78,2023-01-11,Paid,Christopher Campbell,2023-01-06,0,East,355-120-9327x28426,gbaker@williams.com,625,Medium
+CUST00968,Steven Mosley,33B2C096-B1E,Credit,Car Loan,130278,67884.15,1212.22,2024-03-18,Paid,Jessica Duffy,2023-06-09,0,North,917.907.4523,beckjacqueline@gmail.com,756,Low
+CUST00969,Christina Gonzalez,9BE192DF-965,Savings,Personal Loan,478290,273479.88,18231.99,2023-05-24,Missed,Jon Vasquez,,9,West,540.319.9825,timothy40@hotmail.com,730,Low
+CUST00970,Tabitha Davis,54A4F0F0-39C,Savings,Car Loan,299902,263638.0,9090.97,2023-08-07,Missed,Rebecca Mitchell,,72,East,441-592-1502,andrewlowery@murphy.biz,349,High
+CUST00971,Patrick Reynolds,D6F4A57A-16B,Credit,Car Loan,189971,88228.36,3151.01,2023-08-20,Paid,Jeffrey Rocha,2023-01-30,0,South,(824)051-7597,jeffrey28@king.org,426,High
+CUST00972,Gregory Holmes,F754B352-84A,Savings,Car Loan,407205,261934.53,4762.45,2024-09-07,Paid,Shane Evans,2024-01-30,0,North,039-809-0474,dluna@martin.com,634,Medium
+CUST00973,Sherri Perry,169CFEBD-E89,Credit,Personal Loan,121289,98633.23,1761.31,2023-10-14,Paid,Melissa Cox,2023-06-06,0,North,202.776.0107x979,ahunter@yahoo.com,743,Low
+CUST00974,Gina Watson,5D69F558-8AB,Savings,Home Loan,67495,17511.62,648.58,2024-02-03,Partially Paid,Scott Patterson,2023-10-14,63,East,+1-813-193-5376x49945,annjackson@yahoo.com,367,High
+CUST00975,Chelsea Smith,B7D116D5-91A,Savings,Home Loan,114210,105640.36,2576.59,2024-03-21,Missed,Monica Ramirez,,16,South,001-878-701-2523x8514,watsonmichael@obrien.com,658,Medium
+CUST00976,Lisa Torres,0825CA7C-D1E,Credit,Home Loan,102414,16164.21,449.01,2024-03-11,Paid,Eric Williams,2023-06-07,0,North,5393312059,jon08@walsh.net,423,High
+CUST00977,Judy Patton,595F4900-AF1,Savings,Personal Loan,67376,21429.93,476.22,2024-09-11,Partially Paid,Amanda Esparza,2024-03-12,75,West,+1-120-259-2831,lisa79@johnson-moore.biz,749,Low
+CUST00978,Nicholas Smith,B9183A9C-ECE,Current,Car Loan,85672,71083.58,1366.99,2023-01-10,Partially Paid,Jessica Watts,2023-01-07,4,South,200-202-6875,ebell@gmail.com,418,High
+CUST00979,Jill Martinez,22C99B84-88D,Credit,Personal Loan,305227,244411.03,12863.74,2024-11-08,Missed,Christopher Wells,,61,East,+1-511-978-8384x08581,johnsonrhonda@gmail.com,700,Medium
+CUST00980,Marc Mccarthy Jr.,B95E2440-8F9,Savings,Home Loan,441848,212261.65,5585.83,2024-05-30,Paid,Nancy Nunez,2023-01-18,0,North,910.387.6171x13465,tammy18@christensen-green.info,586,Medium
+CUST00981,Hunter Warren,7DD96DC0-F68,Savings,Car Loan,46239,44584.47,1114.61,2023-11-04,Paid,Stephanie James,2023-07-27,0,South,411-665-7098x422,ihuerta@yahoo.com,603,Medium
+CUST00982,Emma Aguirre,AE68C755-498,Credit,Personal Loan,113929,19109.12,335.25,2024-03-02,Paid,Elizabeth Martin,2023-04-20,0,West,(894)658-1297,fischereric@yahoo.com,364,High
+CUST00983,Amy Johnson,E1BF7DA7-28D,Current,Home Loan,159873,90945.43,3031.51,2023-06-22,Paid,Eric Robinson,2023-01-22,0,East,001-475-954-0432x3955,vasquezbrianna@wilson.biz,636,Medium
+CUST00984,Jim Beltran,48C02B99-6C7,Current,Car Loan,12554,154.99,3.97,2023-04-14,Paid,Justin Davis,2023-01-21,0,East,+1-527-239-1157x6824,paul13@yahoo.com,466,High
+CUST00985,James Williams,CD697A5E-48F,Current,Car Loan,345252,259857.64,5413.7,2023-09-13,Paid,Rachel Edwards,2023-05-12,0,East,880-673-2718x53332,lawrencemitchell@hotmail.com,627,Medium
+CUST00986,Dr. Samantha Walker,EDF7D4F9-94B,Current,Personal Loan,452559,88294.31,3531.77,2024-06-30,Partially Paid,Heather Jones,2023-03-14,90,East,071-069-4729x983,cathy38@yahoo.com,741,Low
+CUST00987,Jeremy Monroe,BE4548CC-42D,Savings,Personal Loan,78787,30801.48,603.95,2023-09-11,Missed,William Young,,11,East,636-601-2197x51971,kara98@butler.com,354,High
+CUST00988,Craig Stewart,682861E4-537,Current,Car Loan,306823,91378.13,1661.42,2024-08-17,Paid,Anna Reed,2024-04-21,0,West,192-718-4705,rsmith@miller-hansen.info,313,High
+CUST00989,April Hartman MD,671E9947-BC4,Savings,Car Loan,458661,59106.4,1906.66,2023-04-26,Missed,Gregory Vaughn,,39,South,001-621-697-3794,xcampbell@gonzalez.com,327,High
+CUST00990,Ashley Gonzalez MD,A14D80F4-327,Current,Home Loan,333210,23048.4,411.58,2023-02-09,Partially Paid,Anthony Stanley,2023-01-27,85,West,425.417.2172,weberlarry@yahoo.com,789,Low
+CUST00991,Angela Williams,A6B65953-062,Credit,Personal Loan,391475,123559.71,3168.2,2024-03-15,Paid,Paula Larsen,2023-08-02,0,East,888.937.7931x899,yolandaibarra@adams.org,413,High
+CUST00992,Marie Sullivan,2AD07578-EBA,Current,Home Loan,422447,20328.72,1016.44,2024-04-23,Paid,Lindsey Haynes,2023-10-20,0,North,001-595-608-2719,anthonyanthony@yahoo.com,305,High
+CUST00993,Robin Wood,CD006A31-61F,Current,Home Loan,23370,6821.28,174.9,2024-08-03,Missed,Matthew Gonzales,,42,South,(389)660-0317x965,brentpena@soto.biz,836,Low
+CUST00994,Marcus Hopkins,953191B3-B82,Current,Car Loan,67026,43596.73,1362.4,2023-08-22,Missed,Jack Harding,,10,East,3296605782,timothystevens@silva-adams.com,778,Low
+CUST00995,Lucas Ingram,6717D08D-8BF,Savings,Car Loan,308726,98191.86,5455.1,2024-05-08,Missed,Brittney King,,73,North,+1-684-628-7728x808,ohodge@hotmail.com,386,High
+CUST00996,Matthew Tran,30158651-FF0,Current,Car Loan,145881,42105.25,1203.01,2023-07-25,Paid,Elizabeth Hess DDS,2023-05-26,0,South,147-363-0896x130,murphydominique@yahoo.com,387,High
+CUST00997,Robert Martinez,0B84F5D6-0E4,Current,Home Loan,293449,28638.37,520.7,2023-03-05,Partially Paid,Charles Kline,2023-01-29,73,West,341.723.5709x3350,jjackson@yahoo.com,751,Low
+CUST00998,Kimberly Ramirez,5E254A28-AF8,Savings,Personal Loan,492815,201018.27,6484.46,2023-09-29,Missed,Gerald Anderson,,62,North,(226)320-5961x06171,katherineporter@gmail.com,755,Low
+CUST00999,Debbie Jackson,17AA11D2-738,Savings,Home Loan,119289,66392.41,1207.13,2023-04-25,Paid,Barbara Bennett,2023-01-16,0,North,001-956-487-5705x9548,caldwellroberto@cunningham.biz,773,Low
