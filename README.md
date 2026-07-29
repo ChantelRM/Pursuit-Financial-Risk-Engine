@@ -1,3 +1,6 @@
+# Vefirication code
+WTC-BWMH7H7D
+
 # Financial Risk Analytics Engine (Pursuit)
 
 An R-based financial risk analytics pipeline, built for Google Colab. It merges debtor and external risk data, computes exposure and risk tiers, drafts collection notifications, visualizes portfolio health, and trains a model to rank which flagged accounts are actually worth pursuing. A chat layer sits on top, answering plain-English questions about the portfolio via an LLM API.
