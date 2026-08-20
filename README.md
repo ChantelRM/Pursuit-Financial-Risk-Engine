@@ -36,6 +36,17 @@ financial-risk-analytics-engine/
 
 `src/` holds the same logic as the notebook split into two plain scripts, for working outside Colab. The notebook doesn't depend on `src/` — either can be used on its own.
 
+## Running with Docker
+Building the image:
+`docker build -t pursuit-dashboard .`
+
+Running the Pursuit Dashboard with docker
+` docker run -p 3838:3838 -e ANTHROPIC_API_KEY="your-own-key-here" pursuit-dashboard`
+
+Requires your **own Anthropic API key** (console.anthropic.com) for the chat
+sidebar to function. The dashboard's tables, charts, and value boxes work
+without one — only the natural-language chat requires it.
+
 ## What each notebook section does
 
 | Section | Purpose |
