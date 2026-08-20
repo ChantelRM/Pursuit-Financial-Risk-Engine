@@ -1,7 +1,7 @@
 FROM rocker/shiny-verse:latest
 WORKDIR /app
 RUN R -e "install.packages(c('bslib', 'shinychat', 'querychat', 'DBI', 'dplyr', 'reactable', 'ggplot2', 'scales'), repos = 'https://cloud.r-project.org/')"
-RUN R -e "install.packages(c('duckdb'), repos = 'https://cloud.r-project.org/')"
+RUN R -e "install.packages('duckdb', repos='https://packagemanager.posit.co/cran/__linux__/jammy/latest')"
 COPY app.R .
 COPY data/ data/
 EXPOSE 3838
