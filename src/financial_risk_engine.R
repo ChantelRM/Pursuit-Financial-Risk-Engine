@@ -1,33 +1,24 @@
-# ==============================================================================
 # PURSUIT — FINANCIAL RISK ANALYTICS ENGINE (standalone script)
-#
-# Merged version of the Colab notebook: Sections 0-5 (ledger/risk/notifications
-# /charts) + Section 6 (pursuit prediction model, debugged version) + Section 7
-# (LLM chat layer). Run top to bottom with Rscript, or source() in RStudio.
-#
-# This reflects the ACTUAL debugged state from the notebook, not the earlier
-# src/ drafts — in particular, Section 6 here trains on Balance_Amount +
-# Debt_Ratio only (Risk_Flag and Days_Past_Due were tested and dropped after
-# they caused ~97% row loss to missingness when sources were combined — see
-# README for the full explanation), and uses the real 3-dataset CONFIG
-# (bank_debt, collections, invoice_delay) rather than the original draft's
-# akrambelha/synthetic_banking placeholder.
-# ==============================================================================
 
 # ------------------------------------------------------------------------------
 # SECTION 0: SETUP
 # ------------------------------------------------------------------------------
 required_packages <- c("dplyr", "ggplot2", "tibble", "purrr", "glue",
                         "scales", "lubridate", "readr", "tidyr", "stringr",
-                        "httr", "jsonlite")
+                        "httr", "jsonlite", "DBI", "RSQLite")
 
 new_packages <- required_packages[!(required_packages %in% installed.packages()[, "Package"])]
-if (length(new_packages) > 0) install.packages(new_packages, repos = "https://cloud.r-project.org")
+if (length(new_packages) > 0) {
+  install.packages(new_packages, repos = c("https://cran.r-universe.dev", "https://cloud.r-project.org"))
+}
 invisible(lapply(required_packages, library, character.only = TRUE))
 
 set.seed(42)
 dir.create("outputs", showWarnings = FALSE)
 dir.create("outputs/charts", showWarnings = FALSE)
+dir.create("data/processed", recursive = TRUE, showWarnings = FALSE)
+
+con <- DBI::dbConnect(RSQLite::SQLite(), "data/processed/pursuit.sqlite")
 dir.create("models", showWarnings = FALSE)
 dir.create("data/raw", recursive = TRUE, showWarnings = FALSE)
 dir.create("data/processed", recursive = TRUE, showWarnings = FALSE)
@@ -133,6 +124,7 @@ unified_ledger <- unified_ledger %>%
 
 message(glue("Flagged {sum(unified_ledger$Critical_Alert)} of {nrow(unified_ledger)} accounts as Critical Alert."))
 write_csv(unified_ledger, "data/processed/unified_ledger.csv")
+DBI::dbWriteTable(con, "unified_ledger", unified_ledger, overwrite = TRUE)
 
 
 # ------------------------------------------------------------------------------
@@ -186,6 +178,7 @@ notification_queue <- critical_accounts %>%
   )
 
 write_csv(notification_queue, "outputs/notification_queue.csv")
+DBI::dbWriteTable(con, "notification_queue", notification_queue, overwrite = TRUE)
 
 
 # ------------------------------------------------------------------------------
@@ -257,16 +250,63 @@ CONFIG <- list(
   )
 )
 
-standardize_bank_debt <- function(cfg) {
-  df <- readr::read_csv(cfg$path, show_col_types = FALSE)
+# Persist raw sources into the database before any cleaning/standardizing
+# happens -- an ELT pattern (Load raw data first, Transform after) rather
+# than transforming in R memory and only ever saving the final result.
+# Once these tables exist, the original CSVs are no longer strictly
+# required to inspect or reprocess this run's raw input.
+raw_sources <- list(
+  raw_bank_debt = CONFIG$bank_debt$path,
+  raw_collections = CONFIG$collections$path,
+  raw_invoice_delay = CONFIG$invoice_delay$path
+)
+
+# Loads a raw source: from the DATABASE first if it already has this table
+# (fast, no CSV parsing needed, and this is what makes the pipeline usable
+# with zero re-uploads once it's run once) -- falling back to the CSV only
+# if the database doesn't have this table yet. Set force_refresh = TRUE to
+# deliberately re-read from a CSV even when the DB already has the table
+# (e.g. you know the source file was updated) -- otherwise an updated CSV
+# would silently be ignored forever once the DB table exists.
+load_raw_source <- function(path, con, tbl_name, force_refresh = FALSE) {
+  db_has_table <- DBI::dbExistsTable(con, tbl_name)
+
+  if (db_has_table && !force_refresh) {
+    message(glue("Using existing database table '{tbl_name}' (DB is the primary source)."))
+    return(DBI::dbReadTable(con, tbl_name))
+  }
+
+  if (file.exists(path)) {
+    df <- readr::read_csv(path, show_col_types = FALSE)
+    DBI::dbWriteTable(con, tbl_name, df, overwrite = TRUE)
+    action <- if (db_has_table) "refreshed" else "created"
+    message(glue("Loaded '{tbl_name}' from CSV ({nrow(df)} rows) and {action} the database copy."))
+    return(df)
+  }
+
+  if (db_has_table) {
+    message(glue("force_refresh requested but no CSV found at {path} -- falling back to existing database table '{tbl_name}'."))
+    return(DBI::dbReadTable(con, tbl_name))
+  }
+
+  stop(glue("Cannot load '{tbl_name}': no existing database table AND no CSV at {path}. Need at least one."))
+}
+
+raw_bank_debt     <- load_raw_source(CONFIG$bank_debt$path, con, "raw_bank_debt")
+raw_collections   <- load_raw_source(CONFIG$collections$path, con, "raw_collections")
+raw_invoice_delay <- load_raw_source(CONFIG$invoice_delay$path, con, "raw_invoice_delay")
+
+# To force a refresh from CSV when you know the source data changed, e.g.:
+# raw_bank_debt <- load_raw_source(CONFIG$bank_debt$path, con, "raw_bank_debt", force_refresh = TRUE)
+
+standardize_bank_debt <- function(df, cfg) {
   tibble(Source = "bank_debt", Record_ID = as.character(df[[cfg$id_col]]),
          Outcome_Repaid = as.integer(df[[cfg$actual_recovery_col]] > 0),
          Balance_Amount = df[[cfg$expected_recovery_col]], Debt_Ratio = 1,
          Days_Past_Due = NA_real_, Risk_Flag = NA_integer_)
 }
 
-standardize_collections <- function(cfg) {
-  df <- readr::read_csv(cfg$path, show_col_types = FALSE)
+standardize_collections <- function(df, cfg) {
   outcome <- if (!is.null(cfg$outcome_col) && cfg$outcome_col %in% names(df)) {
     as.integer(df[[cfg$outcome_col]] %in% cfg$outcome_paid_values)
   } else NA_integer_
@@ -280,8 +320,7 @@ standardize_collections <- function(cfg) {
 # Days_Overdue_Delay isn't used as a feature here: it's very likely what
 # DelayFlag (the label) was derived from — including it would leak the label
 # back into training.
-standardize_invoice_delay <- function(cfg) {
-  df <- readr::read_csv(cfg$path, show_col_types = FALSE)
+standardize_invoice_delay <- function(df, cfg) {
   tibble(
     Source = "invoice_delay",
     Record_ID = as.character(df[[cfg$id_col]]),
@@ -293,8 +332,8 @@ standardize_invoice_delay <- function(cfg) {
   )
 }
 
-safe_standardize <- function(fn, cfg, label) {
-  tryCatch(fn(cfg), error = function(e) {
+safe_standardize <- function(fn, df, cfg, label) {
+  tryCatch(fn(df, cfg), error = function(e) {
     warning(glue("Could not standardize '{label}': {conditionMessage(e)}. Check CONFIG${label} against inspect_dataset() output."))
     NULL
   })
@@ -343,9 +382,9 @@ evaluate_model <- function(model, data, threshold = 0.5, label = "set") {
 # yet doesn't crash the whole script — it'll just skip to Section 7):
 payment_model <- tryCatch({
   modeling_data <- bind_rows(
-    safe_standardize(standardize_bank_debt, CONFIG$bank_debt, "bank_debt"),
-    safe_standardize(standardize_collections, CONFIG$collections, "collections"),
-    safe_standardize(standardize_invoice_delay, CONFIG$invoice_delay, "invoice_delay")
+    safe_standardize(standardize_bank_debt, raw_bank_debt, CONFIG$bank_debt, "bank_debt"),
+    safe_standardize(standardize_collections, raw_collections, CONFIG$collections, "collections"),
+    safe_standardize(standardize_invoice_delay, raw_invoice_delay, CONFIG$invoice_delay, "invoice_delay")
   )
   message(glue("Combined modeling table: {nrow(modeling_data)} rows from {n_distinct(modeling_data$Source)} source(s)."))
   validate_modeling_data(modeling_data)
@@ -416,6 +455,7 @@ score_unified_ledger <- function(unified_ledger, model) {
 if (!is.null(payment_model)) {
   pursuit_rankings <- score_unified_ledger(unified_ledger, payment_model)
   write_csv(pursuit_rankings, "outputs/pursuit_rankings.csv")
+  DBI::dbWriteTable(con, "pursuit_rankings", pursuit_rankings, overwrite = TRUE)
 }
 
 
@@ -437,6 +477,7 @@ call_llm <- function(prompt, model = "claude-sonnet-5", max_tokens = 1000) {
       "anthropic-version" = "2023-06-01",
       "content-type" = "application/json"
     ),
+    httr::config(http_version = 1.1),
     body = jsonlite::toJSON(list(
       model = model,
       max_tokens = max_tokens,
@@ -448,8 +489,16 @@ call_llm <- function(prompt, model = "claude-sonnet-5", max_tokens = 1000) {
     stop(glue("API error {httr::status_code(resp)}: {httr::content(resp, 'text')}"))
   }
 
-  parsed <- httr::content(resp, "parsed")
-  parsed$content[[1]]$text
+  parsed <- jsonlite::fromJSON(httr::content(resp, "text", encoding = "UTF-8"), simplifyVector = FALSE)
+
+  # Don't assume content[[1]] is the text block -- Claude can return a
+  # "thinking" block before the "text" block for substantive prompts.
+  # Find the actual text block(s) by type instead of by position.
+  text_blocks <- Filter(function(block) identical(block$type, "text"), parsed$content)
+  if (length(text_blocks) == 0) {
+    stop("No text block found in response -- check the raw response structure.")
+  }
+  paste(sapply(text_blocks, function(b) b$text), collapse = "\n")
 }
 
 build_data_context <- function(question, data = unified_ledger) {
@@ -459,7 +508,7 @@ build_data_context <- function(question, data = unified_ledger) {
   if (!is.na(target_id) && target_id %in% data$Debtor_ID) {
     row <- data %>% filter(Debtor_ID == target_id)
     return(glue(
-"Specific account detail:
+"Specific account detail (all monetary values in South African Rand, ZAR):
 {paste(capture.output(print(as.data.frame(row))), collapse = '\n')}"
     ))
   }
@@ -471,8 +520,8 @@ build_data_context <- function(question, data = unified_ledger) {
   glue(
 "Portfolio summary ({nrow(data)} accounts in scope):
 - Critical Alert accounts: {sum(data$Critical_Alert)}
-- Total outstanding balance: ${format(round(sum(data$Remaining_Balance), 2), big.mark=',')}
-- Total net profit: ${format(round(sum(data$Net_Profit), 2), big.mark=',')}
+- Total outstanding balance: R{format(round(sum(data$Remaining_Balance), 2), big.mark=',')}
+- Total net profit: R{format(round(sum(data$Net_Profit), 2), big.mark=',')}
 - Risk tier breakdown: {paste(names(table(data$Risk_Tier)), table(data$Risk_Tier), sep=': ', collapse=', ')}
 - Blacklisted accounts: {sum(data$Is_Blacklisted)}
 - Accounts with external debts: {sum(data$Has_External_Debts)}"
@@ -492,9 +541,10 @@ Question: {question}"
   call_llm(prompt)
 }
 
-# Example usage once ANTHROPIC_API_KEY (or OPENAI_API_KEY, if you swapped
-# call_llm) is set:
+# Example usage once ANTHROPIC_API_KEY is set:
 # cat(ask_data_llm("Which risk tier has the most exposure?"))
 # cat(ask_data_llm("Tell me about Debtor_0006"))
 
-message("Pipeline complete. See README.md for the full section-by-section explanation.")
+DBI::dbDisconnect(con)
+message("Pipeline complete. Database written to data/processed/pursuit.sqlite")
+message("See README.md for the full section-by-section explanation.")
