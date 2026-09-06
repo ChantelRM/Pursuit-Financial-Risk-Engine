@@ -7,7 +7,7 @@ library(bslib)
 library(shinychat)
 library(querychat)
 library(DBI)
-library(duckdb)
+library(RSQLite)
 library(dplyr)
 library(reactable)
 library(ggplot2)
@@ -16,15 +16,19 @@ library(scales)
 # ------------------------------------------------------------------------------
 # DATA
 # ------------------------------------------------------------------------------
-unified_ledger <- readr::read_csv("data/unified_ledger.csv", show_col_types = FALSE)
-
-conn <- DBI::dbConnect(duckdb::duckdb())
-DBI::dbWriteTable(conn, "ledger", unified_ledger, overwrite = TRUE)
+# Connects directly to the same SQLite file the batch pipeline produces.
+# flags = RSQLite::SQLITE_RO opens it read-only -- the dashboard should
+# never write back into the pipeline's database. NOTE: this is a baked-in
+# snapshot from whenever the Docker image was last built (see the
+# Dockerfile's build-order note) -- it does not live-update if the
+# pipeline reruns after the image is built. Rebuild the image to pick up
+# fresher data.
+conn <- DBI::dbConnect(RSQLite::SQLite(), "data/processed/pursuit.sqlite", flags = RSQLite::SQLITE_RO)
+unified_ledger <- DBI::dbReadTable(conn, "unified_ledger")
 
 qc <- querychat::QueryChat$new(
   conn,
-  table_name = "ledger",
-  client="anthropic/claude-sonnet-4-5",
+  table_name = "unified_ledger",
   greeting = paste(
     "Ask me about the portfolio — for example:",
     "\"Show only Critical Alert accounts with balance over 5000\"",
@@ -33,7 +37,7 @@ qc <- querychat::QueryChat$new(
     sep = "\n"
   ),
   data_description = "
-    `ledger` is the merged debtor risk table (Master Ledger + External Risk
+    `unified_ledger` is the merged debtor risk table (Master Ledger + External Risk
     Registry, already joined). Columns:
     - Debtor_ID, Debtor_Name
     - Original_Debt, Amount_Paid, Remaining_Balance, Net_Profit (Rand amounts)
@@ -49,21 +53,6 @@ qc <- querychat::QueryChat$new(
 # SHARED HELPERS
 # ------------------------------------------------------------------------------
 styled_accounts_table <- function(data, page_size = 10, dark = FALSE) {
-  
-  if (dark) {
-    table_color <- "#E2E8F0"
-    table_bg <- "#1E293B"
-    table_border <- "#334155"
-    search_color <- "#E5E7EB"
-    search_bg <- "#0B1424"
-  } else {
-    table_color <- "#1E293B"
-    table_bg <- "#FFFFFF"
-    table_border <- "#E2E8F0"
-    search_color <- "#6D28D9"
-    search_bg <- "#FFFFFF"
-  }
-  
   reactable(
     data,
     searchable = TRUE,
@@ -72,31 +61,21 @@ styled_accounts_table <- function(data, page_size = 10, dark = FALSE) {
     rowStyle = function(index) {
       tier <- data$Risk_Tier[index]
       if (tier == "Severe") {
-        if (dark) {
-          return(list(backgroundColor = "#7F1D1D"))
-        } else {
-          return(list(backgroundColor = "#FFC7CE"))
-        }
+        list(backgroundColor = if (dark) "#7F1D1D" else "#FFC7CE")
       } else if (tier == "Critical") {
-        if (dark) {
-          return(list(backgroundColor = "#78350F"))
-        } else {
-          return(list(backgroundColor = "#FFEB9C"))
-        }
+        list(backgroundColor = if (dark) "#78350F" else "#FFEB9C")
       }
     },
     theme = reactableTheme(
       style = list(fontSize = "0.75rem"),
-      color = table_color,
-      backgroundColor = table_bg,
-      borderColor = table_border,
+      color = if (dark) "#E2E8F0" else "#1E293B",
+      backgroundColor = if (dark) "#1E293B" else "#FFFFFF",
+      borderColor = if (dark) "#334155" else "#E2E8F0",
       searchInputStyle = list(
-        color = search_color,
-        backgroundColor = search_bg,
+        color = if (dark) "#E5E7EB" else "#6D28D9",
+        backgroundColor = if (dark) "#0B1424" else "#FFFFFF",
         borderColor = "#8B5CF6",
-        borderWidth = "1px",
-        borderStyle = "solid",
-        borderRadius = "15px",
+        borderWidth = "1px", borderStyle = "solid", borderRadius = "15px",
         boxShadow = "0 0 8px rgba(139, 92, 246, 0.35)"
       )
     ),
@@ -113,11 +92,12 @@ styled_accounts_table <- function(data, page_size = 10, dark = FALSE) {
     )
   )
 }
+
 # ------------------------------------------------------------------------------
 # UI
 # ------------------------------------------------------------------------------
 ui <- page_sidebar(
-  
+
   title = div(
     class = "dashboard-header",
     div(
@@ -138,7 +118,7 @@ ui <- page_sidebar(
       class = "theme-toggle-btn"
     )
   ),
-  
+
   theme = bslib::bs_theme(
     version = 5,
     base_font = font_google("Poppins"),
@@ -148,9 +128,9 @@ ui <- page_sidebar(
     warning = "#F59E0B",
     danger = "#F43F5E"
   ),
-  
+
   tags$head(
-    
+
     tags$script(
       HTML("
         document.documentElement.classList.add('dark-mode-root');
@@ -176,7 +156,7 @@ ui <- page_sidebar(
         });
       ")
     ),
-    
+
     tags$style(
       HTML("
 
@@ -236,8 +216,8 @@ ui <- page_sidebar(
         body.dark-mode .sidebar-toggle,
         body.dark-mode .collapse-toggle svg,
         body.dark-mode .sidebar-toggle svg {
-          color: #22D3EE !important;
-          fill: #22D3EE !important;
+          color: #FFFFFF !important;
+          fill: #FFFFFF !important;
         }
 
         /* ================================================================
@@ -290,18 +270,6 @@ ui <- page_sidebar(
           height: 1.6rem !important;
           font-size: 1.6rem !important;
         }
-        .bslib-full-screen-enter {
-          background-color: transparent !important;
-          border: none !important;
-          color: #22D3EE !important;
-        }
-        .bslib-full-screen-enter svg,
-body.dark-mode .collapse-toggle svg,
-body.dark-mode .sidebar-toggle svg {
-  width: 1.3rem !important;
-  height: 1.3rem !important;
-  filter: drop-shadow(0 0 0.5px currentColor) drop-shadow(0 0 0.5px currentColor);
-}
 
         .metric-accounts .value-box-showcase { color: #A855F7 !important; }
         .metric-alerts .value-box-showcase { color: #F43F5E !important; }
@@ -335,15 +303,6 @@ body.dark-mode .sidebar-toggle svg {
           flex: 1 1 auto;
           overflow-y: auto;
         }
-        
-        #accounts_table .rt-search {
-  background-color: transparent !important;
-}
-#accounts_table .rt-search input {
-  background-color: #0B1424 !important;
-  color: #E5E7EB !important;
-  border: 1px solid #8B5CF6 !important;
-}
 
         /* ================================================================
            QUICK INSIGHTS
@@ -428,39 +387,6 @@ body.dark-mode .sidebar-toggle svg {
           background-color: rgba(109, 40, 217, 0.88) !important;
           border-radius: 15px !important;
         }
-        .shiny-chat-suggestion-list {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 0.5rem !important;
-  list-style: none !important;
-  padding-left: 0 !important;
-  margin-top: 0.5rem !important;
-  background-color: transparent !important;
-}
-.shiny-chat-suggestion-list::before {
-  content: 'Suggested follow-up questions: ';
-  display: block;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: #94A3B8;
-  margin-bottom: 0.4rem;
-  background-color: transparent ! important;
-}
-.shiny-chat-suggestion-list li button {
-  all: unset !important;
-  display: block !important;
-  font-style: italic !important;
-  color: #C4B5FD !important;
-  cursor: pointer !important;
-  padding: 0.15rem 0 !important;
-}
-.shiny-chat-suggestion-list li button:hover {
-  color: #22D3EE !important;
-  text-decoration: underline !important;
-}
 
         /* ================================================================
            DARK MODE — DEFAULT
@@ -525,7 +451,7 @@ body.dark-mode .sidebar-toggle svg {
 
         body.dark-mode .metric-card .bslib-value-box:hover {
           border-color: #C084FC !important;
-          box-shadow: 0 10px 26px rgba(0, 0, 0, 0.32), 0 0 36px 8px rgba(192, 132, 252, 0.45) !important;
+          box-shadow: 0 10px 26px rgba(0, 0, 0, 0.32), 0 0 36px 8px rgba(192, 132, 252, 0.75) !important;
         }
 
         body.dark-mode .bslib-value-box .value-box-title { color: #CBD5E1 !important; }
@@ -617,7 +543,7 @@ body.dark-mode .sidebar-toggle svg {
 
         body.light-mode .metric-card .bslib-value-box:hover {
           border-color: #A855F7 !important;
-          box-shadow: 0 10px 24px rgba(44, 62, 100, 0.16), 0 0 32px 7px rgba(168, 85, 247, 0.30) !important;
+          box-shadow: 0 10px 24px rgba(44, 62, 100, 0.16), 0 0 32px 7px rgba(168, 85, 247, 0.65) !important;
         }
 
         body.light-mode .bslib-value-box .value-box-title { color: #475569 !important; }
@@ -650,25 +576,17 @@ body.dark-mode .sidebar-toggle svg {
 
         /* Search box fix -- targets the real #accounts_table ID directly
            rather than guessing reactable's internal class names */
-       #accounts_table { background-color: transparent !important; }
-body.dark-mode #accounts_table input {
-  background-color: #0B1424 !important;
-  color: #E5E7EB !important;
-  border: 1px solid #8B5CF6 !important;
-}
-body.light-mode #accounts_table input {
-  background-color: #FFFFFF !important;
-  color: #172033 !important;
-  border: 1px solid #8B5CF6 !important;
-}
-        
-        .querychat pre,
-.querychat code,
-.querychat .card {
-  background-color: #0B1424 !important;
-  color: #E5E7EB !important;
-  border: 1px solid #334155 !important;
-}
+        #accounts_table { background-color: transparent !important; }
+        body.dark-mode #accounts_table input {
+          background-color: #0B1424 !important;
+          color: #E5E7EB !important;
+          border: 1px solid #8B5CF6 !important;
+        }
+        body.light-mode #accounts_table input {
+          background-color: #FFFFFF !important;
+          color: #172033 !important;
+          border: 1px solid #8B5CF6 !important;
+        }
 
         /* ================================================================
            MOBILE
@@ -685,9 +603,9 @@ body.light-mode #accounts_table input {
       ")
     )
   ),
-  
+
   sidebar = qc$sidebar(width = 300),
-  
+
   # --------------------------------------------------------------------------
   # TOP KPI CARDS
   # Each div(...) wrapper needs TWO closing parens before its trailing
@@ -699,28 +617,28 @@ body.light-mode #accounts_table input {
   layout_columns(
     fill = FALSE,
     col_widths = c(3, 3, 3, 3),
-    
+
     div(class = "metric-card metric-accounts",
         value_box(title = "Total Accounts", value = textOutput("total_accounts"),
                   showcase = icon("users"), showcase_layout = bslib::showcase_left_center(width = "30%"))
     ),
-    
+
     div(class = "metric-card metric-alerts",
         value_box(title = "Critical Alerts", value = textOutput("critical_alerts"),
                   showcase = icon("triangle-exclamation"), showcase_layout = bslib::showcase_left_center(width = "30%"))
     ),
-    
+
     div(class = "metric-card metric-outstanding",
         value_box(title = "Total Outstanding", value = textOutput("total_outstanding"),
                   showcase = icon("wallet"), showcase_layout = bslib::showcase_left_center(width = "30%"))
     ),
-    
+
     div(class = "metric-card metric-profit",
         value_box(title = "Total Net Profit", value = textOutput("total_profit"),
                   showcase = icon("chart-line"), showcase_layout = bslib::showcase_left_center(width = "30%"))
     )
   ),
-  
+
   # --------------------------------------------------------------------------
   # ACCOUNTS TABLE, QUICK INSIGHTS, CRITICAL ALERT FEED
   # --------------------------------------------------------------------------
@@ -728,13 +646,13 @@ body.light-mode #accounts_table input {
     class = "accounts-dashboard-row",
     layout_columns(
       col_widths = c(7, 5),
-      
+
       card(
         full_screen = TRUE,
         card_header("Accounts"),
         reactableOutput("accounts_table")
       ),
-      
+
       div(
         class = "insights-alerts-stack",
         card(
@@ -755,22 +673,22 @@ body.light-mode #accounts_table input {
 # ------------------------------------------------------------------------------
 server <- function(input, output, session) {
   qc_vals <- qc$server()
-  
+
   filtered_data <- reactive({
     df <- qc_vals$df()
     req(df)
     df
   })
-  
+
   dark_mode <- reactiveVal(TRUE)
   is_dark <- reactive({ dark_mode() })
-  
+
   observeEvent(input$theme_toggle, {
     new_mode <- !dark_mode()
     dark_mode(new_mode)
-    session$sendCustomMessage("set-theme", list(mode = if (new_mode) {"dark"} else {"light"}))
+    session$sendCustomMessage("set-theme", list(mode = if (new_mode) "dark" else "light"))
   })
-  
+
   # ---- Value boxes ----
   output$total_accounts <- renderText(format(nrow(filtered_data()), big.mark = ","))
   output$critical_alerts <- renderText(format(sum(filtered_data()$Critical_Alert, na.rm = TRUE), big.mark = ","))
@@ -780,33 +698,33 @@ server <- function(input, output, session) {
   output$total_profit <- renderText(
     scales::dollar(sum(filtered_data()$Net_Profit, na.rm = TRUE), prefix = "R", big.mark = ",")
   )
-  
+
   # ---- Accounts table ----
   output$accounts_table <- renderReactable({
     styled_accounts_table(filtered_data(), page_size = 10, dark = is_dark())
   })
-  
+
   # --------------------------------------------------------------------------
   # QUICK INSIGHTS
   # --------------------------------------------------------------------------
   output$quick_insights <- renderUI({
     data <- filtered_data()
-    
+
     critical_count <- sum(data$Critical_Alert, na.rm = TRUE)
     severe_count <- sum(data$Risk_Tier == "Severe", na.rm = TRUE)
     total_outstanding <- sum(data$Remaining_Balance, na.rm = TRUE)
-    
+
     highest_risk_tier <- data %>%
       filter(!is.na(Risk_Tier)) %>%
       count(Risk_Tier, sort = TRUE) %>%
       slice_head(n = 1)
-    
+
     highest_risk_text <- if (nrow(highest_risk_tier) > 0) {
       paste0(highest_risk_tier$Risk_Tier, " contains the most accounts")
     } else {
       "No risk-tier information available"
     }
-    
+
     div(
       class = "insights-wrapper",
       div(
@@ -835,7 +753,7 @@ server <- function(input, output, session) {
       )
     )
   })
-  
+
   # --------------------------------------------------------------------------
   # CRITICAL ALERT FEED
   # --------------------------------------------------------------------------
@@ -844,7 +762,7 @@ server <- function(input, output, session) {
       filter(Critical_Alert %in% TRUE) %>%
       arrange(desc(Days_Past_Due), desc(Remaining_Balance)) %>%
       slice_head(n = 4)
-    
+
     if (nrow(alert_data) == 0) {
       return(
         div(
@@ -854,18 +772,18 @@ server <- function(input, output, session) {
         )
       )
     }
-    
+
     alert_rows <- lapply(seq_len(nrow(alert_data)), function(index) {
       debtor_name <- alert_data$Debtor_Name[index]
       days_past_due <- alert_data$Days_Past_Due[index]
       balance <- alert_data$Remaining_Balance[index]
-      
+
       description <- if (!is.na(days_past_due) && days_past_due > 0) {
         paste("Payment overdue by", days_past_due, "days")
       } else {
         "Critical account requires review"
       }
-      
+
       div(
         class = "alert-feed-item",
         div(class = "alert-feed-icon", icon("triangle-exclamation")),
@@ -876,7 +794,7 @@ server <- function(input, output, session) {
         div(class = "alert-balance", scales::dollar(balance, prefix = "R", big.mark = ","))
       )
     })
-    
+
     do.call(div, c(list(class = "alert-feed"), alert_rows))
   })
 }
