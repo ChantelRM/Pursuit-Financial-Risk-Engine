@@ -1,42 +1,76 @@
-# Vefirication code
+# Verification code
 WTC-BWMH7H7D
 
 # Financial Risk Analytics Engine (Pursuit)
 
-An R-based financial risk analytics pipeline, built for Google Colab. It merges debtor and external risk data, computes exposure and risk tiers, drafts collection notifications, visualizes portfolio health, and trains a model to rank which flagged accounts are actually worth pursuing. A chat layer sits on top, answering plain-English questions about the portfolio via an LLM API.
+An R-based financial risk analytics pipeline and dashboard. It merges debtor and external risk data, computes exposure and risk tiers, drafts collection notifications, visualizes portfolio health, and trains a model to rank which flagged accounts are actually worth pursuing. A chat layer sits on top, answering plain-English questions about the portfolio via an LLM API. The pipeline persists its output as a SQLite database, which a containerized Shiny dashboard reads directly.
 
 ## Quick start
 
+**Option A — notebook (exploration/development):**
 1. Open `financial_risk_analytics.ipynb` in Google Colab
 2. Runtime > Change runtime type > R
 3. Run cells top to bottom (Section 0 → Section 8)
 
-Sections 0–5, 7, and 8 run on simulated data with no setup. Section 6 (the prediction model) needs two real datasets uploaded to `data/raw/` — details below.
+**Option B — standalone script (batch pipeline):**
+```r
+source("financial_risk_engine_full.R")
+```
+Runs the full pipeline non-interactively and writes `data/processed/pursuit.sqlite`. This is what the Dockerized dashboard reads from.
+
+Sections/steps for merge, notifications, and charts run on simulated data with no setup. The prediction model needs the 3 real datasets uploaded to `data/raw/` — details below.
 
 ## Project structure
 
 ```
-financial-risk-analytics-engine/
+Pursuit-Financial-Risk-Engine/
 ├── README.md
-├── PROJECT_PLAN.md                 <- issue tracker / task breakdown
-├── financial_risk_analytics.ipynb  <- main notebook
-├── src/
-│   ├── financial_risk_engine.R     <- standalone version of Sections 0-5
-│   └── pursuit_prediction_model.R  <- standalone version of Section 6
+├── PROJECT_PLAN.md                    <- issue tracker / task breakdown
+├── LEARNING_JOURNAL.md                <- design decisions and debugging lessons
+├── financial_risk_analytics.ipynb     <- notebook version (exploration/development)
+├── financial_risk_engine_full.R       <- standalone script version (the real batch job)
+├── app/
+│   └── app.R                          <- Shiny dashboard, reads from the SQLite database
+├── Dockerfile                         <- containerizes the dashboard
 ├── data/
-│   ├── raw/                        <- Kaggle CSVs live here
-│   └── processed/                  <- unified_ledger.csv, generated
+│   ├── raw/                           <- Kaggle CSVs live here
+│   └── processed/
+│       ├── pursuit.sqlite             <- the pipeline's real output: all tables, raw + processed
+│       └── unified_ledger.csv         <- also written, for quick manual inspection
 ├── models/
-│   └── payment_model.rds           <- trained model, generated
+│   └── payment_model.rds              <- trained model, generated
 └── outputs/
     ├── charts/
     ├── notification_queue.csv
     └── pursuit_rankings.csv
 ```
 
-`src/` holds the same logic as the notebook split into two plain scripts, for working outside Colab. The notebook doesn't depend on `src/` — either can be used on its own.
+`financial_risk_engine_full.R` is the source of truth for the pipeline logic — it mirrors the notebook exactly but runs non-interactively via `Rscript` or `source()`, which is what makes it usable as an actual batch job rather than something that only works cell-by-cell.
 
-## What each notebook section does
+## Data & storage layer
+
+The pipeline follows an **ELT pattern** (Extract, Load, Transform) rather than transforming everything in R memory and only ever saving the final result: the 3 raw source CSVs are persisted into `pursuit.sqlite` as their own tables (`raw_bank_debt`, `raw_collections`, `raw_invoice_delay`) *before* any cleaning happens, alongside the processed outputs (`unified_ledger`, `notification_queue`, `pursuit_rankings`).
+
+**Loading is database-first, CSV-fallback.** `load_raw_source()` checks the database for each raw table before touching the CSV at all — meaning after the first successful run, the pipeline (and the model training that depends on it) no longer requires the original CSVs to be present. Pass `force_refresh = TRUE` to deliberately re-read from a CSV when the source data has actually changed; otherwise an updated CSV would silently be ignored once the database table exists.
+
+**SQLite over DuckDB.** DuckDB was the original choice but caused repeated, difficult install failures across multiple environments (missing system libraries, R-version/binary mismatches across several package repos). RSQLite statically bundles its own SQLite engine and never touches system libraries at all, which made it dramatically more reliable to install. DuckDB's analytical/columnar performance advantage is irrelevant at this project's data scale (a few hundred to ~33,000 rows), so the switch cost nothing functionally — see `LEARNING_JOURNAL.md` for the full story.
+
+## Running with Docker
+
+```bash
+docker build -t pursuit-dashboard .
+docker run -p 3838:3838 -e ANTHROPIC_API_KEY="your-own-key-here" pursuit-dashboard
+```
+
+Then open `http://localhost:3838`.
+
+**Build-order requirement:** `data/processed/pursuit.sqlite` must already exist before running `docker build` — the Dockerfile's `COPY` step only grabs files already on disk, it does not run the pipeline for you. Run `financial_risk_engine_full.R` first (Quick start, Option B) to generate/refresh the database, then build the image.
+
+Requires your own Anthropic API key (console.anthropic.com) for the chat sidebar to function. The dashboard's tables, charts, and value boxes work without one — only the natural-language chat requires it. Never commit a real key to this repo or bake it into the image; it's passed at `docker run` time via `-e` specifically so it never needs to be.
+
+The image is a **baked-in snapshot** of the database from whenever it was last built — it does not live-update if the pipeline reruns afterward. Rebuild the image to pick up fresher data.
+
+## What each pipeline section does
 
 | Section | Purpose |
 |---|---|
@@ -99,6 +133,7 @@ This project went through real debugging, not just implementation — the reason
 - **Reframing rather than discarding a flawed feature** — an initial "find similar historical debtors, recommend their strategy" feature turned out to be unsupportable (the source dataset assigns strategy purely by balance band, so there's no counterfactual to learn from). Rather than drop the work, it was reframed into a valid question the data *does* support: a cost-benefit check at each strategy threshold, using the dataset's own documented $50-per-level cost structure.
 - **Fixed exchange rate over a live currency API for model data** — deliberately not applied to training data, since two of three source datasets have no confirmed currency; applying real conversion math to unconfirmed-currency numbers would be false precision. Applied instead to the dashboard's own simulated data, where the conversion is meaningful, with the rate used logged to a file for reproducibility.
 - **Two-tier LLM chat design** — an offline keyword-matched fallback (`ask_data()`) alongside the full LLM-backed layer (`ask_data_llm()`), so a billing/API issue blocks only the more flexible tier, not natural-language querying entirely.
+- **SQLite over DuckDB for the storage layer** — DuckDB caused repeated, genuinely difficult local install failures (missing system libraries, R-version/binary mismatches across three different package repos, none of which turned out to be the real cause until the actual R version itself was confirmed too old for the available binaries). RSQLite statically bundles its own engine and needs nothing from the host system, at the cost of DuckDB's analytical/columnar performance advantage — irrelevant at this project's scale, so a clean trade.
 
 A few debugging lessons worth naming plainly, since catching and understanding these is as much a part of the engineering as writing the code the first time:
 - **Silent missingness from mismatched training sources** — combining datasets where a feature exists in only some of them caused `glm()` to silently drop ~97% of rows to missingness, producing a model that looked fine until the degrees-of-freedom count was checked directly.
@@ -123,3 +158,5 @@ Code in this repository is MIT licensed (see `LICENSE`). The two Kaggle datasets
 ## Task tracking
 
 See `PROJECT_PLAN.md` for the current issue list.
+An R-based financial risk analytics pipeline, built for Google Colab. It merges debtor and external risk data, computes exposure and risk tiers, drafts collection notifications, visualizes portfolio health, and trains a model to rank which flagged accounts are actually worth pursuing. A chat layer sits on top, answering plain-English questions about the portfolio via an LLM API.
+
