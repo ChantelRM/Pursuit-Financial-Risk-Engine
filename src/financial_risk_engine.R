@@ -5,7 +5,7 @@
 # ------------------------------------------------------------------------------
 required_packages <- c("dplyr", "ggplot2", "tibble", "purrr", "glue",
                         "scales", "lubridate", "readr", "tidyr", "stringr",
-                        "httr", "jsonlite", "DBI", "RSQLite")
+                        "httr", "jsonlite", "DBI", "RSQLite", "logger")
 
 new_packages <- required_packages[!(required_packages %in% installed.packages()[, "Package"])]
 if (length(new_packages) > 0) {
@@ -22,6 +22,45 @@ con <- DBI::dbConnect(RSQLite::SQLite(), "data/processed/pursuit.sqlite")
 dir.create("models", showWarnings = FALSE)
 dir.create("data/raw", recursive = TRUE, showWarnings = FALSE)
 dir.create("data/processed", recursive = TRUE, showWarnings = FALSE)
+
+# logger helpers
+LOG_FILE <- "logs/pipeline_run.log"
+dir.create("logs",showWarnings = FALSE)
+
+log_message <- function(level, message, console = FALSE) {
+  timestamp <- format(Sys.time(), "%Y-%m-%D %H:%M:%S")
+
+  calls <- sys.calls()
+  delpth <- length(calls)
+
+  if(depth >=3){
+    caller_call <- calls[[depth -2]]
+    fn_name <- as.character(caller_call[[1]])[1]
+  } else {
+    fn_name <- "global"
+  }
+
+  log_line <- sprintf("%s [%s] %s: %s", timestamp, level, fn_name, message)
+
+  cat(log_line, "\n", file = LOG_FILE , append= TRUE)
+
+  if(console) cat(log_line, "\n")
+
+}
+
+# log info information, console output
+log_info <- function(msg, console = FALSE) {
+  log_message("INFO", msg, console =console)
+}
+
+# log error messages, console output
+log_error <- function(msg, console = TRUE) {
+  log_message("ERROR", msg, console = console)
+}
+
+log_warning<- function(msg,console= TRUE){
+  log_message("WARN", msg, console = console)
+}
 
 
 # ------------------------------------------------------------------------------
@@ -53,6 +92,12 @@ validate_schema <- function(df, schema, df_name = "dataset") {
   if (length(problems) > 0) stop(glue("[{df_name}] Schema mismatches:\n{paste(problems, collapse = '\n')}"))
   message(glue("[{df_name}] Schema OK ({nrow(df)} rows, {ncol(df)} cols)"))
   invisible(TRUE)
+
+  log_info(glue("[{df_name}] Schema mismatches:\n{paste(problems, collapse = '\n')}"), TRUE)
+  log_info((glue("[{df_name}] Schema OK ({nrow(df)} rows, {ncol(df)} cols)"),TRUE)
+}
+else{
+  log_warning("NO MASTER LEDGER SCHEMA!!", TRUE)
 }
 
 load_and_validate_csv <- function(path, schema, df_name = "dataset", date_cols = character(0)) {
@@ -126,7 +171,8 @@ message(glue("Flagged {sum(unified_ledger$Critical_Alert)} of {nrow(unified_ledg
 write_csv(unified_ledger, "data/processed/unified_ledger.csv")
 DBI::dbWriteTable(con, "unified_ledger", unified_ledger, overwrite = TRUE)
 
-
+log_info(glue("Flagged {sum(unified_ledger$Critical_Alert)} of {nrow(unified_ledger)} accounts as Critical Alert."),TRUE)
+))
 # ------------------------------------------------------------------------------
 # SECTION 4: NOTIFICATION DRAFTS (email + SMS)
 # ------------------------------------------------------------------------------
@@ -287,7 +333,10 @@ load_raw_source <- function(path, con, tbl_name, force_refresh = FALSE) {
   if (db_has_table) {
     message(glue("force_refresh requested but no CSV found at {path} -- falling back to existing database table '{tbl_name}'."))
     return(DBI::dbReadTable(con, tbl_name))
+    log_warning(glue("force_refresh requested but no CSV found at {path} -- falling back to existing database table '{tbl_name}'."),TRUE)
   }
+
+  log_error(glue("Cannot load '{tbl_name}': no existing database table AND no CSV at {path}. Need at least one."),FALSE)
 
   stop(glue("Cannot load '{tbl_name}': no existing database table AND no CSV at {path}. Need at least one."))
 }
@@ -349,6 +398,8 @@ validate_modeling_data <- function(df) {
   if (length(issues) > 0) warning(paste(issues, collapse = "\n"))
   else message("Validation passed: rows present, no duplicate IDs, no negative balances.")
   invisible(issues)
+
+  log_info(issues, TRUE)
 }
 
 split_dataset <- function(df, train_frac = 0.70, val_frac = 0.15, seed = 42) {
@@ -411,6 +462,7 @@ payment_model <- tryCatch({
   message("Model saved to models/payment_model.rds")
   model
 }, error = function(e) {
+  log_error(glue("Section 6 skipped — {conditionMessage(e)}."))
   message(glue("Section 6 skipped — {conditionMessage(e)}. Upload the 3 CSVs to data/raw/ to run this section."))
   NULL
 })
@@ -428,6 +480,8 @@ predict_new_accounts <- function(new_csv_path, model) {
   scored$Predicted_Payment_Probability <- predict(model, newdata = scored, type = "response")
   scored %>% arrange(desc(Predicted_Payment_Probability))
 }
+
+log_info(glue("Train: {nrow(splits$train)} | Validation: {nrow(splits$val)} | Test: {nrow(splits$test)}"), console = TRUE)
 
 score_unified_ledger <- function(unified_ledger, model) {
   scoring_input <- unified_ledger %>%

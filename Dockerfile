@@ -1,5 +1,5 @@
 FROM rocker/shiny-verse:latest
-RUN R -e "install.packages(c('bslib', 'shinychat', 'querychat', 'DBI', 'dplyr', 'reactable', 'ggplot2', 'scales', 'RSQLite'), repos = 'https://cloud.r-project.org/')"
+RUN R -e "install.packages(c('bslib', 'shinychat', 'querychat', 'DBI', 'dplyr', 'reactable', 'ggplot2', 'scales', 'RSQLite','logger'), repos = 'https://cloud.r-project.org/')"
 COPY app/app.R .
 COPY data/processed/ ./data/processed/
 EXPOSE 3838
