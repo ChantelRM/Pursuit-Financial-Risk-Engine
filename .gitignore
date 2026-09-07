@@ -5,3 +5,4 @@ outputs/*.csv
 outputs/charts/*.png
 models/*.rds
 .vscode
+logs/

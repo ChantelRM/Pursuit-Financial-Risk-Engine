@@ -28,7 +28,7 @@ LOG_FILE <- "logs/pipeline_run.log"
 dir.create("logs",showWarnings = FALSE)
 
 log_message <- function(level, message, console = FALSE) {
-  timestamp <- format(Sys.time(), "%Y-%m-%D %H:%M:%S")
+  timestamp <- format(Sys.time(), "%Y-%m-%d %H:%M:%S")
 
   calls <- sys.calls()
   depth <- length(calls)
@@ -37,7 +37,8 @@ log_message <- function(level, message, console = FALSE) {
     caller_call <- calls[[depth -2]]
     fn_name <- as.character(caller_call[[1]])[1]
   } else {
-    fn_name <- "global"
+    # fn_name <- "global"
+    if (fn_name %in% c("eval", "eval.parent")) fn_name <- "global"
   }
 
   log_line <- sprintf("%s [%s] %s: %s", timestamp, level, fn_name, message)
@@ -96,8 +97,6 @@ validate_schema <- function(df, schema, df_name = "dataset") {
   log_info(glue("[{df_name}] Schema mismatches:\n{paste(problems, collapse = '\n')}"), TRUE)
   log_info(glue("[{df_name}] Schema OK ({nrow(df)} rows, {ncol(df)} cols)"), TRUE)
 }
-  log_warning("NO MASTER LEDGER SCHEMA!!", TRUE)
-
 
 load_and_validate_csv <- function(path, schema, df_name = "dataset", date_cols = character(0)) {
   df <- readr::read_csv(path, show_col_types = FALSE)
@@ -340,9 +339,14 @@ load_raw_source <- function(path, con, tbl_name, force_refresh = FALSE) {
   stop(glue("Cannot load '{tbl_name}': no existing database table AND no CSV at {path}. Need at least one."))
 }
 
-raw_bank_debt     <- load_raw_source(CONFIG$bank_debt$path, con, "raw_bank_debt")
+# raw_bank_debt     <- load_raw_source(CONFIG$bank_debt$path, con, "raw_bank_debt")
 raw_collections   <- load_raw_source(CONFIG$collections$path, con, "raw_collections")
-raw_invoice_delay <- load_raw_source(CONFIG$invoice_delay$path, con, "raw_invoice_delay")
+raw_invoice_delay <- load_raw_source(CONFIG$invoice_delay$path, con, "raw_invoice_delay",force_refresh = TRUE)
+
+cust_num_check <- raw_invoice_delay %>% count(Cust_Num) %>% arrange(desc(n)) %>% head(10)
+cust_num_lines <- capture.output(print(cust_num_check))
+for (line in cust_num_lines) log_info(line, console = TRUE)
+
 
 # To force a refresh from CSV when you know the source data changed, e.g.:
 # raw_bank_debt <- load_raw_source(CONFIG$bank_debt$path, con, "raw_bank_debt", force_refresh = TRUE)
@@ -390,15 +394,16 @@ safe_standardize <- function(fn, df, cfg, label) {
 validate_modeling_data <- function(df) {
   issues <- c()
   if (nrow(df) == 0) issues <- c(issues, "No rows loaded — check CONFIG paths.")
-  dupes <- df %>% group_by(Source, Record_ID) %>% filter(n() > 1)
-  if (nrow(dupes) > 0) issues <- c(issues, glue("{nrow(dupes)} duplicate Record_ID(s) found within a source."))
+
+  exact_dupes <- df[duplicated(df) | duplicated(df, fromLast = TRUE), ]
+  if (nrow(exact_dupes) > 0) issues <- c(issues, glue("{nrow(exact_dupes)} exact duplicate row(s) found."))
+
   negative_balance <- df %>% filter(Balance_Amount < 0)
   if (nrow(negative_balance) > 0) issues <- c(issues, glue("{nrow(negative_balance)} row(s) with a negative Balance_Amount."))
-  if (length(issues) > 0) warning(paste(issues, collapse = "\n"))
-  else message("Validation passed: rows present, no duplicate IDs, no negative balances.")
-  invisible(issues)
 
-  log_info(issues, TRUE)
+  if (length(issues) > 0) log_warn(paste(issues, collapse = "; "))
+  else log_info("Validation passed: rows present, no exact duplicates, no negative balances.")
+  invisible(issues)
 }
 
 split_dataset <- function(df, train_frac = 0.70, val_frac = 0.15, seed = 42) {
@@ -465,6 +470,12 @@ payment_model <- tryCatch({
   message(glue("Section 6 skipped — {conditionMessage(e)}. Upload the 3 CSVs to data/raw/ to run this section."))
   NULL
 })
+
+model_summary_lines <- capture.output(print(summary(model)))
+for (line in model_summary_lines) log_info(line, console = TRUE)
+
+val_lines <- capture.output(evaluate_model(model, splits$val, label = "Validation"))
+for (line in val_lines) log_info(line, console = TRUE)
 
 predict_new_accounts <- function(new_csv_path, model) {
   new_data <- readr::read_csv(new_csv_path, show_col_types = FALSE)
