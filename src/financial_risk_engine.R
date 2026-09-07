@@ -31,7 +31,7 @@ log_message <- function(level, message, console = FALSE) {
   timestamp <- format(Sys.time(), "%Y-%m-%D %H:%M:%S")
 
   calls <- sys.calls()
-  delpth <- length(calls)
+  depth <- length(calls)
 
   if(depth >=3){
     caller_call <- calls[[depth -2]]
@@ -94,11 +94,10 @@ validate_schema <- function(df, schema, df_name = "dataset") {
   invisible(TRUE)
 
   log_info(glue("[{df_name}] Schema mismatches:\n{paste(problems, collapse = '\n')}"), TRUE)
-  log_info((glue("[{df_name}] Schema OK ({nrow(df)} rows, {ncol(df)} cols)"),TRUE)
+  log_info(glue("[{df_name}] Schema OK ({nrow(df)} rows, {ncol(df)} cols)"), TRUE)
 }
-else{
   log_warning("NO MASTER LEDGER SCHEMA!!", TRUE)
-}
+
 
 load_and_validate_csv <- function(path, schema, df_name = "dataset", date_cols = character(0)) {
   df <- readr::read_csv(path, show_col_types = FALSE)
@@ -172,7 +171,7 @@ write_csv(unified_ledger, "data/processed/unified_ledger.csv")
 DBI::dbWriteTable(con, "unified_ledger", unified_ledger, overwrite = TRUE)
 
 log_info(glue("Flagged {sum(unified_ledger$Critical_Alert)} of {nrow(unified_ledger)} accounts as Critical Alert."),TRUE)
-))
+
 # ------------------------------------------------------------------------------
 # SECTION 4: NOTIFICATION DRAFTS (email + SMS)
 # ------------------------------------------------------------------------------
