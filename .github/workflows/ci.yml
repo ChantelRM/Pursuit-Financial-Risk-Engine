@@ -36,5 +36,5 @@ jobs:
         shell: Rscript {0}
 
       - name: Run the pipeline end-to-end
-        run: source("financial_risk_engine_full.R")
+        run: source("financial_risk_engine.R")
         shell: Rscript {0}
