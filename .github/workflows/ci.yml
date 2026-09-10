@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'release'
+
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libssl-dev libcurl4-openssl-dev libxml2-dev libuv1-dev
+
+      - name: Install R package dependencies
+        run: |
+          install.packages(c(
+            "dplyr", "ggplot2", "tibble", "purrr", "glue", "scales",
+            "lubridate", "readr", "tidyr", "stringr", "httr", "jsonlite",
+            "DBI", "RSQLite", "testthat"
+          ), repos = c("https://cran.r-universe.dev", "https://cloud.r-project.org"))
+        shell: Rscript {0}
+
+      - name: Run test suite
+        run: testthat::test_dir("tests/testthat")
+        shell: Rscript {0}
+
+      - name: Run the pipeline end-to-end
+        run: source("financial_risk_engine_full.R")
+        shell: Rscript {0}
