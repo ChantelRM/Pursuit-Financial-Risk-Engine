@@ -115,6 +115,33 @@ new_predictions <- predict_new_accounts("data/raw/some_new_batch.csv", payment_m
 
 A dataset shaped like the Master Ledger scores directly through `predict_new_accounts()`. A dataset from a new source with different columns needs its own `standardize_*()` function, following the pattern of the two already in Section 6.
 
+## Running the test suite
+
+Pure-logic functions (schema validation, the `Critical_Alert` rule, logging) live in `R/functions.R`, sourced by both the pipeline itself and the automated tests — one real copy, not a duplicate that can drift out of sync.
+
+**One-time setup:**
+```r
+install.packages("testthat", repos = c("https://cran.r-universe.dev", "https://cloud.r-project.org"))
+```
+If this fails with a compile error naming a missing system library (e.g. `libuv1-dev`), install it via `apt` first, then retry — this project hit that exact wall a few times during setup; see `LEARNING_JOURNAL.md` for the full debugging story.
+
+**Run the suite**, from the project root:
+```r
+testthat::test_dir("tests/testthat")
+```
+Expected output ends with something like:
+```
+[ FAIL 0 | WARN 0 | SKIP 0 | PASS 14 ]
+```
+Any `FAIL` means either a real bug in the pipeline logic or a test that needs updating — check the printed failure message, which names the exact assertion and expected-vs-actual values.
+
+**What's covered:**
+- `validate_schema()` — missing columns, wrong types, and that numeric/integer are correctly treated as interchangeable
+- `compute_critical_alert()` — the full truth table, including the zero-balance edge case (an account can never be flagged, even when blacklisted and carrying external debt, if its remaining balance is zero or negative) — this was originally a manual check from the project's early edge-case testing, now a permanent automated one instead of something to remember to re-run by hand
+- Exact-duplicate row detection, including a test that specifically confirms a repeated `Record_ID`/`Cust_Num` across multiple rows is *not* flagged as a duplicate on its own — real invoice-level data legitimately repeats a customer ID across many separate invoice rows
+
+**Adding a new test:** create a file in `tests/testthat/` named `test-<something>.R`, write one or more `test_that("description", { ... })` blocks using `testthat`'s `expect_*()` assertions (`expect_equal`, `expect_true`, `expect_error`, etc.). If the function under test isn't in `R/functions.R` yet, move it there first (cutting it from `financial_risk_engine_full.R` and adding a `source("R/functions.R")` call near the top) — this keeps tests exercising the real pipeline code rather than a copy of it.
+
 ## LLM chat layer
 
 Section 7 sends a compact statistical summary of the portfolio (not raw per-debtor rows) alongside the question to an LLM API, and can also detect a specific `Debtor_ID` mentioned in the question and return single-account detail instead. The API call itself is provider-agnostic — `call_llm()` is the only function that changes depending on which provider's key is in use.
@@ -158,5 +185,3 @@ Code in this repository is MIT licensed (see `LICENSE`). The two Kaggle datasets
 ## Task tracking
 
 See `PROJECT_PLAN.md` for the current issue list.
-An R-based financial risk analytics pipeline, built for Google Colab. It merges debtor and external risk data, computes exposure and risk tiers, drafts collection notifications, visualizes portfolio health, and trains a model to rank which flagged accounts are actually worth pursuing. A chat layer sits on top, answering plain-English questions about the portfolio via an LLM API.
-
