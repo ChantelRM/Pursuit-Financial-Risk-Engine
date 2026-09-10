@@ -3,6 +3,8 @@
 # ------------------------------------------------------------------------------
 # SECTION 0: SETUP
 # ------------------------------------------------------------------------------
+source("R/functions.R")
+
 required_packages <- c("dplyr", "ggplot2", "tibble", "purrr", "glue",
                         "scales", "lubridate", "readr", "tidyr", "stringr",
                         "httr", "jsonlite", "DBI", "RSQLite", "logger")
@@ -156,7 +158,8 @@ unified_ledger <- unified_ledger %>%
     Remaining_Balance = round(Original_Debt - Amount_Paid, 2),
     Net_Profit = round(Amount_Paid - Cost_To_Acquire, 2),
     Days_Past_Due = as.integer(Sys.Date() - Billing_Month),
-    Critical_Alert = Remaining_Balance > 0 & (Is_Blacklisted | Has_External_Debts),
+    Critical_Alert = compute_critical_alert(Remaining_Balance, Is_Blacklisted, Has_External_Debts),
+    # Critical_Alert = Remaining_Balance > 0 & (Is_Blacklisted | Has_External_Debts),
     Risk_Tier = case_when(
       Critical_Alert & Remaining_Balance > 5000 ~ "Severe",
       Critical_Alert ~ "Critical",
