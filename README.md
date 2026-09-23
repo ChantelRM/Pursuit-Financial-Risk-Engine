@@ -1,6 +1,9 @@
 # Verification code
 WTC-BWMH7H7D
 
+# Demo Video Youtube Link
+
+
 # Financial Risk Analytics Engine (Pursuit)
 
 An R-based financial risk analytics pipeline and dashboard. It merges debtor and external risk data, computes exposure and risk tiers, drafts collection notifications, visualizes portfolio health, and trains a model to rank which flagged accounts are actually worth pursuing. A chat layer sits on top, answering plain-English questions about the portfolio via an LLM API. The pipeline persists its output as a SQLite database, which a containerized Shiny dashboard reads directly.
